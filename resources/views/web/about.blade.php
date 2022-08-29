@@ -1,5 +1,4 @@
 <x-web.templates.base title="Sobre">
-  <x-web.components.menu />
   <main class="about">
     <div class="container about__container">
       <h2 class="about__subtitle">Sobre</h2>
@@ -11,5 +10,4 @@
       </div>
     </div>
   </main>
-  <x-web.components.footer />
 </x-web.templates.base>
