@@ -1,0 +1,114 @@
+{
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2": {
+    "file": "assets/raleway-vietnamese-400-normal.917d91f1.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2": {
+    "file": "assets/raleway-cyrillic-400-normal.679eb908.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2": {
+    "file": "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2": {
+    "file": "assets/raleway-latin-400-normal.c78a1da5.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2"
+  },
+  "resources/fonts/gothamlight-webfont.eot": {
+    "file": "assets/gothamlight-webfont.265439fe.eot",
+    "src": "resources/fonts/gothamlight-webfont.eot"
+  },
+  "resources/fonts/gothambook-webfont.eot": {
+    "file": "assets/gothambook-webfont.0f71c094.eot",
+    "src": "resources/fonts/gothambook-webfont.eot"
+  },
+  "resources/fonts/gothambold-webfont.eot": {
+    "file": "assets/gothambold-webfont.e8f418cf.eot",
+    "src": "resources/fonts/gothambold-webfont.eot"
+  },
+  "resources/fonts/gothammedium-webfont.eot": {
+    "file": "assets/gothammedium-webfont.8b7cd610.eot",
+    "src": "resources/fonts/gothammedium-webfont.eot"
+  },
+  "resources/fonts/loli-pop.woff": {
+    "file": "assets/loli-pop.69b0baad.woff",
+    "src": "resources/fonts/loli-pop.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff": {
+    "file": "assets/raleway-all-400-normal.e0fbe643.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff"
+  },
+  "resources/fonts/gothamlight-webfont.woff2": {
+    "file": "assets/gothamlight-webfont.83bb3b91.woff2",
+    "src": "resources/fonts/gothamlight-webfont.woff2"
+  },
+  "resources/fonts/gothambold-webfont.woff2": {
+    "file": "assets/gothambold-webfont.e5689d23.woff2",
+    "src": "resources/fonts/gothambold-webfont.woff2"
+  },
+  "resources/fonts/gothambook-webfont.woff2": {
+    "file": "assets/gothambook-webfont.c1d14e3a.woff2",
+    "src": "resources/fonts/gothambook-webfont.woff2"
+  },
+  "resources/fonts/gothammedium-webfont.woff2": {
+    "file": "assets/gothammedium-webfont.a35bdc94.woff2",
+    "src": "resources/fonts/gothammedium-webfont.woff2"
+  },
+  "resources/fonts/gothambook-webfont.woff": {
+    "file": "assets/gothambook-webfont.ee9e44bc.woff",
+    "src": "resources/fonts/gothambook-webfont.woff"
+  },
+  "resources/fonts/gothambold-webfont.woff": {
+    "file": "assets/gothambold-webfont.588ab1eb.woff",
+    "src": "resources/fonts/gothambold-webfont.woff"
+  },
+  "resources/fonts/gothamlight-webfont.woff": {
+    "file": "assets/gothamlight-webfont.177dd76f.woff",
+    "src": "resources/fonts/gothamlight-webfont.woff"
+  },
+  "resources/fonts/gothammedium-webfont.woff": {
+    "file": "assets/gothammedium-webfont.389f7786.woff",
+    "src": "resources/fonts/gothammedium-webfont.woff"
+  },
+  "resources/fonts/gothambold-webfont.ttf": {
+    "file": "assets/gothambold-webfont.09d9b6cb.ttf",
+    "src": "resources/fonts/gothambold-webfont.ttf"
+  },
+  "resources/fonts/gothambook-webfont.ttf": {
+    "file": "assets/gothambook-webfont.23d30c6f.ttf",
+    "src": "resources/fonts/gothambook-webfont.ttf"
+  },
+  "resources/fonts/gothamlight-webfont.ttf": {
+    "file": "assets/gothamlight-webfont.31d16321.ttf",
+    "src": "resources/fonts/gothamlight-webfont.ttf"
+  },
+  "resources/fonts/gothammedium-webfont.ttf": {
+    "file": "assets/gothammedium-webfont.58ba8571.ttf",
+    "src": "resources/fonts/gothammedium-webfont.ttf"
+  },
+  "resources/js/control/app.js": {
+    "file": "assets/app.718014bb.js",
+    "src": "resources/js/control/app.js",
+    "isEntry": true
+  },
+  "resources/js/web/app.js": {
+    "file": "assets/app.e5198d1b.js",
+    "src": "resources/js/web/app.js",
+    "isEntry": true
+  },
+  "resources/scss/web/app.scss": {
+    "file": "assets/app.964d4a37.css",
+    "src": "resources/scss/web/app.scss",
+    "isEntry": true
+  },
+  "resources/scss/control/app.scss": {
+    "file": "assets/app.390274ba.css",
+    "src": "resources/scss/control/app.scss",
+    "isEntry": true
+  }
+}

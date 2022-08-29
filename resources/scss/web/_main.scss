@@ -1,0 +1,77 @@
+:root {
+  // Typography
+  --text-font: "Gotham";
+  --title-font: "Loli Pop";
+
+  // Colors
+  --white: #fff;
+  --black: #000;
+  --purple: #c3b4d8;
+  --blue-one: #a1bee5;
+  --blue-two: #c5dfed;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--text-font);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1520px;
+  }
+
+  @media (min-width: 576px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 575px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1520px;
+  }
+}
