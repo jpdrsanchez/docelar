@@ -1,8 +1,14 @@
 // Vendor
 @use "@bootstrap/scss/bootstrap-reboot.scss";
-@use "@bootstrap/scss/bootstrap-grid.scss";
 
 // Global
 @use "reset";
 @use "fonts";
 @use "main";
+
+// Components
+@use "components/menu";
+@use "components/footer";
+
+// Pages
+@use "pages/about";

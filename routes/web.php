@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\WebController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('web.home');
+Route::controller(WebController::class)->group(function () {
+    Route::get('/', 'home')->name('home');
+    Route::get('/sobre', 'about')->name('about');
 });
