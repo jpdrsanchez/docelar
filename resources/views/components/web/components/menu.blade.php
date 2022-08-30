@@ -20,13 +20,13 @@
           <a href="{{ route('web.projects') }}" class="menu__link">Projetos</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Doações</a>
+          <a href="{{ route('web.donations') }}" class="menu__link">Doações</a>
         </li>
         <li class="menu__item">
           <a href="{{ route('web.talks') }}" class="menu__link">Palestras</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link menu__link--button">Contato</a>
+          <a href="{{ route('web.donations') }}" class="menu__link menu__link--button">Contato</a>
         </li>
       </ul>
       </div>

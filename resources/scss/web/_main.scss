@@ -39,6 +39,16 @@ img {
   max-width: 100%;
 }
 
+strong,
+b {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
 .container {
   position: relative;
   width: 100%;

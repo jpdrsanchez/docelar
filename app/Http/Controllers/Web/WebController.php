@@ -31,4 +31,9 @@ class WebController extends Controller
     {
         return view('web.talks');
     }
+
+    public function donations()
+    {
+        return view('web.donations');
+    }
 }
