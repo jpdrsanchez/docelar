@@ -16,4 +16,19 @@ class WebController extends Controller
     {
         return view('web.about');
     }
+
+    public function events()
+    {
+        return view('web.events');
+    }
+
+    public function projects()
+    {
+        return view('web.projects');
+    }
+
+    public function talks()
+    {
+        return view('web.talks');
+    }
 }

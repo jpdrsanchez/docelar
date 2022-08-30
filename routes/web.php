@@ -17,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::controller(WebController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/sobre', 'about')->name('about');
+    Route::get('/eventos', 'events')->name('events');
+    Route::get('/projetos', 'projects')->name('projects');
+    Route::get('/palestras', 'talks')->name('talks');
 });

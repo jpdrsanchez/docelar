@@ -1,0 +1,170 @@
+.schedule-template {
+  position: relative;
+
+  &__main {
+    color: var(--white);
+    min-height: 692px;
+    padding-top: 114px;
+    padding-bottom: 82px;
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 635px;
+  }
+
+  &__category {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: var(--white);
+    margin-bottom: 7px;
+  }
+
+  &__date {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    width: min(100%, 200px);
+    background: var(--white);
+    border-radius: 50px;
+    color: var(--black);
+    padding: 3px 10px;
+    text-align: center;
+
+    &:hover {
+      color: var(--black);
+    }
+  }
+
+  &__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
+  }
+}
+
+.schedule-card {
+  position: relative;
+  border: 7px solid var(--purple);
+  border-radius: 50px;
+  z-index: 500;
+  overflow: hidden;
+
+  &:hover {
+    .schedule-card__linear {
+      opacity: 0;
+    }
+
+    .schedule-card__inner {
+      top: unset;
+      bottom: 30px;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &--md {
+    aspect-ratio: 485 / 358;
+    padding: 30px 15px;
+  }
+
+  &--lg {
+    padding: 60px 30px;
+  }
+
+  &__linear {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      linear-gradient(
+        0deg,
+        rgba(161, 190, 229, 0.65),
+        rgba(161, 190, 229, 0.65)
+      );
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  &__image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__inner {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: max-content;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  &__title {
+    font-family: var(--title-font);
+    font-size: 35px;
+    line-height: 33px;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 19px;
+  }
+
+  &__button {
+    padding: 3px 10px;
+    background: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: var(--black);
+    width: min(100%, 200px);
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      color: var(--black);
+    }
+  }
+}
