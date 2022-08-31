@@ -14,11 +14,12 @@
         "postcss-em-media-query": "^4.1.0",
         "postcss-pxtorem": "^6.0.0",
         "sass": "^1.54.5",
-        "vite": "^3.0.4"
+        "vite": "^3.0.0"
     },
     "dependencies": {
         "@fontsource/raleway": "^4.5.10",
         "@popperjs/core": "^2.11.6",
-        "bootstrap": "^5.2.0"
+        "bootstrap": "^5.2.0",
+        "swiper": "^8.3.2"
     }
 }

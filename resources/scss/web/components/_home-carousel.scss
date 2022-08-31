@@ -1,0 +1,71 @@
+.home-carousel {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__inner {
+    position: relative;
+    box-sizing: border-box;
+    height: 692px;
+    background: url("../../images/home/slide-purple.jpg") no-repeat center
+      center;
+    background-size: cover;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 102px 60px 30px;
+  }
+
+  &__wrapper {
+    max-width: 563px;
+  }
+
+  &__detail {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: var(--white);
+    font-family: var(--title-font);
+    font-size: 96px;
+    line-height: 91px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: var(--white);
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    display: block;
+    max-width: 200px;
+    padding: 3px 10px;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+
+    &:hover {
+      color: var(--black);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.swiper-home {
+  height: 736px;
+  width: 100%;
+}
