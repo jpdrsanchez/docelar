@@ -1,31 +1,35 @@
 {
-  "resources/images/background/detail-3.svg": {
-    "file": "assets/detail-3.c2482ff7.svg",
-    "src": "resources/images/background/detail-3.svg"
-  },
   "resources/images/background/detail-1.svg": {
     "file": "assets/detail-1.371175a6.svg",
     "src": "resources/images/background/detail-1.svg"
   },
-  "resources/images/background/detail-4.svg": {
-    "file": "assets/detail-4.a560d247.svg",
-    "src": "resources/images/background/detail-4.svg"
+  "resources/images/background/detail-3.svg": {
+    "file": "assets/detail-3.c2482ff7.svg",
+    "src": "resources/images/background/detail-3.svg"
   },
   "resources/images/background/detail-2.svg": {
     "file": "assets/detail-2.e961d154.svg",
     "src": "resources/images/background/detail-2.svg"
   },
+  "resources/images/background/detail-5.svg": {
+    "file": "assets/detail-5.5ff8aa6c.svg",
+    "src": "resources/images/background/detail-5.svg"
+  },
   "resources/images/background/line-1.svg": {
     "file": "assets/line-1.3395a34e.svg",
     "src": "resources/images/background/line-1.svg"
+  },
+  "resources/images/background/detail-4.svg": {
+    "file": "assets/detail-4.a560d247.svg",
+    "src": "resources/images/background/detail-4.svg"
   },
   "resources/images/background/detail-6.svg": {
     "file": "assets/detail-6.c0981e4d.svg",
     "src": "resources/images/background/detail-6.svg"
   },
-  "resources/images/background/detail-5.svg": {
-    "file": "assets/detail-5.5ff8aa6c.svg",
-    "src": "resources/images/background/detail-5.svg"
+  "resources/images/donate/donate-bank.svg": {
+    "file": "assets/donate-bank.533c869b.svg",
+    "src": "resources/images/donate/donate-bank.svg"
   },
   "resources/images/donate/donate-pix.svg": {
     "file": "assets/donate-pix.d23a039b.svg",
@@ -43,21 +47,17 @@
     "file": "assets/footer-logo.6a6786b6.svg",
     "src": "resources/images/footer-logo.svg"
   },
-  "resources/images/donate/donate-bank.svg": {
-    "file": "assets/donate-bank.533c869b.svg",
-    "src": "resources/images/donate/donate-bank.svg"
-  },
-  "resources/images/home/people-2.png": {
-    "file": "assets/people-2.b71b7080.png",
-    "src": "resources/images/home/people-2.png"
-  },
-  "resources/images/home/people-1.png": {
-    "file": "assets/people-1.aaefd4f9.png",
-    "src": "resources/images/home/people-1.png"
+  "resources/images/home/people-3.png": {
+    "file": "assets/people-3.54f97ddb.png",
+    "src": "resources/images/home/people-3.png"
   },
   "resources/images/logo.png": {
     "file": "assets/logo.bcd9b584.png",
     "src": "resources/images/logo.png"
+  },
+  "resources/images/home/people-2.png": {
+    "file": "assets/people-2.b71b7080.png",
+    "src": "resources/images/home/people-2.png"
   },
   "resources/images/home/slide-purple.jpg": {
     "file": "assets/slide-purple.5cc786d3.jpg",
@@ -71,53 +71,69 @@
     "file": "assets/menu-logo.c5f126f4.png",
     "src": "resources/images/menu-logo.png"
   },
-  "resources/images/home/slide-blue.jpg": {
-    "file": "assets/slide-blue.10356fef.jpg",
-    "src": "resources/images/home/slide-blue.jpg"
+  "resources/images/home/people-1.png": {
+    "file": "assets/people-1.aaefd4f9.png",
+    "src": "resources/images/home/people-1.png"
   },
   "resources/images/home/slide-light-blue.jpg": {
     "file": "assets/slide-light-blue.2cffe87b.jpg",
     "src": "resources/images/home/slide-light-blue.jpg"
   },
-  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2": {
-    "file": "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2"
-  },
-  "resources/fonts/gothambook-webfont.eot": {
-    "file": "assets/gothambook-webfont.0f71c094.eot",
-    "src": "resources/fonts/gothambook-webfont.eot"
+  "resources/images/home/slide-blue.jpg": {
+    "file": "assets/slide-blue.10356fef.jpg",
+    "src": "resources/images/home/slide-blue.jpg"
   },
   "resources/fonts/gothamlight-webfont.eot": {
     "file": "assets/gothamlight-webfont.265439fe.eot",
     "src": "resources/fonts/gothamlight-webfont.eot"
   },
-  "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2": {
-    "file": "assets/raleway-cyrillic-400-normal.679eb908.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2"
-  },
-  "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2": {
-    "file": "assets/raleway-latin-400-normal.c78a1da5.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2"
-  },
   "resources/fonts/gothambold-webfont.eot": {
     "file": "assets/gothambold-webfont.e8f418cf.eot",
     "src": "resources/fonts/gothambold-webfont.eot"
-  },
-  "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2": {
-    "file": "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2"
   },
   "resources/fonts/gothammedium-webfont.eot": {
     "file": "assets/gothammedium-webfont.8b7cd610.eot",
     "src": "resources/fonts/gothammedium-webfont.eot"
   },
-  "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2": {
-    "file": "assets/raleway-vietnamese-400-normal.917d91f1.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2"
+  "resources/fonts/gothambook-webfont.eot": {
+    "file": "assets/gothambook-webfont.0f71c094.eot",
+    "src": "resources/fonts/gothambook-webfont.eot"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2": {
+    "file": "assets/raleway-cyrillic-400-normal.679eb908.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2"
   },
   "resources/fonts/loli-pop.woff": {
     "file": "assets/loli-pop.69b0baad.woff",
     "src": "resources/fonts/loli-pop.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2": {
+    "file": "assets/raleway-vietnamese-400-normal.917d91f1.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2": {
+    "file": "assets/raleway-latin-400-normal.c78a1da5.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2": {
+    "file": "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2"
+  },
+  "resources/fonts/gothamlight-webfont.woff2": {
+    "file": "assets/gothamlight-webfont.83bb3b91.woff2",
+    "src": "resources/fonts/gothamlight-webfont.woff2"
+  },
+  "resources/fonts/gothammedium-webfont.woff2": {
+    "file": "assets/gothammedium-webfont.a35bdc94.woff2",
+    "src": "resources/fonts/gothammedium-webfont.woff2"
+  },
+  "resources/fonts/gothambold-webfont.woff2": {
+    "file": "assets/gothambold-webfont.e5689d23.woff2",
+    "src": "resources/fonts/gothambold-webfont.woff2"
   },
   "resources/fonts/gothambook-webfont.woff2": {
     "file": "assets/gothambook-webfont.c1d14e3a.woff2",
@@ -127,21 +143,9 @@
     "file": "assets/raleway-all-400-normal.e0fbe643.woff",
     "src": "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff"
   },
-  "resources/fonts/gothamlight-webfont.woff2": {
-    "file": "assets/gothamlight-webfont.83bb3b91.woff2",
-    "src": "resources/fonts/gothamlight-webfont.woff2"
-  },
-  "resources/fonts/gothambold-webfont.woff2": {
-    "file": "assets/gothambold-webfont.e5689d23.woff2",
-    "src": "resources/fonts/gothambold-webfont.woff2"
-  },
-  "resources/fonts/gothammedium-webfont.woff2": {
-    "file": "assets/gothammedium-webfont.a35bdc94.woff2",
-    "src": "resources/fonts/gothammedium-webfont.woff2"
-  },
-  "resources/fonts/gothambook-webfont.woff": {
-    "file": "assets/gothambook-webfont.ee9e44bc.woff",
-    "src": "resources/fonts/gothambook-webfont.woff"
+  "resources/fonts/gothammedium-webfont.woff": {
+    "file": "assets/gothammedium-webfont.389f7786.woff",
+    "src": "resources/fonts/gothammedium-webfont.woff"
   },
   "resources/fonts/gothamlight-webfont.woff": {
     "file": "assets/gothamlight-webfont.177dd76f.woff",
@@ -151,13 +155,13 @@
     "file": "assets/gothambold-webfont.588ab1eb.woff",
     "src": "resources/fonts/gothambold-webfont.woff"
   },
-  "resources/fonts/gothammedium-webfont.woff": {
-    "file": "assets/gothammedium-webfont.389f7786.woff",
-    "src": "resources/fonts/gothammedium-webfont.woff"
+  "resources/fonts/gothambook-webfont.woff": {
+    "file": "assets/gothambook-webfont.ee9e44bc.woff",
+    "src": "resources/fonts/gothambook-webfont.woff"
   },
-  "resources/fonts/gothambook-webfont.ttf": {
-    "file": "assets/gothambook-webfont.23d30c6f.ttf",
-    "src": "resources/fonts/gothambook-webfont.ttf"
+  "resources/fonts/gothammedium-webfont.ttf": {
+    "file": "assets/gothammedium-webfont.58ba8571.ttf",
+    "src": "resources/fonts/gothammedium-webfont.ttf"
   },
   "resources/fonts/gothamlight-webfont.ttf": {
     "file": "assets/gothamlight-webfont.31d16321.ttf",
@@ -167,9 +171,9 @@
     "file": "assets/gothambold-webfont.09d9b6cb.ttf",
     "src": "resources/fonts/gothambold-webfont.ttf"
   },
-  "resources/fonts/gothammedium-webfont.ttf": {
-    "file": "assets/gothammedium-webfont.58ba8571.ttf",
-    "src": "resources/fonts/gothammedium-webfont.ttf"
+  "resources/fonts/gothambook-webfont.ttf": {
+    "file": "assets/gothambook-webfont.23d30c6f.ttf",
+    "src": "resources/fonts/gothambook-webfont.ttf"
   },
   "resources/js/control/app.js": {
     "file": "assets/app.718014bb.js",
@@ -177,19 +181,19 @@
     "isEntry": true
   },
   "resources/js/web/app.js": {
-    "file": "assets/app.d4bcef94.js",
+    "file": "assets/app.913593e6.js",
     "src": "resources/js/web/app.js",
     "isEntry": true,
     "css": [
-      "assets/app.18333e48.css"
+      "assets/app.45a02e80.css"
     ]
   },
   "resources/js/web/app.css": {
-    "file": "assets/app.18333e48.css",
+    "file": "assets/app.45a02e80.css",
     "src": "resources/js/web/app.css"
   },
   "resources/scss/web/app.scss": {
-    "file": "assets/app.d9b1e5b6.css",
+    "file": "assets/app.5db25410.css",
     "src": "resources/scss/web/app.scss",
     "isEntry": true
   },
