@@ -113,6 +113,21 @@
     }
   }
 
+  &--sw {
+    aspect-ratio: 373 / 276;
+    padding: 30px;
+
+    .schedule-card__inner {
+      top: unset;
+      bottom: 30px;
+      transform: translate(-50%, 0);
+    }
+
+    .schedule-card__hover {
+      opacity: 1;
+    }
+  }
+
   &__linear {
     top: 0;
     left: 0;
