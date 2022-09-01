@@ -55,7 +55,7 @@
       </div>
     </x-web.components.talks-carousel>
   </section>
-  <section class="homeDonate">
+  {{-- <section class="homeDonate">
     <div class="container homeDonate__container">
       <div class="homeDonate__content">
         <h2 class="page-title homeDonate__title">Contribua com as Doações</h2>
@@ -117,5 +117,5 @@
         <p class="homeSchedule__open">Sábado e Domingo das 9:00h até 18:00</p>
       </div>
     </div>
-  </section>
+  </section> --}}
 </x-web.templates.base>

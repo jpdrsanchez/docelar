@@ -18,30 +18,47 @@
     background-size: cover;
     border-radius: 50px;
     overflow: hidden;
-    padding: 102px 60px 30px;
+    padding: 45px 30px 30px;
+
+    @media (min-width: 576px) {
+      padding-top: 102px 60px;
+    }
   }
 
   &__wrapper {
     max-width: 563px;
-  }
 
-  &__detail {
-    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
   }
 
   &__title {
     color: var(--white);
     font-family: var(--title-font);
-    font-size: 96px;
-    line-height: 91px;
+    font-size: 48px;
+    line-height: 45px;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      font-size: 96px;
+      line-height: 91px;
+    }
   }
 
   &__text {
     color: var(--white);
-    font-size: 20px;
-    line-height: 40px;
-    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 45px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 40px;
+      margin-bottom: 60px;
+    }
   }
 
   &__link {
@@ -56,6 +73,11 @@
     font-size: 18px;
     line-height: 40px;
 
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     &:hover {
       color: var(--black);
     }
@@ -65,6 +87,51 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__curv {
+    margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    bottom: 87px;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+      right: 60px;
+      bottom: 45px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      right: 120px;
+    }
+
+    @media (min-width: 1400px) {
+      left: 500px;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+
+    @media (max-width: 1599px) {
+      display: none;
+    }
   }
 }
 
