@@ -22,4 +22,6 @@ Route::controller(WebController::class)->group(function () {
     Route::get('/projetos', 'projects')->name('projects');
     Route::get('/palestras', 'talks')->name('talks');
     Route::get('/doacoes', 'donations')->name('donations');
+    Route::get('/palestra', 'talk')->name('talk');
+    Route::get('/contato', 'contact')->name('contact');
 });

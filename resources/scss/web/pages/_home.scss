@@ -7,7 +7,7 @@
   &__image {
     position: absolute;
     left: 0;
-    top: -15px;
+    top: -179px;
     z-index: 500;
   }
 
@@ -57,6 +57,7 @@
 }
 
 .homeProjects {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
   background: rgba(197, 223, 237, 0.4);
@@ -100,6 +101,13 @@
     &:hover {
       color: var(--white);
     }
+  }
+
+  &__image {
+    z-index: 600;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
   }
 }
 

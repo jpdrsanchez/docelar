@@ -117,6 +117,10 @@
     aspect-ratio: 373 / 276;
     padding: 30px;
 
+    .schedule-card__linear {
+      opacity: 0;
+    }
+
     .schedule-card__inner {
       top: unset;
       bottom: 30px;

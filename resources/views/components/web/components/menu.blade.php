@@ -26,7 +26,7 @@
           <a href="{{ route('web.talks') }}" class="menu__link">Palestras</a>
         </li>
         <li class="menu__item">
-          <a href="{{ route('web.donations') }}" class="menu__link menu__link--button">Contato</a>
+          <a href="{{ route('web.contact') }}" class="menu__link menu__link--button">Contato</a>
         </li>
       </ul>
       </div>

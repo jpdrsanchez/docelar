@@ -12,8 +12,11 @@
 @use "components/footer";
 @use "components/home-carousel";
 @use "components/talks-carousel";
+@use "components/contact-form";
 
 // Pages
 @use "pages/home";
 @use "pages/about";
 @use "pages/donate";
+@use "pages/talks";
+@use "pages/contact";

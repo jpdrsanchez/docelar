@@ -27,6 +27,7 @@
       </ul>
       <a href="#" class="homeProjects__link">Ver mais projetos</a>
     </div>
+    <img src="{{ Vite::asset('resource/images/background/detail-5.svg') }}" alt="" aria-hidden="true" class="homeProjects__image">
   </section>
   <section class="homeTalks">
     <div class="container homeTalks__container">

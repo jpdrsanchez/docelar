@@ -41,4 +41,14 @@ class WebController extends Controller
     {
         return view('web.event');
     }
+
+    public function talk()
+    {
+        return view('web.talk');
+    }
+
+    public function contact()
+    {
+        return view('web.contact');
+    }
 }
