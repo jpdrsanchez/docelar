@@ -18,6 +18,7 @@ Route::controller(WebController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/sobre', 'about')->name('about');
     Route::get('/eventos', 'events')->name('events');
+    Route::get('/evento', 'event')->name('event');
     Route::get('/projetos', 'projects')->name('projects');
     Route::get('/palestras', 'talks')->name('talks');
     Route::get('/doacoes', 'donations')->name('donations');

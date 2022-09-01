@@ -9,6 +9,7 @@
     @vite(['resources/scss/control/app.scss', 'resources/js/control/app.js'])
 </head>
 <body>
+    <x-control.components.navbar />
     {{ $slot }}
 </body>
 </html>

@@ -26,8 +26,8 @@
             <img src="{{ Vite::asset('resources/images/donate/donate-bank.svg') }}" alt="Depoósito Bancário" class="donations-info__methods__item__image donations-info__methods__item__image--banks">
             <p class="donations-info__methods__item__text donations-info__methods__item__text--banks">Faça sua doação com uma Conta Bancária</p>
             <div class="donations-info__methods__item__banks">
-              <x-web.components.donate-bank image="" agency="001" account="2442444243-5" bank="0221" name="Leandro" document="37847583758" />
-              <x-web.components.donate-bank image="" agency="001" account="2442444243-5" bank="0221" name="Leandro" document="37847583758" />
+              <x-web.components.donate-bank :image="Vite::asset('resources/images/donate-mastercard.png')" agency="001" account="2442444243-5" bank="0221" name="Leandro" document="37847583758" />
+              <x-web.components.donate-bank :image="Vite::asset('resources/images/donate-itau.png')" agency="001" account="2442444243-5" bank="0221" name="Leandro" document="37847583758" />
             </div>
           </li>
         </ul>

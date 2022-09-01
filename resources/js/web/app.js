@@ -1,4 +1,4 @@
-import.meta.glob(["../../images/**"]);
+import.meta.glob("/resources/images/**/*");
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
