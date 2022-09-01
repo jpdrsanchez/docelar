@@ -4,4 +4,28 @@
     <x-web.components.home-carousel-item />
     <x-web.components.home-carousel-item />
   </x-web.components.home-carousel>
+  <section class="homeAbout">
+    <img src="{{ Vite::asset('resources/images/home/people-2.png') }}" alt="" aria-hidden="true" class="homeAbout__image">
+    <img src="{{ Vite::asset('resources/images/background/line-1.svg') }}" alt="" aria-hidden="true" class="homeAbout__line">
+    <div class="container homeAbout__container">
+      <div class="homeAbout__wrapper">
+        <h2 class="page-title homeAbout__title">Sobre</h2>
+        <p class="homeAbout__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque faucibus risus et sem libero. Dolor in porttitor nisi a commodo neque, tortor lobortis sit. Mi egestas suspendisse enim eros leo gravida viverra. Nulla aliquam ultricies in amet dui, morbi mi posuere. Quam morbi sit quis enim vestibulum at.<br />At ac iaculis sagittis, adipiscing eget duis egestas pulvinar venenatis. </p>
+        <a href="{{ route('web.about') }}" class="homeAbout__link">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+  <section class="homeProjects">
+    <div class="container homeProjects__container">
+      <h2 class="page-title homeProjects__title">Projetos</h2>
+      <p class="homeProjects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque.</p>
+      <ul class="homeProjects__list">
+        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
+        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
+        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
+        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
+      </ul>
+      <a href="#" class="homeProjects__link">Ver mais projetos</a>
+    </div>
+  </section>
 </x-web.templates.base>
