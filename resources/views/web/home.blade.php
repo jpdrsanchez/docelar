@@ -66,4 +66,56 @@
     <img src="{{ Vite::asset('resources/images/home/people-3.png') }}" alt="" aria-hidden="true" class="homeDonate__image">
     <img src="{{ Vite::asset('resources/images/background/line-1.svg') }}" alt="" aria-hidden="true" class="homeDonate__line">
   </section>
+  <section class="homeSchedule">
+    <div class="container">
+      <div class="homeSchedule__content">
+        <h2 class="page-title homeSchedule__title">Agenda</h2>
+        <p class="homeSchedule__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor.</p>
+        <div class="homeSchedule__schedules">
+          <div class="homeSchedule__list">
+            <h3 class="homeSchedule__list__title">Eventos</h3>
+            <ul class="homeSchedule__list__list">
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+              <li>25/12/2022 - Evento de Natal</li>
+            </ul>
+          </div>
+          <div class="homeSchedule__list">
+            <h3 class="homeSchedule__list__title">Projetos</h3>
+            <ul class="homeSchedule__list__list">
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+            </ul>
+          </div>
+          <div class="homeSchedule__list">
+            <h3 class="homeSchedule__list__title">Palestras</h3>
+            <ul class="homeSchedule__list__list">
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+              <li>08/08/2022 - TDAH Infantil</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="homeSchedule__subtitle">Horários de Abertura</h2>
+        <p class="homeSchedule__open">Segunda a Sexta das 9:00h até 21:00h</p>
+        <p class="homeSchedule__open">Sábado e Domingo das 9:00h até 18:00</p>
+      </div>
+    </div>
+  </section>
 </x-web.templates.base>
