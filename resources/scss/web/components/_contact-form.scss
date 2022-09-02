@@ -6,6 +6,10 @@
 
   &__title {
     margin-bottom: 47px;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__field {

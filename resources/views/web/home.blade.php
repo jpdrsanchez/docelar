@@ -28,6 +28,7 @@
       <a href="#" class="homeProjects__link">Ver mais projetos</a>
     </div>
     <img src="{{ Vite::asset('resources/images/background/detail-5.svg') }}" alt="" aria-hidden="true" class="homeProjects__image">
+    <img src="{{ Vite::asset('resources/images/background/detail-6.svg') }}" alt="" aria-hidden="true" class="homeProjects__image-two">
   </section>
   <section class="homeTalks">
     <div class="container homeTalks__container">
@@ -55,7 +56,7 @@
       </div>
     </x-web.components.talks-carousel>
   </section>
-  {{-- <section class="homeDonate">
+  <section class="homeDonate">
     <div class="container homeDonate__container">
       <div class="homeDonate__content">
         <h2 class="page-title homeDonate__title">Contribua com as Doações</h2>
@@ -65,6 +66,8 @@
     </div>
     <img src="{{ Vite::asset('resources/images/home/people-3.png') }}" alt="" aria-hidden="true" class="homeDonate__image">
     <img src="{{ Vite::asset('resources/images/background/line-1.svg') }}" alt="" aria-hidden="true" class="homeDonate__line">
+    <img src="{{ Vite::asset('resources/images/background/detail-7.svg') }}" alt="" aria-hidden="true" class="homeDonate__detail-one">
+    <img src="{{ Vite::asset('resources/images/background/circle-2.svg') }}" alt="" aria-hidden="true" class="homeDonate__detail-two">
   </section>
   <section class="homeSchedule">
     <div class="container">
@@ -115,7 +118,9 @@
         <h2 class="homeSchedule__subtitle">Horários de Abertura</h2>
         <p class="homeSchedule__open">Segunda a Sexta das 9:00h até 21:00h</p>
         <p class="homeSchedule__open">Sábado e Domingo das 9:00h até 18:00</p>
+        <img src="{{ Vite::asset('resources/images/background/detail-8.svg') }}" alt="" aria-hidden="true" class="homeSchedule__detail-one">
+        <img src="{{ Vite::asset('resources/images/background/detail-9.svg') }}" alt="" aria-hidden="true" class="homeSchedule__detail-two">
       </div>
     </div>
-  </section> --}}
+  </section>
 </x-web.templates.base>

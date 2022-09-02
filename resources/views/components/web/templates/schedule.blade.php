@@ -11,6 +11,8 @@
     </div>
   </main>
   <section class="schedule-template__section">
+    <img src="{{ Vite::asset('resources/images/background/detail-10.svg') }}" alt="" aria-hidden="true" class="schedule-template__section__detail-one">
+    <img src="{{ Vite::asset('resources/images/background/detail-11.svg') }}" alt="" aria-hidden="true" class="schedule-template__section__detail-two">
     <div class="container">
       @unless (empty($sectionTitle))
         <h2 class="page-title schedule-template__section__title">{{ $sectionTitle }}</h2>

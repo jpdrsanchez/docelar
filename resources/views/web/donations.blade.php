@@ -15,7 +15,7 @@
     <div class="container">
       <div class="donations-info__wrapper">
         <h2 class="page-title donations-info__title">Cada centavo conta</h2>
-        <p class="donations-info__text"><strong>Atenção:</strong> não vamos até a residencia para retirar a doação. Pedimos que vão ao endereço Rua xxxxx xxxx São Paulo - SP <strong>Qualquer tipo de doação é bem-vinda</strong>, só se atentar a obejetos muito grandes, como por exemplo geladeira, armário, etc.. Aceitamos doações com pix ou conta bancária.</p>
+        <p class="donations-info__text"><strong>Atenção:</strong> não vamos até a residencia para retirar a doação. Pedimos que vão ao endereço Rua xxxxx xxxx São Paulo - SP<br /><strong>Qualquer tipo de doação é bem-vinda</strong>, só se atentar a obejetos muito grandes, como por exemplo geladeira, armário, etc..<br />Aceitamos doações com pix ou conta bancária.</p>
         <ul class="donations-info__methods">
           <li class="donations-info__methods__item donations-info__methods__item--pix">
             <img src="{{ Vite::asset('resources/images/donate/donate-pix.svg') }}" alt="PIX" class="donations-info__methods__item__image">

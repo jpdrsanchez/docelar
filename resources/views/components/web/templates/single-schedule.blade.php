@@ -1,4 +1,6 @@
 <div class="single-schedule">
+  <img src="{{ Vite::asset('resources/images/background/detail-12.svg') }}" alt="" aria-hidden="true" class="about__detail-one">
+  <img src="{{ Vite::asset('resources/images/background/detail-11.svg') }}" alt="" aria-hidden="true" class="about__detail-two">
   <main class="single-schedule__main">
     <div class="container single-schedule__main__container">
       <div class="single-schedule__main__title">

@@ -133,6 +133,18 @@
       display: none;
     }
   }
+
+  &__detail {
+    z-index: 800;
+    position: absolute;
+    top: -15px;
+    right: 24px;
+
+    @media (min-width: 576px) {
+      right: 0;
+      max-width: 100%;
+    }
+  }
 }
 
 .swiper-home {

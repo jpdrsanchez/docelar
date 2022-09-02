@@ -6,6 +6,10 @@
   position: relative;
   z-index: 300;
 
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
   &__wrapper {
     max-width: 692px;
   }
@@ -41,6 +45,11 @@
     &:hover {
       color: var(--white);
     }
+
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__detail {
@@ -49,12 +58,26 @@
     left: 50%;
     transform: translateX(-83px);
     pointer-events: none;
+
+    @media (max-width: 1399px) {
+      display: none;
+    }
   }
 
   &__bg {
     position: absolute;
     bottom: -22px;
-    right: 0;
+    right: -100px;
+    max-width: 45%;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 1400px) {
+      max-width: 100%;
+      right: 0;
+    }
   }
 }
 
@@ -68,15 +91,32 @@
     position: relative;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 50px;
-    padding: 60px;
-    background: url("../../images/background/detail-2.svg") top -39px right -52px
-        no-repeat,
-      url("../../images/background/detail-3.svg") bottom 15px right 15px
+    padding: 60px 30px;
+    background: var(--white);
+
+    @media (min-width: 768px) {
+      padding: 60px;
+    }
+
+    @media (min-width: 1200px) {
+      background: url("../../images/background/detail-2.svg") top -39px right -52px
         no-repeat;
+    }
+
+    @media (min-width: 1400px) {
+      background: url("../../images/background/detail-2.svg") top -39px right -52px
+          no-repeat,
+        url("../../images/background/detail-3.svg") bottom 15px right 15px
+          no-repeat;
+    }
   }
 
   &__title {
     margin-bottom: 34px;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -84,6 +124,10 @@
     line-height: 40px;
     margin-bottom: 26px;
     max-width: 1280px;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__methods {
@@ -91,8 +135,16 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width: 991px) {
+      gap: 60px;
+    }
+
+    @media (min-width: 992px) {
+      justify-content: space-between;
+    }
 
     &__item {
       flex-grow: 0;
@@ -135,7 +187,7 @@
 
       &__banks {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 60px;
         width: 100%;
       }
@@ -144,6 +196,13 @@
 }
 
 .donate-bank {
+  @media (max-width: 767px) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__image {
     height: 42px;
     margin-bottom: 30px;

@@ -1,5 +1,7 @@
 <x-web.templates.base title="Sobre">
   <main class="about">
+    <img src="{{ Vite::asset('resources/images/background/detail-12.svg') }}" alt="" aria-hidden="true" class="about__detail-one">
+    <img src="{{ Vite::asset('resources/images/background/detail-11.svg') }}" alt="" aria-hidden="true" class="about__detail-two">
     <div class="container about__container">
       <h2 class="about__subtitle">Sobre</h2>
       <h1 class="page-title about__title">Nossa História</h1>

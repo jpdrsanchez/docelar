@@ -20,9 +20,4 @@ new Swiper(".swiper-talks", {
         delay: 3500,
         disableOnInteraction: true,
     },
-    breakpoint: {
-        1399: {
-            slidesPerView: 1,
-        },
-    },
 });

@@ -9,6 +9,7 @@
   </main>
   <section class="contact-section">
     <div class="container">
+      <img src="{{ Vite::asset('resources/images/contact/person-1.png') }}" alt="" aria-hidden="true" class="contact-section__image">
       <div class="contact-section__content">
         <div class="contact-section__form">
           <x-web.components.contact-form title="Fale Conosco" type="contact" />

@@ -6,6 +6,7 @@
     </a>
     <nav class="menu" data-menu="menu">
       <div class="menu__wrapper">
+        <img src="{{ Vite::asset('resources/images/menu-logo.png') }}" alt="Doce lar da criança" class="menu__logo">
         <ul class="menu__list">
           <li class="menu__item">
             <a href="{{ route('web.home') }}" class="menu__link">Home</a>
