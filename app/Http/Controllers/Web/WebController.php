@@ -2,14 +2,18 @@
 
 namespace App\Http\Controllers\Web;
 
+use App\Enums\BannerTypes;
 use App\Http\Controllers\Controller;
+use App\Models\Banner;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
     public function home()
     {
-        return view('web.home');
+        $banners = Banner::with('media')->get();
+        $types = BannerTypes::class;
+        return view('web.home', ['banners' => $banners, 'types' => $types]);
     }
 
     public function about()

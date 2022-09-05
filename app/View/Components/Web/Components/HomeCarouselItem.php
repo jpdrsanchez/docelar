@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Web\Components;
 
+use App\Enums\BannerTypes;
 use Illuminate\View\Component;
 
 class HomeCarouselItem extends Component
@@ -11,9 +12,8 @@ class HomeCarouselItem extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(public string $title, public string $text, public string $image, public string $link, public string $buttonText, public BannerTypes $type)
     {
-        //
     }
 
     /**

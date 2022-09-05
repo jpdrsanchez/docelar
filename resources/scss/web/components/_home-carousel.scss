@@ -13,15 +13,12 @@
     position: relative;
     box-sizing: border-box;
     height: 692px;
-    background: url("../../images/home/slide-purple.jpg") no-repeat center
-      center;
-    background-size: cover;
     border-radius: 50px;
     overflow: hidden;
     padding: 45px 30px 30px;
 
     @media (min-width: 576px) {
-      padding-top: 102px 60px;
+      padding: 102px 60px;
     }
   }
 

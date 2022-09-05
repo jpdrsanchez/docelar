@@ -2,51 +2,17 @@
 
 namespace App\View\Components\Control\Components;
 
+use App\Enums\ControlMenu;
 use Illuminate\View\Component;
 
 class Navbar extends Component
 {
     /**
-     * @var array
+     * Control Menu Enum Array
+     *
+     * @var ControlMenu[]
      */
-    public const MENU = [
-        [
-            'name' => 'Início',
-            'link' => '/',
-            'hasDropdown' => false,
-            'dropdownItems' => []
-        ],
-        [
-            'name' => 'Eventos',
-            'link' => '#',
-            'hasDropdown' => true,
-            'dropdownItems' => [
-                [
-                    'name' => 'Gerenciar Eventos',
-                    'link' => '/eventos',
-                ],
-                [
-                    'name' => 'Novo Evento',
-                    'link' => '/eventos/criar',
-                ]
-            ]
-        ],
-        [
-            'name' => 'Projetos',
-            'link' => '#',
-            'hasDropdown' => true,
-            'dropdownItems' => [
-                [
-                    'name' => 'Gerenciar Projetos',
-                    'link' => '/projeto',
-                ],
-                [
-                    'name' => 'Novo Projeto',
-                    'link' => '/projeto/criar',
-                ]
-            ]
-        ],
-    ];
+    public array $menu;
 
     /**
      * Create a new component instance.
@@ -55,17 +21,7 @@ class Navbar extends Component
      */
     public function __construct()
     {
-        //
-    }
-
-    /**
-     * Get the component menu data
-     *
-     * @return array
-     */
-    public function menu()
-    {
-        return self::MENU;
+        $this->menu = ControlMenu::cases();
     }
 
     /**

@@ -3,5 +3,10 @@
 @use "@fontsource/raleway";
 
 // Global
-@use "reset";
 @use "main";
+
+// Pages
+@use "pages/auth";
+
+// Components
+@use "components/navbar";

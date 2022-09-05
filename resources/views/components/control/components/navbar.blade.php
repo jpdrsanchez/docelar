@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background: #303a44">
+<nav class="navbar navbar-expand-lg noweb-navbar mb-5">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <img src="//www.nowcloud.com.br/tools/framework/v5/images/logo-dashboard.png" alt="Logotipo Noweb Publicidade" height="30">
@@ -9,28 +9,15 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        @foreach ($menu() as $item)
-          <li @class(['nav-item', 'dropdown' => $item['hasDropdown']])>
-            <a
-            @class(['nav-link', 'active', 'text-white', 'dropdown-toggle' => $item['hasDropdown']])
-            aria-current="page"
-            href="{{$item['link']}}"
-            @if ($item['hasDropdown'])
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            @endif>
-              {{$item['name']}}
-            </a>
-            @if ($item['hasDropdown'])
-            <ul class="dropdown-menu">
-                @foreach ($item['dropdownItems'] as $dropdownItem)
-                <li><a class="dropdown-item" href="{{$dropdownItem['link']}}">{{$dropdownItem['name']}}</a></li>
-                @endforeach
-            </ul>
-            @endif
-          </li>
+        @foreach ($menu as $item)
+          <x-control.components.nav-item :item="$item->getValues()" />
         @endforeach
+        <li class="nav-item">
+          <form action="{{ route('logout') }}" method="POST" >
+            @csrf
+            <button type="submit" class="nav-link text-white btn-link">Sair</button>
+          </form>
+        </li>
       </ul>
     </div>
   </div>

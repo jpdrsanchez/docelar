@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BannerController;
+use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('control.home');
+Route::middleware('auth')->group(function () {
+    Route::get("/", fn () => view("control.home"));
+    Route::resource("medias", MediaController::class)->except(['create']);
+    Route::resource('banners', BannerController::class);
 });
