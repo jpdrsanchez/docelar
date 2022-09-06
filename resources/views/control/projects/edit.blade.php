@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label for="type" class="form-label">Data</label>
-          <input type="date" name="date" id="date" class="form-control" value="{{ old('date') ? old('date') : $project->date }}">
+          <input type="date" name="date" id="date" class="form-control @error("date") is-invalid @enderror" value="{{ old('date') ? old('date') : $project->date }}">
           @error('date')
             <div class="invalid-feedback">
               {{ $message }}
@@ -28,8 +28,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="introduction" class="form-label">Introdução</label>
-          <div data-quill style="height: 130px">{{ old('introduction') ? old('introduction') : $project->introduction }}</div>
-          <input type="hidden" name="introduction" id="introduction" value={{ old('introduction') ? old('introduction') : $project->introduction }}>
+          <div data-quill style="height: 130px">{!! old('introduction') ? old('introduction') : $project->introduction !!}</div>
+          <input class="form-control @error("introduction") is-invalid @enderror" type="hidden" name="introduction" id="introduction" value={{ old('introduction') ? old('introduction') : $project->introduction }}>
           @error('introduction')
             <div class="invalid-feedback">
               {{ $message }}
@@ -38,8 +38,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <div data-quill style="height: 130px">{{ old('description') ? old('description') : $project->description }}</div>
-          <input type="hidden" name="description" id="description" value={{ old('description') ? old('description') : $project->description }}>
+          <div data-quill style="height: 130px">{!! old('description') ? old('description') : $project->description !!}</div>
+          <input type="hidden" class="form-control @error("description") is-invalid @enderror" name="description" id="description" value={{ old('description') ? old('description') : $project->description }}>
           @error('description')
             <div class="invalid-feedback">
               {{ $message }}

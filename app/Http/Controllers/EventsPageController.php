@@ -30,17 +30,11 @@ class EventsPageController extends Controller
      */
     public function update(UpdateEventsPageRequest $request, EventsPage $eventsPage)
     {
-        //
-    }
+        $event = EventsPage::first();
+        $event->title_seo = $request->title_seo;
+        $event->description_seo = $request->description_seo;
+        $event->save();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\EventsPage  $eventsPage
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(EventsPage $eventsPage)
-    {
-        //
+        return redirect()->route('control.home')->with('status', 'Página atualizada com sucesso');
     }
 }

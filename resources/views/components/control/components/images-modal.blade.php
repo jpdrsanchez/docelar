@@ -16,7 +16,7 @@
                 </div>
                 <div class="card-footer d-flex align-items-center gap-2">
                   <button class="btn btn-noweb" type="button" data-select>Selecionar</button>
-                  <input type="radio" name="image_id" id="image_id" value="{{ $media->id }}" data-input class="visually-hidden" @if ($id === $media->id) checked @endif>
+                  <input type="radio" name="image_id" id="image_id" value="{{ $media->id }}" data-input class="visually-hidden" @if ($id == $media->id) checked @endif>
                 </div>
               </div>
             </div>

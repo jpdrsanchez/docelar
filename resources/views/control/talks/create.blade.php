@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label for="date" class="form-label">Data</label>
-          <input type="date" name="date" id="date" class="form-control" value="{{ old('date') }}">
+          <input type="date" name="date" id="date" class="form-control @error("date") is-invalid @enderror" value="{{ old('date') }}">
           @error('date')
             <div class="invalid-feedback">
               {{ $message }}
@@ -27,8 +27,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="introduction" class="form-label">Introdução</label>
-          <div data-quill style="height: 130px">{{ old('introduction') }}</div>
-          <input type="hidden" name="introduction" id="introduction" value={{ old('introduction') }}>
+          <div data-quill style="height: 130px">{!! old('introduction') !!}</div>
+          <input class="form-control @error("introduction") is-invalid @enderror" type="hidden" name="introduction" id="introduction" value={{ old('introduction') }}>
           @error('introduction')
             <div class="invalid-feedback">
               {{ $message }}
@@ -37,8 +37,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <div data-quill style="height: 130px">{{ old('description') }}</div>
-          <input type="hidden" name="description" id="description" value={{ old('description') }}>
+          <div data-quill style="height: 130px">{!! old('description') !!}</div>
+          <input class="form-control @error("description") is-invalid @enderror" type="hidden" name="description" id="description" value={{ old('description') }}>
           @error('description')
             <div class="invalid-feedback">
               {{ $message }}
@@ -47,7 +47,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label class="form-label">Imagem</label>
-          <button type="button" class="btn btn-noweb" data-bs-toggle="modal" data-bs-target="#imagesModal" style="width: 100%; display: block">
+          <button type="button" class="form-control @error("image") is-invalid @enderror" data-bs-toggle="modal" data-bs-target="#imagesModal" style="width: 100%; display: block">
             <ion-icon name="images"></ion-icon>
             Selecionar imagem
           </button>
@@ -59,7 +59,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label class="form-label">Arquivo</label>
-          <input type="file" name="file" id="file" class="form-control">
+          <input type="file" name="file" id="file" class="form-control @error("file") is-invalid @enderror">
           @error('file')
             <div class="text-danger">
               {{ $message }}

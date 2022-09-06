@@ -13,7 +13,7 @@ class UpdateGalleryRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,21 @@ class UpdateGalleryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'file' => 'required|file|mimes:png,jpg'
+        ];
+    }
+
+    /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'file' => 'Envie um arquivo válido',
+            'mimes' => 'O arquivo deve ser do tipo jpg ou png',
+            'required' => 'O arquivo é obrigatório'
         ];
     }
 }

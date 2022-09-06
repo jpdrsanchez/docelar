@@ -1,19 +1,23 @@
 {
-  "resources/images/background/detail-11.svg": {
-    "file": "assets/detail-11.2d7de7dc.svg",
-    "src": "resources/images/background/detail-11.svg"
-  },
   "resources/images/background/circle-1.svg": {
     "file": "assets/circle-1.9eefd805.svg",
     "src": "resources/images/background/circle-1.svg"
+  },
+  "resources/images/background/circle-2.svg": {
+    "file": "assets/circle-2.bb18f55a.svg",
+    "src": "resources/images/background/circle-2.svg"
+  },
+  "resources/images/background/detail-1.svg": {
+    "file": "assets/detail-1.371175a6.svg",
+    "src": "resources/images/background/detail-1.svg"
   },
   "resources/images/background/detail-10.svg": {
     "file": "assets/detail-10.db944785.svg",
     "src": "resources/images/background/detail-10.svg"
   },
-  "resources/images/background/circle-2.svg": {
-    "file": "assets/circle-2.bb18f55a.svg",
-    "src": "resources/images/background/circle-2.svg"
+  "resources/images/background/detail-11.svg": {
+    "file": "assets/detail-11.2d7de7dc.svg",
+    "src": "resources/images/background/detail-11.svg"
   },
   "resources/images/background/detail-2.svg": {
     "file": "assets/detail-2.e961d154.svg",
@@ -23,149 +27,145 @@
     "file": "assets/detail-12.bb3a7aeb.svg",
     "src": "resources/images/background/detail-12.svg"
   },
-  "resources/images/background/detail-4.svg": {
-    "file": "assets/detail-4.a560d247.svg",
-    "src": "resources/images/background/detail-4.svg"
+  "resources/images/background/detail-3.svg": {
+    "file": "assets/detail-3.c2482ff7.svg",
+    "src": "resources/images/background/detail-3.svg"
   },
   "resources/images/background/detail-5.svg": {
     "file": "assets/detail-5.5ff8aa6c.svg",
     "src": "resources/images/background/detail-5.svg"
   },
-  "resources/images/background/detail-1.svg": {
-    "file": "assets/detail-1.371175a6.svg",
-    "src": "resources/images/background/detail-1.svg"
+  "resources/images/background/detail-4.svg": {
+    "file": "assets/detail-4.a560d247.svg",
+    "src": "resources/images/background/detail-4.svg"
   },
   "resources/images/background/detail-6.svg": {
     "file": "assets/detail-6.c0981e4d.svg",
     "src": "resources/images/background/detail-6.svg"
   },
-  "resources/images/background/detail-3.svg": {
-    "file": "assets/detail-3.c2482ff7.svg",
-    "src": "resources/images/background/detail-3.svg"
-  },
   "resources/images/background/detail-7.svg": {
     "file": "assets/detail-7.d5773c3e.svg",
     "src": "resources/images/background/detail-7.svg"
-  },
-  "resources/images/background/detail-9.svg": {
-    "file": "assets/detail-9.8c5eb99f.svg",
-    "src": "resources/images/background/detail-9.svg"
-  },
-  "resources/images/background/detail-8.svg": {
-    "file": "assets/detail-8.1e13a1f0.svg",
-    "src": "resources/images/background/detail-8.svg"
   },
   "resources/images/background/line-1.svg": {
     "file": "assets/line-1.3395a34e.svg",
     "src": "resources/images/background/line-1.svg"
   },
-  "resources/images/background/line-2.svg": {
-    "file": "assets/line-2.eb69898c.svg",
-    "src": "resources/images/background/line-2.svg"
+  "resources/images/background/detail-8.svg": {
+    "file": "assets/detail-8.1e13a1f0.svg",
+    "src": "resources/images/background/detail-8.svg"
+  },
+  "resources/images/background/detail-9.svg": {
+    "file": "assets/detail-9.8c5eb99f.svg",
+    "src": "resources/images/background/detail-9.svg"
   },
   "resources/images/contact/mail.svg": {
     "file": "assets/mail.a61a9009.svg",
     "src": "resources/images/contact/mail.svg"
   },
-  "resources/images/contact/location.svg": {
-    "file": "assets/location.11a27b96.svg",
-    "src": "resources/images/contact/location.svg"
-  },
   "resources/images/contact/person-1.png": {
     "file": "assets/person-1.8b351a66.png",
     "src": "resources/images/contact/person-1.png"
   },
-  "resources/images/donate/donate-bank.svg": {
-    "file": "assets/donate-bank.533c869b.svg",
-    "src": "resources/images/donate/donate-bank.svg"
+  "resources/images/contact/location.svg": {
+    "file": "assets/location.11a27b96.svg",
+    "src": "resources/images/contact/location.svg"
+  },
+  "resources/images/background/line-2.svg": {
+    "file": "assets/line-2.eb69898c.svg",
+    "src": "resources/images/background/line-2.svg"
   },
   "resources/images/contact/phone.svg": {
     "file": "assets/phone.0a85e2ff.svg",
     "src": "resources/images/contact/phone.svg"
   },
-  "resources/images/donate/donate-pix.svg": {
-    "file": "assets/donate-pix.d23a039b.svg",
-    "src": "resources/images/donate/donate-pix.svg"
+  "resources/images/donate/donate-bank.svg": {
+    "file": "assets/donate-bank.533c869b.svg",
+    "src": "resources/images/donate/donate-bank.svg"
   },
   "resources/images/donate/donate-bg.png": {
     "file": "assets/donate-bg.6eee3cf5.png",
     "src": "resources/images/donate/donate-bg.png"
   },
-  "resources/images/donate/donate-qr.png": {
-    "file": "assets/donate-qr.2b88c360.png",
-    "src": "resources/images/donate/donate-qr.png"
+  "resources/images/donate/donate-pix.svg": {
+    "file": "assets/donate-pix.d23a039b.svg",
+    "src": "resources/images/donate/donate-pix.svg"
   },
   "resources/images/footer-logo.svg": {
     "file": "assets/footer-logo.6a6786b6.svg",
     "src": "resources/images/footer-logo.svg"
   },
-  "resources/images/home/circle-detail.svg": {
-    "file": "assets/circle-detail.a35e1b31.svg",
-    "src": "resources/images/home/circle-detail.svg"
+  "resources/images/donate/donate-qr.png": {
+    "file": "assets/donate-qr.2b88c360.png",
+    "src": "resources/images/donate/donate-qr.png"
   },
   "resources/images/home/line-detail.svg": {
     "file": "assets/line-detail.778c780e.svg",
     "src": "resources/images/home/line-detail.svg"
   },
+  "resources/images/home/circle-detail.svg": {
+    "file": "assets/circle-detail.a35e1b31.svg",
+    "src": "resources/images/home/circle-detail.svg"
+  },
   "resources/images/home/people-3.png": {
     "file": "assets/people-3.54f97ddb.png",
     "src": "resources/images/home/people-3.png"
-  },
-  "resources/images/home/title-detail.svg": {
-    "file": "assets/title-detail.3b61e078.svg",
-    "src": "resources/images/home/title-detail.svg"
-  },
-  "resources/images/logo.png": {
-    "file": "assets/logo.bcd9b584.png",
-    "src": "resources/images/logo.png"
-  },
-  "resources/images/home/slide-purple.jpg": {
-    "file": "assets/slide-purple.5cc786d3.jpg",
-    "src": "resources/images/home/slide-purple.jpg"
-  },
-  "resources/images/home/people-1.png": {
-    "file": "assets/people-1.aaefd4f9.png",
-    "src": "resources/images/home/people-1.png"
   },
   "resources/images/home/people-2.png": {
     "file": "assets/people-2.f7cde511.png",
     "src": "resources/images/home/people-2.png"
   },
+  "resources/images/home/people-1.png": {
+    "file": "assets/people-1.aaefd4f9.png",
+    "src": "resources/images/home/people-1.png"
+  },
   "resources/images/home/slide-light-blue.jpg": {
     "file": "assets/slide-light-blue.2cffe87b.jpg",
     "src": "resources/images/home/slide-light-blue.jpg"
+  },
+  "resources/images/home/title-detail.svg": {
+    "file": "assets/title-detail.3b61e078.svg",
+    "src": "resources/images/home/title-detail.svg"
+  },
+  "resources/images/home/slide-purple.jpg": {
+    "file": "assets/slide-purple.5cc786d3.jpg",
+    "src": "resources/images/home/slide-purple.jpg"
+  },
+  "resources/images/logo.png": {
+    "file": "assets/logo.bcd9b584.png",
+    "src": "resources/images/logo.png"
   },
   "resources/images/menu-logo.png": {
     "file": "assets/menu-logo.c5f126f4.png",
     "src": "resources/images/menu-logo.png"
   },
+  "resources/images/talks.png": {
+    "file": "assets/talks.858173a1.png",
+    "src": "resources/images/talks.png"
+  },
   "resources/images/home/slide-blue.jpg": {
     "file": "assets/slide-blue.10356fef.jpg",
     "src": "resources/images/home/slide-blue.jpg"
-  },
-  "resources/fonts/gothamlight-webfont.eot": {
-    "file": "assets/gothamlight-webfont.265439fe.eot",
-    "src": "resources/fonts/gothamlight-webfont.eot"
-  },
-  "resources/fonts/gothambook-webfont.eot": {
-    "file": "assets/gothambook-webfont.0f71c094.eot",
-    "src": "resources/fonts/gothambook-webfont.eot"
-  },
-  "resources/fonts/gothambold-webfont.eot": {
-    "file": "assets/gothambold-webfont.e8f418cf.eot",
-    "src": "resources/fonts/gothambold-webfont.eot"
   },
   "resources/fonts/gothammedium-webfont.eot": {
     "file": "assets/gothammedium-webfont.8b7cd610.eot",
     "src": "resources/fonts/gothammedium-webfont.eot"
   },
-  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2": {
-    "file": "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2"
+  "resources/fonts/gothambold-webfont.eot": {
+    "file": "assets/gothambold-webfont.e8f418cf.eot",
+    "src": "resources/fonts/gothambold-webfont.eot"
+  },
+  "resources/fonts/gothambook-webfont.eot": {
+    "file": "assets/gothambook-webfont.0f71c094.eot",
+    "src": "resources/fonts/gothambook-webfont.eot"
   },
   "resources/fonts/loli-pop.woff": {
     "file": "assets/loli-pop.69b0baad.woff",
     "src": "resources/fonts/loli-pop.woff"
+  },
+  "resources/fonts/gothamlight-webfont.eot": {
+    "file": "assets/gothamlight-webfont.265439fe.eot",
+    "src": "resources/fonts/gothamlight-webfont.eot"
   },
   "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2": {
     "file": "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
@@ -175,6 +175,10 @@
     "file": "assets/raleway-cyrillic-400-normal.679eb908.woff2",
     "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2"
   },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2"
+  },
   "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2": {
     "file": "assets/raleway-vietnamese-400-normal.917d91f1.woff2",
     "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-normal.woff2"
@@ -183,62 +187,583 @@
     "file": "assets/raleway-latin-400-normal.c78a1da5.woff2",
     "src": "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2"
   },
-  "resources/fonts/gothambook-webfont.woff2": {
-    "file": "assets/gothambook-webfont.c1d14e3a.woff2",
-    "src": "resources/fonts/gothambook-webfont.woff2"
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-100-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-100-normal.3ecfe1d7.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-100-normal.woff2"
   },
-  "resources/fonts/gothammedium-webfont.woff2": {
-    "file": "assets/gothammedium-webfont.a35bdc94.woff2",
-    "src": "resources/fonts/gothammedium-webfont.woff2"
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-100-normal.woff2": {
+    "file": "assets/raleway-cyrillic-100-normal.ae7b695e.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-100-normal.woff2"
   },
-  "resources/fonts/gothambold-webfont.woff2": {
-    "file": "assets/gothambold-webfont.e5689d23.woff2",
-    "src": "resources/fonts/gothambold-webfont.woff2"
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-800-normal.woff2": {
+    "file": "assets/raleway-cyrillic-800-normal.f3a6a19d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-800-normal.woff2"
   },
-  "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff": {
-    "file": "assets/raleway-all-400-normal.e0fbe643.woff",
-    "src": "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff"
+  "node_modules/@fontsource/raleway/files/raleway-latin-100-normal.woff2": {
+    "file": "assets/raleway-latin-100-normal.7632a87c.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-100-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-800-normal.woff2": {
+    "file": "assets/raleway-vietnamese-800-normal.6b17a23e.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-800-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-100-normal.woff2": {
+    "file": "assets/raleway-vietnamese-100-normal.4534f1ec.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-100-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-700-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-700-normal.fdfe9a87.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-700-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-800-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-800-normal.8f160103.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-800-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-100-normal.woff2": {
+    "file": "assets/raleway-latin-ext-100-normal.7386947f.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-100-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-700-normal.woff2": {
+    "file": "assets/raleway-vietnamese-700-normal.25bb038b.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-700-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-700-normal.woff2": {
+    "file": "assets/raleway-cyrillic-700-normal.26d7da41.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-700-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-800-normal.woff2": {
+    "file": "assets/raleway-latin-800-normal.ead9bd74.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-800-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-800-normal.woff2": {
+    "file": "assets/raleway-latin-ext-800-normal.c6dd2104.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-800-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-500-normal.woff2": {
+    "file": "assets/raleway-cyrillic-500-normal.021530a3.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-500-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-700-normal.woff2": {
+    "file": "assets/raleway-latin-ext-700-normal.4c1a4f5b.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-700-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-500-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-500-normal.4f373a3d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-500-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-500-normal.woff2": {
+    "file": "assets/raleway-latin-ext-500-normal.44a2e995.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-500-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-700-normal.woff2": {
+    "file": "assets/raleway-latin-700-normal.80f4e592.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-700-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-500-normal.woff2": {
+    "file": "assets/raleway-vietnamese-500-normal.e5439783.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-500-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-200-normal.woff2": {
+    "file": "assets/raleway-cyrillic-200-normal.5ab82cc8.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-200-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-200-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-200-normal.89ecd2dc.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-200-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-200-normal.woff2": {
+    "file": "assets/raleway-latin-ext-200-normal.26993acf.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-200-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-500-normal.woff2": {
+    "file": "assets/raleway-latin-500-normal.263105b8.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-500-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-200-normal.woff2": {
+    "file": "assets/raleway-vietnamese-200-normal.9728b358.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-200-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-900-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-900-normal.7d0d1926.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-900-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-900-normal.woff2": {
+    "file": "assets/raleway-latin-ext-900-normal.2917931d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-900-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-900-normal.woff2": {
+    "file": "assets/raleway-latin-900-normal.23b8ba30.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-900-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-900-normal.woff2": {
+    "file": "assets/raleway-vietnamese-900-normal.b8c133e9.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-900-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-200-normal.woff2": {
+    "file": "assets/raleway-latin-200-normal.135a9ebf.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-200-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-600-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-600-normal.87771bee.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-600-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-900-normal.woff2": {
+    "file": "assets/raleway-cyrillic-900-normal.b7899284.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-900-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-600-normal.woff2": {
+    "file": "assets/raleway-cyrillic-600-normal.c3c74b0a.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-600-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-600-normal.woff2": {
+    "file": "assets/raleway-latin-600-normal.d3bf5c7f.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-600-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-600-normal.woff2": {
+    "file": "assets/raleway-latin-ext-600-normal.540b97a2.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-600-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-600-normal.woff2": {
+    "file": "assets/raleway-vietnamese-600-normal.3cb5e20d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-600-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-100-italic.woff2": {
+    "file": "assets/raleway-latin-ext-100-italic.7e77e4c1.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-100-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-100-italic.woff2": {
+    "file": "assets/raleway-vietnamese-100-italic.cf9f94ea.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-100-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-100-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-100-italic.b6348bb3.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-100-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-100-italic.woff2": {
+    "file": "assets/raleway-latin-100-italic.acba3759.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-100-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-100-italic.woff2": {
+    "file": "assets/raleway-cyrillic-100-italic.819cc5ab.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-100-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-200-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-200-italic.1f41e9a1.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-200-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-200-italic.woff2": {
+    "file": "assets/raleway-latin-200-italic.26cca2dc.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-200-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-200-italic.woff2": {
+    "file": "assets/raleway-cyrillic-200-italic.e77efb6e.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-200-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-200-italic.woff2": {
+    "file": "assets/raleway-latin-ext-200-italic.60099257.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-200-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-200-italic.woff2": {
+    "file": "assets/raleway-vietnamese-200-italic.69f47d6a.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-200-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-300-italic.woff2": {
+    "file": "assets/raleway-cyrillic-300-italic.17c78cb7.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-300-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-300-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-300-italic.a0a4d8e8.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-300-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-300-italic.woff2": {
+    "file": "assets/raleway-vietnamese-300-italic.5da00318.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-300-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-300-italic.woff2": {
+    "file": "assets/raleway-latin-ext-300-italic.cbbf9602.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-300-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-italic.woff2": {
+    "file": "assets/raleway-latin-ext-400-italic.56a8d8f0.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-300-italic.woff2": {
+    "file": "assets/raleway-latin-300-italic.0e7a0d77.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-300-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-400-italic.woff2": {
+    "file": "assets/raleway-latin-400-italic.b51f996c.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-400-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-italic.woff2": {
+    "file": "assets/raleway-cyrillic-400-italic.d14beec2.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-italic.woff2": {
+    "file": "assets/raleway-vietnamese-400-italic.00ea6b52.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-400-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-400-italic.a5eb7712.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-300-normal.woff2": {
+    "file": "assets/raleway-vietnamese-300-normal.5baf739e.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-300-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-300-normal.woff2": {
+    "file": "assets/raleway-latin-ext-300-normal.07be510c.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-300-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-300-normal.woff2": {
+    "file": "assets/raleway-cyrillic-300-normal.7208fc05.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-300-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-500-italic.woff2": {
+    "file": "assets/raleway-latin-ext-500-italic.8432ffb8.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-500-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-300-normal.woff2": {
+    "file": "assets/raleway-latin-300-normal.f67ce158.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-300-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-300-normal.woff2": {
+    "file": "assets/raleway-cyrillic-ext-300-normal.d3edb811.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-300-normal.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-500-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-500-italic.5d328e5a.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-500-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-500-italic.woff2": {
+    "file": "assets/raleway-vietnamese-500-italic.9e92a1c1.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-500-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-500-italic.woff2": {
+    "file": "assets/raleway-cyrillic-500-italic.b8a42752.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-500-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-500-italic.woff2": {
+    "file": "assets/raleway-latin-500-italic.dd2b1b4b.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-500-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-600-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-600-italic.71eb70ae.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-600-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-600-italic.woff2": {
+    "file": "assets/raleway-vietnamese-600-italic.313ef9f3.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-600-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-600-italic.woff2": {
+    "file": "assets/raleway-cyrillic-600-italic.8a7b8aa9.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-600-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-600-italic.woff2": {
+    "file": "assets/raleway-latin-ext-600-italic.a61d31bb.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-600-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-600-italic.woff2": {
+    "file": "assets/raleway-latin-600-italic.b49d462e.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-600-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-700-italic.woff2": {
+    "file": "assets/raleway-cyrillic-700-italic.b02decad.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-700-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-700-italic.woff2": {
+    "file": "assets/raleway-vietnamese-700-italic.646db61d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-700-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-700-italic.woff2": {
+    "file": "assets/raleway-latin-ext-700-italic.33aa71d6.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-700-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-700-italic.woff2": {
+    "file": "assets/raleway-latin-700-italic.8931d18d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-700-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-700-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-700-italic.c3fdd2bb.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-700-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-900-italic.woff2": {
+    "file": "assets/raleway-cyrillic-900-italic.a66a3d9d.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-900-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-900-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-900-italic.0fe2526a.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-900-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-900-italic.woff2": {
+    "file": "assets/raleway-latin-ext-900-italic.23094bf3.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-900-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-900-italic.woff2": {
+    "file": "assets/raleway-latin-900-italic.fb2686a2.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-900-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-900-italic.woff2": {
+    "file": "assets/raleway-vietnamese-900-italic.025a8771.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-900-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-800-italic.woff2": {
+    "file": "assets/raleway-cyrillic-800-italic.092d4cfc.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-800-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-800-italic.woff2": {
+    "file": "assets/raleway-cyrillic-ext-800-italic.5de4bce0.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-800-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-vietnamese-800-italic.woff2": {
+    "file": "assets/raleway-vietnamese-800-italic.877cef7a.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-vietnamese-800-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-800-italic.woff2": {
+    "file": "assets/raleway-latin-800-italic.a28a6103.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-800-italic.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-800-italic.woff2": {
+    "file": "assets/raleway-latin-ext-800-italic.3cb782c4.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-800-italic.woff2"
   },
   "resources/fonts/gothamlight-webfont.woff2": {
     "file": "assets/gothamlight-webfont.83bb3b91.woff2",
     "src": "resources/fonts/gothamlight-webfont.woff2"
   },
-  "resources/fonts/gothammedium-webfont.woff": {
-    "file": "assets/gothammedium-webfont.389f7786.woff",
-    "src": "resources/fonts/gothammedium-webfont.woff"
+  "resources/fonts/gothambold-webfont.woff2": {
+    "file": "assets/gothambold-webfont.e5689d23.woff2",
+    "src": "resources/fonts/gothambold-webfont.woff2"
   },
-  "resources/fonts/gothambook-webfont.woff": {
-    "file": "assets/gothambook-webfont.ee9e44bc.woff",
-    "src": "resources/fonts/gothambook-webfont.woff"
+  "resources/fonts/gothammedium-webfont.woff2": {
+    "file": "assets/gothammedium-webfont.a35bdc94.woff2",
+    "src": "resources/fonts/gothammedium-webfont.woff2"
   },
-  "resources/fonts/gothambold-webfont.woff": {
-    "file": "assets/gothambold-webfont.588ab1eb.woff",
-    "src": "resources/fonts/gothambold-webfont.woff"
+  "resources/fonts/gothambook-webfont.woff2": {
+    "file": "assets/gothambook-webfont.c1d14e3a.woff2",
+    "src": "resources/fonts/gothambook-webfont.woff2"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff": {
+    "file": "assets/raleway-all-400-normal.e0fbe643.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-100-normal.woff": {
+    "file": "assets/raleway-all-100-normal.00074c0b.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-100-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-800-normal.woff": {
+    "file": "assets/raleway-all-800-normal.2aac73a3.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-800-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-700-normal.woff": {
+    "file": "assets/raleway-all-700-normal.69221c40.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-700-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-500-normal.woff": {
+    "file": "assets/raleway-all-500-normal.572ac67c.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-500-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-200-normal.woff": {
+    "file": "assets/raleway-all-200-normal.827aa4f2.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-200-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-900-normal.woff": {
+    "file": "assets/raleway-all-900-normal.85bd473c.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-900-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-600-normal.woff": {
+    "file": "assets/raleway-all-600-normal.b8ab27c5.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-600-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-100-italic.woff": {
+    "file": "assets/raleway-all-100-italic.7470de5b.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-100-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-200-italic.woff": {
+    "file": "assets/raleway-all-200-italic.6879c125.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-200-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-300-italic.woff": {
+    "file": "assets/raleway-all-300-italic.42d06954.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-300-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-400-italic.woff": {
+    "file": "assets/raleway-all-400-italic.4bf4ba2a.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-400-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-500-italic.woff": {
+    "file": "assets/raleway-all-500-italic.6826e805.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-500-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-300-normal.woff": {
+    "file": "assets/raleway-all-300-normal.1375a1e6.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-300-normal.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-600-italic.woff": {
+    "file": "assets/raleway-all-600-italic.7fdb8656.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-600-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-700-italic.woff": {
+    "file": "assets/raleway-all-700-italic.30a2300d.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-700-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-900-italic.woff": {
+    "file": "assets/raleway-all-900-italic.a35c43a6.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-900-italic.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-all-800-italic.woff": {
+    "file": "assets/raleway-all-800-italic.e3754d7b.woff",
+    "src": "node_modules/@fontsource/raleway/files/raleway-all-800-italic.woff"
   },
   "resources/fonts/gothamlight-webfont.woff": {
     "file": "assets/gothamlight-webfont.177dd76f.woff",
     "src": "resources/fonts/gothamlight-webfont.woff"
   },
-  "resources/fonts/gothambook-webfont.ttf": {
-    "file": "assets/gothambook-webfont.23d30c6f.ttf",
-    "src": "resources/fonts/gothambook-webfont.ttf"
+  "resources/fonts/gothambold-webfont.woff": {
+    "file": "assets/gothambold-webfont.588ab1eb.woff",
+    "src": "resources/fonts/gothambold-webfont.woff"
   },
-  "resources/fonts/gothammedium-webfont.ttf": {
-    "file": "assets/gothammedium-webfont.58ba8571.ttf",
-    "src": "resources/fonts/gothammedium-webfont.ttf"
+  "resources/fonts/gothambook-webfont.woff": {
+    "file": "assets/gothambook-webfont.ee9e44bc.woff",
+    "src": "resources/fonts/gothambook-webfont.woff"
   },
-  "resources/fonts/gothambold-webfont.ttf": {
-    "file": "assets/gothambold-webfont.09d9b6cb.ttf",
-    "src": "resources/fonts/gothambold-webfont.ttf"
+  "resources/fonts/gothammedium-webfont.woff": {
+    "file": "assets/gothammedium-webfont.389f7786.woff",
+    "src": "resources/fonts/gothammedium-webfont.woff"
   },
   "resources/fonts/gothamlight-webfont.ttf": {
     "file": "assets/gothamlight-webfont.31d16321.ttf",
     "src": "resources/fonts/gothamlight-webfont.ttf"
   },
+  "resources/fonts/gothammedium-webfont.ttf": {
+    "file": "assets/gothammedium-webfont.58ba8571.ttf",
+    "src": "resources/fonts/gothammedium-webfont.ttf"
+  },
+  "resources/fonts/gothambook-webfont.ttf": {
+    "file": "assets/gothambook-webfont.23d30c6f.ttf",
+    "src": "resources/fonts/gothambook-webfont.ttf"
+  },
+  "resources/fonts/gothambold-webfont.ttf": {
+    "file": "assets/gothambold-webfont.09d9b6cb.ttf",
+    "src": "resources/fonts/gothambold-webfont.ttf"
+  },
   "resources/js/control/app.js": {
-    "file": "assets/app.7412a5d8.js",
+    "file": "assets/app.a1ba733c.js",
     "src": "resources/js/control/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/app.184135a5.css"
+    ],
+    "assets": [
+      "assets/raleway-cyrillic-ext-100-normal.3ecfe1d7.woff2",
+      "assets/raleway-all-100-normal.00074c0b.woff",
+      "assets/raleway-cyrillic-100-normal.ae7b695e.woff2",
+      "assets/raleway-vietnamese-100-normal.4534f1ec.woff2",
+      "assets/raleway-latin-ext-100-normal.7386947f.woff2",
+      "assets/raleway-latin-100-normal.7632a87c.woff2",
+      "assets/raleway-cyrillic-ext-200-normal.89ecd2dc.woff2",
+      "assets/raleway-all-200-normal.827aa4f2.woff",
+      "assets/raleway-cyrillic-200-normal.5ab82cc8.woff2",
+      "assets/raleway-vietnamese-200-normal.9728b358.woff2",
+      "assets/raleway-latin-ext-200-normal.26993acf.woff2",
+      "assets/raleway-latin-200-normal.135a9ebf.woff2",
+      "assets/raleway-cyrillic-ext-300-normal.d3edb811.woff2",
+      "assets/raleway-all-300-normal.1375a1e6.woff",
+      "assets/raleway-cyrillic-300-normal.7208fc05.woff2",
+      "assets/raleway-vietnamese-300-normal.5baf739e.woff2",
+      "assets/raleway-latin-ext-300-normal.07be510c.woff2",
+      "assets/raleway-latin-300-normal.f67ce158.woff2",
+      "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
+      "assets/raleway-all-400-normal.e0fbe643.woff",
+      "assets/raleway-cyrillic-400-normal.679eb908.woff2",
+      "assets/raleway-vietnamese-400-normal.917d91f1.woff2",
+      "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
+      "assets/raleway-latin-400-normal.c78a1da5.woff2",
+      "assets/raleway-cyrillic-ext-500-normal.4f373a3d.woff2",
+      "assets/raleway-all-500-normal.572ac67c.woff",
+      "assets/raleway-cyrillic-500-normal.021530a3.woff2",
+      "assets/raleway-vietnamese-500-normal.e5439783.woff2",
+      "assets/raleway-latin-ext-500-normal.44a2e995.woff2",
+      "assets/raleway-latin-500-normal.263105b8.woff2",
+      "assets/raleway-cyrillic-ext-600-normal.87771bee.woff2",
+      "assets/raleway-all-600-normal.b8ab27c5.woff",
+      "assets/raleway-cyrillic-600-normal.c3c74b0a.woff2",
+      "assets/raleway-vietnamese-600-normal.3cb5e20d.woff2",
+      "assets/raleway-latin-ext-600-normal.540b97a2.woff2",
+      "assets/raleway-latin-600-normal.d3bf5c7f.woff2",
+      "assets/raleway-cyrillic-ext-700-normal.fdfe9a87.woff2",
+      "assets/raleway-all-700-normal.69221c40.woff",
+      "assets/raleway-cyrillic-700-normal.26d7da41.woff2",
+      "assets/raleway-vietnamese-700-normal.25bb038b.woff2",
+      "assets/raleway-latin-ext-700-normal.4c1a4f5b.woff2",
+      "assets/raleway-latin-700-normal.80f4e592.woff2",
+      "assets/raleway-cyrillic-ext-800-normal.8f160103.woff2",
+      "assets/raleway-all-800-normal.2aac73a3.woff",
+      "assets/raleway-cyrillic-800-normal.f3a6a19d.woff2",
+      "assets/raleway-vietnamese-800-normal.6b17a23e.woff2",
+      "assets/raleway-latin-ext-800-normal.c6dd2104.woff2",
+      "assets/raleway-latin-800-normal.ead9bd74.woff2",
+      "assets/raleway-cyrillic-ext-900-normal.7d0d1926.woff2",
+      "assets/raleway-all-900-normal.85bd473c.woff",
+      "assets/raleway-cyrillic-900-normal.b7899284.woff2",
+      "assets/raleway-vietnamese-900-normal.b8c133e9.woff2",
+      "assets/raleway-latin-ext-900-normal.2917931d.woff2",
+      "assets/raleway-latin-900-normal.23b8ba30.woff2",
+      "assets/raleway-cyrillic-ext-100-italic.b6348bb3.woff2",
+      "assets/raleway-all-100-italic.7470de5b.woff",
+      "assets/raleway-cyrillic-100-italic.819cc5ab.woff2",
+      "assets/raleway-vietnamese-100-italic.cf9f94ea.woff2",
+      "assets/raleway-latin-ext-100-italic.7e77e4c1.woff2",
+      "assets/raleway-latin-100-italic.acba3759.woff2",
+      "assets/raleway-cyrillic-ext-200-italic.1f41e9a1.woff2",
+      "assets/raleway-all-200-italic.6879c125.woff",
+      "assets/raleway-cyrillic-200-italic.e77efb6e.woff2",
+      "assets/raleway-vietnamese-200-italic.69f47d6a.woff2",
+      "assets/raleway-latin-ext-200-italic.60099257.woff2",
+      "assets/raleway-latin-200-italic.26cca2dc.woff2",
+      "assets/raleway-cyrillic-ext-300-italic.a0a4d8e8.woff2",
+      "assets/raleway-all-300-italic.42d06954.woff",
+      "assets/raleway-cyrillic-300-italic.17c78cb7.woff2",
+      "assets/raleway-vietnamese-300-italic.5da00318.woff2",
+      "assets/raleway-latin-ext-300-italic.cbbf9602.woff2",
+      "assets/raleway-latin-300-italic.0e7a0d77.woff2",
+      "assets/raleway-cyrillic-ext-400-italic.a5eb7712.woff2",
+      "assets/raleway-all-400-italic.4bf4ba2a.woff",
+      "assets/raleway-cyrillic-400-italic.d14beec2.woff2",
+      "assets/raleway-vietnamese-400-italic.00ea6b52.woff2",
+      "assets/raleway-latin-ext-400-italic.56a8d8f0.woff2",
+      "assets/raleway-latin-400-italic.b51f996c.woff2",
+      "assets/raleway-cyrillic-ext-500-italic.5d328e5a.woff2",
+      "assets/raleway-all-500-italic.6826e805.woff",
+      "assets/raleway-cyrillic-500-italic.b8a42752.woff2",
+      "assets/raleway-vietnamese-500-italic.9e92a1c1.woff2",
+      "assets/raleway-latin-ext-500-italic.8432ffb8.woff2",
+      "assets/raleway-latin-500-italic.dd2b1b4b.woff2",
+      "assets/raleway-cyrillic-ext-600-italic.71eb70ae.woff2",
+      "assets/raleway-all-600-italic.7fdb8656.woff",
+      "assets/raleway-cyrillic-600-italic.8a7b8aa9.woff2",
+      "assets/raleway-vietnamese-600-italic.313ef9f3.woff2",
+      "assets/raleway-latin-ext-600-italic.a61d31bb.woff2",
+      "assets/raleway-latin-600-italic.b49d462e.woff2",
+      "assets/raleway-cyrillic-ext-700-italic.c3fdd2bb.woff2",
+      "assets/raleway-all-700-italic.30a2300d.woff",
+      "assets/raleway-cyrillic-700-italic.b02decad.woff2",
+      "assets/raleway-vietnamese-700-italic.646db61d.woff2",
+      "assets/raleway-latin-ext-700-italic.33aa71d6.woff2",
+      "assets/raleway-latin-700-italic.8931d18d.woff2",
+      "assets/raleway-cyrillic-ext-800-italic.5de4bce0.woff2",
+      "assets/raleway-all-800-italic.e3754d7b.woff",
+      "assets/raleway-cyrillic-800-italic.092d4cfc.woff2",
+      "assets/raleway-vietnamese-800-italic.877cef7a.woff2",
+      "assets/raleway-latin-ext-800-italic.3cb782c4.woff2",
+      "assets/raleway-latin-800-italic.a28a6103.woff2",
+      "assets/raleway-cyrillic-ext-900-italic.0fe2526a.woff2",
+      "assets/raleway-all-900-italic.a35c43a6.woff",
+      "assets/raleway-cyrillic-900-italic.a66a3d9d.woff2",
+      "assets/raleway-vietnamese-900-italic.025a8771.woff2",
+      "assets/raleway-latin-ext-900-italic.23094bf3.woff2",
+      "assets/raleway-latin-900-italic.fb2686a2.woff2"
+    ]
   },
   "resources/js/web/app.js": {
     "file": "assets/app.f24d1f5f.js",
@@ -252,13 +777,17 @@
     "file": "assets/app.45a02e80.css",
     "src": "resources/js/web/app.css"
   },
+  "resources/js/control/app.css": {
+    "file": "assets/app.184135a5.css",
+    "src": "resources/js/control/app.css"
+  },
   "resources/scss/web/app.scss": {
-    "file": "assets/app.1ea1f38a.css",
+    "file": "assets/app.e46a2923.css",
     "src": "resources/scss/web/app.scss",
     "isEntry": true
   },
   "resources/scss/control/app.scss": {
-    "file": "assets/app.8839c0e6.css",
+    "file": "assets/app.5c4d6ec4.css",
     "src": "resources/scss/control/app.scss",
     "isEntry": true
   }

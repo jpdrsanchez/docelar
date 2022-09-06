@@ -34,4 +34,20 @@ class StoreBankRequest extends FormRequest
             'image_id' => 'required_without:image'
         ];
     }
+
+    /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'string' => 'O campo deve ser do tipo string',
+            'required' => 'O campo não pode estar vazio',
+            'url' => 'O campo deve conter um link válido',
+            'file' => 'O arquivo deve ser válido',
+            'mimes' => 'O arquivo deve ser do tipo PNG',
+        ];
+    }
 }

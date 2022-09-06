@@ -39,7 +39,7 @@
             <td>{{ $event->date }}</td>
             <td>
               <div class="d-flex align-items-stretch gap-2 justify-content-end">
-                <a class="btn btn-noweb" href="#">
+                <a class="btn btn-noweb" href="{{ route('control.galleries.edit', ['gallery' => $event->gallery->id]) }}">
                   <ion-icon name="images"></ion-icon>
                   <span class="visually-hidden">Galeria</span>
                 </a>

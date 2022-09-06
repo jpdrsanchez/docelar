@@ -18,7 +18,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::all();
+        $events = Event::with('gallery')->get();
 
         return view('control.events.index', ['events' => $events]);
     }
@@ -76,17 +76,6 @@ class EventController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Event $event)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Event  $event
@@ -107,7 +96,30 @@ class EventController extends Controller
      */
     public function update(UpdateEventRequest $request, Event $event)
     {
-        //
+        $event->title = $request->title;
+        $event->introduction = $request->introduction;
+        $event->description = $request->description;
+        $event->date = Carbon::create($request->date)->toDateTimeString();
+        $event->save();
+
+        if ($request->hasFile('image')) {
+            $event->media()->detach();
+            $name = $request->file('image')->getClientOriginalName();
+            $mimeType = $request->file('image')->getClientOriginalExtension();
+            $path = $request->file('image')->store('/uploads', ['disk' => 'public']);
+
+            $media = new Media;
+            $media->name = $name;
+            $media->path = $path;
+            $media->type = $mimeType;
+            $event->media()->save($media, ['type' => 'event_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+        } else if ($request->has('image_id')) {
+            $media = Media::find($request->image_id);
+            if ((int)$request->image_id !== $event->media[0]->id)
+                $event->media()->sync([$media->id => ['type' => 'event_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]]);
+        }
+
+        return redirect()->route('control.events.index')->with('status', 'Evento Criado com Sucesso');
     }
 
     /**
@@ -118,6 +130,8 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        //
+        $event->media()->detach();
+        $event->delete();
+        return redirect()->route('control.events.index')->with('status', 'Evento Deletado com Sucesso');
     }
 }

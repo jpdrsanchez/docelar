@@ -30,17 +30,11 @@ class ProjectsPageController extends Controller
      */
     public function update(UpdateProjectsPageRequest $request, ProjectsPage $projectsPage)
     {
-        //
-    }
+        $project = ProjectsPage::first();
+        $project->title_seo = $request->title_seo;
+        $project->description_seo = $request->description_seo;
+        $project->save();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\ProjectsPage  $projectsPage
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(ProjectsPage $projectsPage)
-    {
-        //
+        return redirect()->route('control.home')->with('status', 'Página atualizada com sucesso');
     }
 }

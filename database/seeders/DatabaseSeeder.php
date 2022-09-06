@@ -93,39 +93,46 @@ class DatabaseSeeder extends Seeder
         Config::upsert([
             [
                 'field_name' => 'address',
+                'field_label' => 'Endereço',
                 'field_type' => 'textarea',
                 'field_value' => 'Rua xxxxxxx xxxxxx, xxx São Paulo - SP',
             ],
             [
                 'field_name' => 'phone',
+                'field_label' => 'Telefone',
                 'field_type' => 'text',
                 'field_value' => '11900000000',
             ],
             [
                 'field_name' => 'email',
+                'field_label' => 'E-mail',
                 'field_type' => 'text',
                 'field_value' => 'contato@docelar.com.br',
             ],
             [
                 'field_name' => 'maps',
+                'field_label' => 'Google Maps Iframe',
                 'field_type' => 'textarea',
                 'field_value' => '',
             ],
             [
                 'field_name' => 'instagram',
+                'field_label' => 'Instagram',
                 'field_type' => 'text',
                 'field_value' => 'https://instagram.com.br',
             ],
             [
                 'field_name' => 'facebook',
+                'field_label' => 'Facebook',
                 'field_type' => 'text',
                 'field_value' => 'https://facebook.com.br',
             ],
             [
                 'field_name' => 'footer_text',
+                'field_label' => 'Texto do Rodapé',
                 'field_type' => 'textarea',
                 'field_value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id massa fames ipsum pharetra bibendum odio pellente.',
             ]
-        ], ['field_name', 'field_type', 'field_value']);
+        ], ['field_name', 'field_label', 'field_type', 'field_value']);
     }
 }

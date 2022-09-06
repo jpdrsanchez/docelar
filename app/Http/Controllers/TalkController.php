@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateTalkRequest;
 use App\Models\Media;
 use App\Models\Talk;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class TalkController extends Controller
 {
@@ -76,17 +77,6 @@ class TalkController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Talk  $talk
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Talk $talk)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Talk  $talk
@@ -94,7 +84,8 @@ class TalkController extends Controller
      */
     public function edit(Talk $talk)
     {
-        //
+        $medias = Media::all();
+        return view('control.talks.edit', ['talk' => $talk, 'medias' => $medias]);
     }
 
     /**
@@ -106,7 +97,36 @@ class TalkController extends Controller
      */
     public function update(UpdateTalkRequest $request, Talk $talk)
     {
-        //
+        if ($request->hasFile('file')) {
+            if ($talk->file) Storage::delete($talk->file);
+            $path = $request->file('file')->store('/uploads', ['disk' => 'public']);
+            $talk->file = $path;
+        }
+
+        $talk->title = $request->title;
+        $talk->introduction = $request->introduction;
+        $talk->description = $request->description;
+        $talk->date = Carbon::create($request->date)->toDateTimeString();
+        $talk->save();
+
+        if ($request->hasFile('image')) {
+            $talk->media()->detach();
+            $name = $request->file('image')->getClientOriginalName();
+            $mimeType = $request->file('image')->getClientOriginalExtension();
+            $path = $request->file('image')->store('/uploads', ['disk' => 'public']);
+
+            $media = new Media;
+            $media->name = $name;
+            $media->path = $path;
+            $media->type = $mimeType;
+            $talk->media()->save($media, ['type' => 'talk_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+        } else if ($request->has('image_id')) {
+            $media = Media::find($request->image_id);
+            if ((int)$request->image_id !== $talk->media[0]->id)
+                $talk->media()->sync([$media->id => ['type' => 'talk_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]]);
+        }
+
+        return redirect()->route('control.talks.index')->with('status', 'Palestra Criado com Sucesso');
     }
 
     /**
@@ -117,6 +137,8 @@ class TalkController extends Controller
      */
     public function destroy(Talk $talk)
     {
-        //
+        $talk->media()->detach();
+        $talk->delete();
+        return redirect()->route('control.talks.index')->with('status', 'Palestra Deletada com Sucesso');
     }
 }

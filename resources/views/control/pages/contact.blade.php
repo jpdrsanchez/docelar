@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $contact->description_seo }}</div>
+          <div data-quill style="height: 130px">{!! old('description_seo') ? old('description_seo') : $contact->description_seo !!}</div>
           <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $contact->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
@@ -37,7 +37,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="content" class="form-label">Conteúdo Principal</label>
-          <div data-quill style="height: 130px">{{ old('content') ? old('content') : $contact->content }}</div>
+          <div data-quill style="height: 130px">{!! old('content') ? old('content') : $contact->content !!}</div>
           <input type="hidden" name="content" id="content" value={{ old('content') ? old('content') : $contact->content }}>
           @error('content')
             <div class="invalid-feedback">

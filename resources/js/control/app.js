@@ -1,5 +1,23 @@
 import "./bootstrap";
 import * as bootstrap from "bootstrap/dist/js/bootstrap";
+import "@fontsource/raleway/100.css";
+import "@fontsource/raleway/200.css";
+import "@fontsource/raleway/300.css";
+import "@fontsource/raleway/400.css";
+import "@fontsource/raleway/500.css";
+import "@fontsource/raleway/600.css";
+import "@fontsource/raleway/700.css";
+import "@fontsource/raleway/800.css";
+import "@fontsource/raleway/900.css";
+import "@fontsource/raleway/100-italic.css";
+import "@fontsource/raleway/200-italic.css";
+import "@fontsource/raleway/300-italic.css";
+import "@fontsource/raleway/400-italic.css";
+import "@fontsource/raleway/500-italic.css";
+import "@fontsource/raleway/600-italic.css";
+import "@fontsource/raleway/700-italic.css";
+import "@fontsource/raleway/800-italic.css";
+import "@fontsource/raleway/900-italic.css";
 
 import initImageSelection from "./modules/select-image";
 initImageSelection();
@@ -21,3 +39,7 @@ if (quillContainer.length) {
         });
     });
 }
+
+import Dropzone from "dropzone";
+
+const dropzone = new Dropzone(".dropzone");

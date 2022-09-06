@@ -19,6 +19,8 @@ return new class extends Migration
             $table->text('description_seo');
             $table->string('title');
             $table->string('subtitle');
+            $table->string('image_one')->nullable();
+            $table->string('image_two')->nullable();
             $table->text('content');
             $table->timestamps();
         });

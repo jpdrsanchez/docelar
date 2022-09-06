@@ -2,54 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreGalleryRequest;
 use App\Http\Requests\UpdateGalleryRequest;
 use App\Models\Gallery;
+use App\Models\Media;
+use Carbon\Carbon;
 
 class GalleryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreGalleryRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreGalleryRequest $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Gallery  $gallery
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Gallery $gallery)
-    {
-        //
-    }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -58,7 +17,9 @@ class GalleryController extends Controller
      */
     public function edit(Gallery $gallery)
     {
-        //
+        $gallery->load(['media', 'gallerieable']);
+
+        return view('control.gallery', compact('gallery'));
     }
 
     /**
@@ -70,7 +31,17 @@ class GalleryController extends Controller
      */
     public function update(UpdateGalleryRequest $request, Gallery $gallery)
     {
-        //
+        $name = $request->file('file')->getClientOriginalName();
+        $mimeType = $request->file('file')->getClientOriginalExtension();
+        $path = $request->file('file')->store('/uploads', ['disk' => 'public']);
+
+        $media = new Media;
+        $media->name = $name;
+        $media->path = $path;
+        $media->type = $mimeType;
+        $gallery->media()->save($media, ['type' => 'gallery_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+
+        return response()->json(['name' => $name], 200);
     }
 
     /**

@@ -10,7 +10,7 @@
       <div class="row">
         <div class="mb-3 col-12 col-lg-6">
           <label for="title" class="form-label">Título</label>
-          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') ? old('title') : $ʋ->title }}">
+          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') ? old('title') : $event->title }}">
           @error('title')
             <div class="invalid-feedback">
               {{ $message }}
@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="introduction" class="form-label">Introdução</label>
-          <div data-quill style="height: 130px">{{ old('introduction') ? old('introduction') : $event->introduction }}</div>
+          <div data-quill style="height: 130px">{!! old('introduction') ? old('introduction') : $event->introduction !!}</div>
           <input type="hidden" name="introduction" id="introduction" value={{ old('introduction') ? old('introduction') : $event->introduction }}>
           @error('introduction')
             <div class="invalid-feedback">
@@ -38,7 +38,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <div data-quill style="height: 130px">{{ old('description') ? old('description') : $event->description }}</div>
+          <div data-quill style="height: 130px">{!! old('description') ? old('description') : $event->description !!}</div>
           <input type="hidden" name="description" id="description" value={{ old('description') ? old('description') : $event->description }}>
           @error('description')
             <div class="invalid-feedback">

@@ -30,7 +30,15 @@ class ContactPageController extends Controller
      */
     public function update(UpdateContactPageRequest $request, ContactPage $contactPage)
     {
-        //
+        $contact = ContactPage::first();
+        $contact->title_seo = $request->title_seo;
+        $contact->description_seo = $request->description_seo;
+        $contact->title = $request->title;
+        $contact->content = $request->content;
+        $contact->form_title = $request->form_title;
+        $contact->save();
+
+        return redirect()->route('control.home')->with('status', 'Página atualizada com sucesso');
     }
 
     /**

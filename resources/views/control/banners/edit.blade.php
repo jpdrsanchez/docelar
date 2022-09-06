@@ -33,7 +33,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <div data-quill style="height: 130px">{{ old('description') ? old('description') : $banner->description }}</div>
+          <div data-quill style="height: 130px">{!! old('description') ? old('description') : $banner->description !!}</div>
           <input type="hidden" name="description" id="description" value={{ old('description') ? old('description') : $banner->description }}>
           @error('description')
             <div class="invalid-feedback">

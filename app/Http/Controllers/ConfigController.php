@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ConfigRequest;
 use App\Models\Config;
-use Illuminate\Http\Request;
 
 class ConfigController extends Controller
 {
@@ -13,9 +13,16 @@ class ConfigController extends Controller
         return view('control.configs', compact('configs'));
     }
 
-    public function store(Request $request)
+    public function update(ConfigRequest $request)
     {
-        $configs = Config::all();
-        return view('control.configs', compact('configs'));
+        foreach ($request->all() as $key => $input) {
+            if ($key !== '_token' && $key !== '_method')
+                Config::updateOrCreate(
+                    ['field_name' => $key],
+                    ['field_value' => $input]
+                );
+        }
+
+        return redirect()->route('control.configs.index')->with('status', 'Configurações atualizadas com sucesso');
     }
 }

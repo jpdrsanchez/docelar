@@ -1,24 +1,26 @@
-<x-web.templates.base title="Home">
+<x-web.templates.base title="{{ $homepage->title_seo }}">
+  @if (! $banners->isEmpty())
   <x-web.components.home-carousel>
     @foreach ($banners as $banner)
       <x-web.components.home-carousel-item :title="$banner->title" :text="$banner->description" :button-text="$banner->button_text" :image="$banner->media[0]->path" :link="$banner->link" :type="$types::from($banner->type)" />
     @endforeach
   </x-web.components.home-carousel>
+  @endif
   <section class="homeAbout">
     <img src="{{ Vite::asset('resources/images/home/people-2.png') }}" alt="" aria-hidden="true" class="homeAbout__image">
     <img src="{{ Vite::asset('resources/images/background/line-1.svg') }}" alt="" aria-hidden="true" class="homeAbout__line">
     <div class="container homeAbout__container">
       <div class="homeAbout__wrapper">
-        <h2 class="page-title homeAbout__title">Sobre</h2>
-        <p class="homeAbout__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque faucibus risus et sem libero. Dolor in porttitor nisi a commodo neque, tortor lobortis sit. Mi egestas suspendisse enim eros leo gravida viverra. Nulla aliquam ultricies in amet dui, morbi mi posuere. Quam morbi sit quis enim vestibulum at.<br />At ac iaculis sagittis, adipiscing eget duis egestas pulvinar venenatis. </p>
+        <h2 class="page-title homeAbout__title">{{ $homepage->about_title }}</h2>
+        <div class="homeAbout__text">{!! $homepage->about_description !!}</div>
         <a href="{{ route('web.about') }}" class="homeAbout__link">Saiba mais</a>
       </div>
     </div>
   </section>
   <section class="homeProjects">
     <div class="container homeProjects__container">
-      <h2 class="page-title homeProjects__title">Projetos</h2>
-      <p class="homeProjects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque.</p>
+      <h2 class="page-title homeProjects__title">{{ $homepage->projects_title }}</h2>
+      <div class="homeProjects__text">{!! $homepage->projects_description !!}</div>
       <ul class="homeProjects__list">
         @foreach ($projects as $project)
           <x-web.components.schedule-card :background="asset($project->media[0]->path)" type="lg" :title="$project->title" :content="$project->introduction" :link="route('web.project', ['project' => $project->slug])" />
@@ -32,8 +34,8 @@
   <section class="homeTalks">
     <div class="container homeTalks__container">
       <div class="homeTalks__content">
-        <h2 class="page-title homeTalks__title">Palestras</h2>
-        <p class="homeTalks__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam<br /><br />purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque. purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque.</p>
+        <h2 class="page-title homeTalks__title">{{ $homepage->talks_title }}</h2>
+        <div class="homeTalks__text">{!! $homepage->talks_description !!}</div>
         <a href="{{ route('web.talks') }}" class="homeTalks__link">Ver mais palestras</a>
       </div>
     </div>
@@ -48,8 +50,8 @@
   <section class="homeDonate">
     <div class="container homeDonate__container">
       <div class="homeDonate__content">
-        <h2 class="page-title homeDonate__title">Contribua com as Doações</h2>
-        <p class="homeDonate__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque faucibus risus et sem libero. Dolor in porttitor nisi a commodo neque, tortor lobortis sit.<br /><br />Risus neque tellus scelerisque faucibus risus et sem libero. Dolor in porttitor nisi a commodo neque, tortor lobortis sit.</p>
+        <h2 class="page-title homeDonate__title">{{ $homepage->donate_title }}</h2>
+        <div class="homeDonate__text">{!! $homepage->donate_description !!}</div>
         <a href="{{ route('web.donations') }}" class="homeDonate__link">Contribuir</a>
       </div>
     </div>
@@ -61,52 +63,43 @@
   <section class="homeSchedule">
     <div class="container">
       <div class="homeSchedule__content">
-        <h2 class="page-title homeSchedule__title">Agenda</h2>
-        <p class="homeSchedule__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor.</p>
+        <h2 class="page-title homeSchedule__title">{{ $homepage->schedule_title }}</h2>
+        <div class="homeSchedule__text">{!! $homepage->schedule_text !!}</div>
         <div class="homeSchedule__schedules">
           <div class="homeSchedule__list">
             <h3 class="homeSchedule__list__title">Eventos</h3>
             <ul class="homeSchedule__list__list">
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
-              <li>25/12/2022 - Evento de Natal</li>
+              @forelse ($events as $event)
+                <li>{{ $event->date }} - {{ $event->name }}</li>
+              @empty
+              <li>Nenhum Evento Cadastrado</li>
+              @endforelse
             </ul>
           </div>
           <div class="homeSchedule__list">
             <h3 class="homeSchedule__list__title">Projetos</h3>
             <ul class="homeSchedule__list__list">
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
+              @forelse ($projects as $project)
+                <li>{{ $project->date }} - {{ $project->name }}</li>
+              @empty
+              <li>Nenhum Projeto Cadastrado</li>
+              @endforelse
             </ul>
           </div>
           <div class="homeSchedule__list">
             <h3 class="homeSchedule__list__title">Palestras</h3>
             <ul class="homeSchedule__list__list">
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
-              <li>08/08/2022 - TDAH Infantil</li>
+              @forelse ($talks as $talk)
+                <li>{{ $talk->date }} - {{ $talk->name }}</li>
+              @empty
+              <li>Nenhuma Palestra Cadastrada</li>
+              @endforelse
             </ul>
           </div>
         </div>
         <h2 class="homeSchedule__subtitle">Horários de Abertura</h2>
-        <p class="homeSchedule__open">Segunda a Sexta das 9:00h até 21:00h</p>
-        <p class="homeSchedule__open">Sábado e Domingo das 9:00h até 18:00</p>
+        <div class="homeSchedule__open">{!! $homepage->schedule_weekdays_opening !!}</div>
+        <div class="homeSchedule__open">{!! $homepage->schedule_weekeend_opening !!}</div>
         <img src="{{ Vite::asset('resources/images/background/detail-8.svg') }}" alt="" aria-hidden="true" class="homeSchedule__detail-one">
         <img src="{{ Vite::asset('resources/images/background/detail-9.svg') }}" alt="" aria-hidden="true" class="homeSchedule__detail-two">
       </div>

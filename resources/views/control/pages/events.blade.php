@@ -9,7 +9,7 @@
       <div class="row">
         <div class="mb-3 col-12">
           <label for="title_seo" class="form-label">Título SEO</label>
-          <input type="text" name="title_seo" id="title_seo" class="form-control" value="{{ old('title_seo') ? old('title_seo') : $event->title_seo }}">
+          <input type="text" name="title_seo" id="title_seo" class="form-control @error('title_seo') is-invalid @enderror" value="{{ old('title_seo') ? old('title_seo') : $event->title_seo }}">
           @error('title_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -18,8 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $event->description_seo }}</div>
-          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $event->description_seo }}>
+          <div data-quill style="height: 130px">{!! old('description_seo') ? old('description_seo') : $event->description_seo !!}</div>
+          <input class="form-control @error('description_seo') is-invalid @enderror" type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $event->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}

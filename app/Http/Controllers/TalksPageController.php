@@ -30,17 +30,12 @@ class TalksPageController extends Controller
      */
     public function update(UpdateTalksPageRequest $request, TalksPage $talksPage)
     {
-        //
-    }
+        $talk = TalksPage::first();
+        $talk->title_seo = $request->title_seo;
+        $talk->description_seo = $request->description_seo;
+        $talk->form_title = $request->form_title;
+        $talk->save();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\TalksPage  $talksPage
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(TalksPage $talksPage)
-    {
-        //
+        return redirect()->route('control.home')->with('status', 'Página atualizada com sucesso');
     }
 }

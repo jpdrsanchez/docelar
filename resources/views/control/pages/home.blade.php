@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $home->description_seo }}</div>
+          <div data-quill style="height: 130px">{!! old('description_seo') ? old('description_seo') : $home->description_seo !!}</div>
           <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $home->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
@@ -37,7 +37,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="about_description" class="form-label">Descrição Seção Sobre</label>
-          <div data-quill style="height: 130px">{{ old('about_description') ? old('about_description') : $home->about_description }}</div>
+          <div data-quill style="height: 130px">{!! old('about_description') ? old('about_description') : $home->about_description !!}</div>
           <input type="hidden" name="about_description" id="about_description" value={{ old('about_description') ? old('about_description') : $home->about_description }}>
           @error('about_description')
             <div class="invalid-feedback">
@@ -56,7 +56,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="projects_description" class="form-label">Descrição Seção Projetos</label>
-          <div data-quill style="height: 130px">{{ old('projects_description') ? old('projects_description') : $home->projects_description }}</div>
+          <div data-quill style="height: 130px">{!! old('projects_description') ? old('projects_description') : $home->projects_description !!}</div>
           <input type="hidden" name="projects_description" id="projects_description" value={{ old('projects_description') ? old('projects_description') : $home->projects_description }}>
           @error('projects_description')
             <div class="invalid-feedback">
@@ -75,7 +75,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="talks_description" class="form-label">Descrição Seção Palestras</label>
-          <div data-quill style="height: 130px">{{ old('talks_description') ? old('talks_description') : $home->talks_description }}</div>
+          <div data-quill style="height: 130px">{!! old('talks_description') ? old('talks_description') : $home->talks_description !!}</div>
           <input type="hidden" name="talks_description" id="talks_description" value={{ old('talks_description') ? old('talks_description') : $home->talks_description }}>
           @error('talks_description')
             <div class="invalid-feedback">
@@ -94,7 +94,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="donate_description" class="form-label">Descrição Seção de Doação</label>
-          <div data-quill style="height: 130px">{{ old('donate_description') ? old('donate_description') : $home->donate_description }}</div>
+          <div data-quill style="height: 130px">{!! old('donate_description') ? old('donate_description') : $home->donate_description !!}</div>
           <input type="hidden" name="donate_description" id="donate_description" value={{ old('donate_description') ? old('donate_description') : $home->donate_description }}>
           @error('donate_description')
             <div class="invalid-feedback">
@@ -113,7 +113,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="schedule_description" class="form-label">Descrição Seção Agenda</label>
-          <div data-quill style="height: 130px">{{ old('schedule_description') ? old('schedule_description') : $home->schedule_description }}</div>
+          <div data-quill style="height: 130px">{!! old('schedule_description') ? old('schedule_description') : $home->schedule_description !!}</div>
           <input type="hidden" name="schedule_description" id="schedule_description" value={{ old('schedule_description') ? old('schedule_description') : $home->schedule_description }}>
           @error('schedule_description')
             <div class="invalid-feedback">

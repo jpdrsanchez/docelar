@@ -30,17 +30,16 @@ class DonatePageController extends Controller
      */
     public function update(UpdateDonatePageRequest $request, DonatePage $donatePage)
     {
-        //
-    }
+        $donate = DonatePage::first();
+        $donate->title_seo = $request->title_seo;
+        $donate->description_seo = $request->description_seo;
+        $donate->title = $request->title;
+        $donate->subtitle = $request->subtitle;
+        $donate->content = $request->content;
+        $donate->donate_title = $request->donate_title;
+        $donate->donate_content = $request->donate_content;
+        $donate->save();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\DonatePage  $donatePage
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(DonatePage $donatePage)
-    {
-        //
+        return redirect()->route('control.home')->with('status', 'Página atualizada com sucesso');
     }
 }

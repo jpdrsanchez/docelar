@@ -1,9 +1,9 @@
-<x-web.templates.base title="Contato">
+<x-web.templates.base title="{{ $contact->title_seo }}">
   <main class="contact-main">
     <div class="container contact-main__container">
       <div class="contact-main__content">
-        <h1 class="page-title contact-main__title">Contato</h1>
-        <p class="contact-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam. massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam.</p>
+        <h1 class="page-title contact-main__title">{{ $contact->title }}</h1>
+        <div class="contact-main__text">{!! $contact->content !!}</div>
       </div>
     </div>
   </main>
@@ -12,7 +12,7 @@
       <img src="{{ Vite::asset('resources/images/contact/person-1.png') }}" alt="" aria-hidden="true" class="contact-section__image">
       <div class="contact-section__content">
         <div class="contact-section__form">
-          <x-web.components.contact-form title="Fale Conosco" type="contact" />
+          <x-web.components.contact-form :title="$contact->form_title" type="contact" />
         </div>
         <div class="contact-section__column">
           <div class="contact-section__info">

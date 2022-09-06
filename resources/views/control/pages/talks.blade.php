@@ -3,13 +3,13 @@
     <h1>Editar Página</h1>
     <p>Edite página cadastrada no sistema</p>
     <hr>
-    <form action="{{ route('control.projectspage.update', ['projectspage' => $talks->id]) }}" method="POST">
+    <form action="{{ route('control.talkspage.update', ['talkspage' => $talks->id]) }}" method="POST">
       @csrf
       @method('PUT')
       <div class="row">
         <div class="mb-3 col-12">
           <label for="title_seo" class="form-label">Título SEO</label>
-          <input type="text" name="title_seo" id="title_seo" class="form-control" value="{{ old('title_seo') ? old('title_seo') : $talks->title_seo }}">
+          <input type="text" name="title_seo" id="title_seo" class="form-control @error('title_seo') is-invalid @enderror" value="{{ old('title_seo') ? old('title_seo') : $talks->title_seo }}">
           @error('title_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -18,8 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $talks->description_seo }}</div>
-          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $talks->description_seo }}>
+          <div data-quill style="height: 130px">{!! old('description_seo') ? old('description_seo') : $talks->description_seo !!}</div>
+          <input class="form-control @error('description_seo') is-invalid @enderror" type="hidden" name="description_seo" id="description_seo" value="{{ old('description_seo') ? old('description_seo') : $talks->description_seo }}">
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="form_title" class="form-label">Título do Formulário</label>
-          <input type="text" name="form_title" id="form_title" class="form-control" value="{{ old('form_title') ? old('form_title') : $talks->form_title }}">
+          <input type="text" name="form_title" id="form_title" class="form-control @error('form_title') is-invalid @enderror" value="{{ old('form_title') ? old('form_title') : $talks->form_title }}">
           @error('form_title')
             <div class="invalid-feedback">
               {{ $message }}

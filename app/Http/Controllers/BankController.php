@@ -70,17 +70,6 @@ class BankController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Bank  $bank
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Bank $bank)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Bank  $bank
@@ -88,7 +77,8 @@ class BankController extends Controller
      */
     public function edit(Bank $bank)
     {
-        //
+        $medias = Media::all();
+        return view('control.banks.edit', ['bank' => $bank, 'medias' => $medias]);
     }
 
     /**
@@ -100,7 +90,32 @@ class BankController extends Controller
      */
     public function update(UpdateBankRequest $request, Bank $bank)
     {
-        //
+        $bank->agency = $request->agency;
+        $bank->code = $request->code;
+        $bank->account = $request->account;
+        $bank->name = $request->name;
+        $bank->document_type = $request->document_type;
+        $bank->document_value = $request->document_value;
+        $bank->save();
+
+        if ($request->hasFile('image')) {
+            $bank->medias()->detach();
+            $name = $request->file('image')->getClientOriginalName();
+            $mimeType = $request->file('image')->getClientOriginalExtension();
+            $path = $request->file('image')->store('/uploads', ['disk' => 'public']);
+
+            $media = new Media;
+            $media->name = $name;
+            $media->path = $path;
+            $media->type = $mimeType;
+            $bank->media()->save($media, ['type' => 'bank_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+        } else if ($request->has('image_id')) {
+            $media = Media::find($request->image_id);
+            if ((int)$request->image_id !== $bank->media[0]->id)
+                $bank->media()->sync([$media->id => ['type' => 'bank_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]]);
+        }
+
+        return redirect()->route('control.banks.index')->with('status', 'Banco Criado com Sucesso');
     }
 
     /**
@@ -111,6 +126,8 @@ class BankController extends Controller
      */
     public function destroy(Bank $bank)
     {
-        //
+        $bank->media()->detach();
+        $bank->delete();
+        return redirect()->route('control.banks.index')->with('status', 'Banco Deletado com Sucesso');
     }
 }

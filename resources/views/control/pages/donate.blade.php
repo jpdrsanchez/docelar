@@ -9,7 +9,7 @@
       <div class="row">
         <div class="mb-3 col-12">
           <label for="title_seo" class="form-label">Título SEO</label>
-          <input type="text" name="title_seo" id="title_seo" class="form-control" value="{{ old('title_seo') ? old('title_seo') : $donate->title_seo }}">
+          <input type="text" name="title_seo" id="title_seo" class="form-control @error('title_seo') is-invalid @enderror" value="{{ old('title_seo') ? old('title_seo') : $donate->title_seo }}">
           @error('title_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -18,8 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $donate->description_seo }}</div>
-          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $donate->description_seo }}>
+          <div data-quill style="height: 130px">{!! old('description_seo') ? old('description_seo') : $donate->description_seo !!}</div>
+          <input class="form-control @error('description_seo') is-invalid @enderror" type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $donate->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label for="title" class="form-label">Título Principal</label>
-          <input type="text" name="title" id="title" class="form-control" value="{{ old('title') ? old('title') : $donate->title }}">
+          <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" value="{{ old('title') ? old('title') : $donate->title }}">
           @error('title')
             <div class="invalid-feedback">
               {{ $message }}
@@ -37,7 +37,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label for="subtitle" class="form-label">Subtítulo</label>
-          <input type="text" name="subtitle" id="subtitle" class="form-control" value="{{ old('subtitle') ? old('subtitle') : $donate->subtitle }}">
+          <input type="text" name="subtitle" id="subtitle" class="form-control @error('subtitle') is-invalid @enderror" value="{{ old('subtitle') ? old('subtitle') : $donate->subtitle }}">
           @error('subtitle')
             <div class="invalid-feedback">
               {{ $message }}
@@ -46,8 +46,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="content" class="form-label">Conteúdo da Página</label>
-          <div data-quill style="height: 130px">{{ old('content') ? old('content') : $donate->content }}</div>
-          <input type="hidden" name="content" id="content" value={{ old('content') ? old('content') : $donate->content }}>
+          <div data-quill style="height: 130px">{!! old('content') ? old('content') : $donate->content !!}</div>
+          <input class="form-control @error('content') is-invalid @enderror" type="hidden" name="content" id="content" value={{ old('content') ? old('content') : $donate->content }}>
           @error('content')
             <div class="invalid-feedback">
               {{ $message }}
@@ -56,7 +56,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="donate_title" class="form-label">Título Seção de Doação</label>
-          <input type="text" name="donate_title" id="donate_title" class="form-control" value="{{ old('donate_title') ? old('donate_title') : $donate->donate_title }}">
+          <input class="form-control @error('donate_title') is-invalid @enderror" type="text" name="donate_title" id="donate_title" value="{{ old('donate_title') ? old('donate_title') : $donate->donate_title }}">
           @error('donate_title')
             <div class="invalid-feedback">
               {{ $message }}
@@ -65,8 +65,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="donate_content" class="form-label">Conteúdo Seção de Doação</label>
-          <div data-quill style="height: 130px">{{ old('donate_content') ? old('donate_content') : $donate->donate_content }}</div>
-          <input type="hidden" name="donate_content" id="donate_content" value={{ old('donate_content') ? old('donate_content') : $donate->donate_content }}>
+          <div data-quill style="height: 130px">{!! old('donate_content') ? old('donate_content') : $donate->donate_content !!}</div>
+          <input class="form-control @error('donate_content') is-invalid @enderror" type="hidden" name="donate_content" id="donate_content" value={{ old('donate_content') ? old('donate_content') : $donate->donate_content }}>
           @error('donate_content')
             <div class="invalid-feedback">
               {{ $message }}

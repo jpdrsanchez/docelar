@@ -44,14 +44,13 @@
     </div>
     <div class="row">
       @forelse ($medias as $media)
-      <div class="col-12 col-sm-6 col-md-3">
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
         <div class="card">
           <div class="card-header text-truncate">{{ $media->name; }}</div>
           <div class="card-body">
             <img src="{{ asset($media->path) }}" alt="" class="card-image rounded">
           </div>
           <div class="card-footer d-flex align-items-center gap-2">
-            <a href="{{ route('control.medias.edit', ['media' => $media->id]) }}" class="btn btn-warning">Editar</a>
             <form action="{{ route('control.medias.destroy', ['media' => $media->id]) }}" method="POST">
               @csrf
               @method('DELETE')

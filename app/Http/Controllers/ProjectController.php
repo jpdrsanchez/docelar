@@ -18,7 +18,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::all();
+        $projects = Project::with('gallery')->get();
 
         return view('control.projects.index', ['projects' => $projects]);
     }
@@ -76,17 +76,6 @@ class ProjectController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Project  $project
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Project $project)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Project  $project
@@ -107,7 +96,30 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project)
     {
-        //
+        $project->title = $request->title;
+        $project->introduction = $request->introduction;
+        $project->description = $request->description;
+        $project->date = Carbon::create($request->date)->toDateTimeString();
+        $project->save();
+
+        if ($request->hasFile('image')) {
+            $project->media()->detach();
+            $name = $request->file('image')->getClientOriginalName();
+            $mimeType = $request->file('image')->getClientOriginalExtension();
+            $path = $request->file('image')->store('/uploads', ['disk' => 'public']);
+
+            $media = new Media;
+            $media->name = $name;
+            $media->path = $path;
+            $media->type = $mimeType;
+            $project->media()->save($media, ['type' => 'project_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+        } else if ($request->has('image_id')) {
+            $media = Media::find($request->image_id);
+            if ((int)$request->image_id !== $project->media[0]->id)
+                $project->media()->sync([$media->id => ['type' => 'project_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]]);
+        }
+
+        return redirect()->route('control.projects.index')->with('status', 'Projeto Criado com Sucesso');
     }
 
     /**
@@ -118,6 +130,8 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        $project->media()->detach();
+        $project->delete();
+        return redirect()->route('control.projects.index')->with('status', 'Projeto Deletado com Sucesso');
     }
 }

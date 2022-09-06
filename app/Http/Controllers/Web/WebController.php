@@ -4,33 +4,46 @@ namespace App\Http\Controllers\Web;
 
 use App\Enums\BannerTypes;
 use App\Http\Controllers\Controller;
+use App\Models\AboutPage;
+use App\Models\Bank;
 use App\Models\Banner;
+use App\Models\ContactPage;
+use App\Models\DonatePage;
 use App\Models\Event;
+use App\Models\EventsPage;
+use App\Models\HomePage;
 use App\Models\Project;
+use App\Models\ProjectsPage;
 use App\Models\Talk;
-use Illuminate\Http\Request;
+use App\Models\TalksPage;
 
 class WebController extends Controller
 {
     public function home()
     {
+        $homepage = HomePage::first();
         $banners = Banner::with('media')->get();
-        $projects = Project::with('media')->orderBy('date', 'desc')->take(4)->get();
-        $talks = Talk::with('media')->orderBy('date', 'desc')->take(5)->get();
+        $projects = Project::with('media')->orderBy('date', 'desc')->take(8)->get();
+        $talks = Talk::with('media')->orderBy('date', 'desc')->take(8)->get();
+        $events = Event::with('media')->orderBy('date', 'desc')->take(8)->get();
         $types = BannerTypes::class;
-        return view('web.home', ['banners' => $banners, 'types' => $types, 'projects' => $projects, 'talks' => $talks]);
+
+        return view('web.home', compact('homepage', 'banners', 'projects', 'talks', 'events', 'types'));
     }
 
     public function about()
     {
-        return view('web.about');
+        $aboutpage = AboutPage::first();
+
+        return view('web.about', compact('aboutpage'));
     }
 
     public function events()
     {
+        $eventpage = EventsPage::first();
         $highlight = Event::with('media')->orderBy('date', 'desc')->first();
         $events = Event::with('media')->orderBy('date', 'desc')->skip(1)->take(100)->get();
-        return view('web.events', ['events' => $events, 'highlight' => $highlight, 'category' => 'Eventos']);
+        return view('web.events', ['eventpage' => $eventpage, 'events' => $events, 'highlight' => $highlight, 'category' => 'Eventos']);
     }
 
     public function event(Event $event)
@@ -40,9 +53,10 @@ class WebController extends Controller
 
     public function projects()
     {
+        $projectpage = ProjectsPage::first();
         $highlight = Project::with('media')->orderBy('date', 'desc')->first();
         $projects = Project::with('media')->orderBy('date', 'desc')->skip(1)->take(100)->get();
-        return view('web.projects', ['projects' => $projects, 'highlight' => $highlight, 'category' => 'Projetos']);
+        return view('web.projects', ['projectpage' => $projectpage, 'projects' => $projects, 'highlight' => $highlight, 'category' => 'Projetos']);
     }
 
     public function project(Project $project)
@@ -52,9 +66,10 @@ class WebController extends Controller
 
     public function talks()
     {
+        $talkspage = TalksPage::first();
         $highlight = Talk::with('media')->orderBy('date', 'desc')->first();
         $talks = Talk::with('media')->orderBy('date', 'desc')->skip(1)->take(100)->get();
-        return view('web.talks', ['talks' => $talks, 'highlight' => $highlight, 'category' => 'Palestras']);
+        return view('web.talks', ['talkspage' => $talkspage, 'talks' => $talks, 'highlight' => $highlight, 'category' => 'Palestras']);
     }
 
     public function talk(Talk $talk)
@@ -64,11 +79,14 @@ class WebController extends Controller
 
     public function donations()
     {
-        return view('web.donations');
+        $donate = DonatePage::first();
+        $banks = Bank::with('media')->get();
+        return view('web.donations', compact('donate', 'banks'));
     }
 
     public function contact()
     {
-        return view('web.contact');
+        $contact = ContactPage::first();
+        return view('web.contact', compact('contact'));
     }
 }

@@ -47,8 +47,8 @@ class StoreBannerRequest extends FormRequest
             'string' => 'O campo deve ser do tipo string',
             'required' => 'O campo não pode estar vazio',
             'url' => 'O campo deve conter um link válido',
-            'image.file' => 'O arquivo deve ser válido',
-            'image.mimes' => 'O arquivo deve ser do tipo PNG',
+            'file' => 'O arquivo deve ser válido',
+            'mimes' => 'O arquivo deve ser do tipo PNG',
         ];
     }
 }

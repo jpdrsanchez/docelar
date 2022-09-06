@@ -13,7 +13,7 @@ class UpdateTalksPageRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,22 @@ class UpdateTalksPageRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title_seo' => 'required|string',
+            'description_seo' => 'required|string',
+            'form_title' => 'required|string',
+        ];
+    }
+
+    /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'string' => 'O campo deve ser do tipo string',
+            'required' => 'O campo não pode estar vazio',
         ];
     }
 }

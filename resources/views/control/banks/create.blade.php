@@ -81,7 +81,7 @@
       <div class="d-flex align-items-center gap-2">
         <button type="submit" class="btn btn-noweb">Criar</button>
         ou
-        <a href="{{ route('control.talks.index') }}" class="btn btn-outline-noweb">Voltar</a>
+        <a href="{{ route('control.banks.index') }}" class="btn btn-outline-noweb">Voltar</a>
       </div>
     </form>
   </div>

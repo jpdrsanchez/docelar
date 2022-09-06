@@ -58,7 +58,7 @@
           </tr>
         @empty
         <tr>
-          <td colspan="5">
+          <td colspan="6">
             <h4 class="text-center">Nenhuma Palestra Cadastrada no Site</h4>
           </td>
         </tr>

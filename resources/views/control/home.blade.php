@@ -1,5 +1,13 @@
 <x-control.templates.base title="Home">
   <div class="container">
+    @if (session('status'))
+      <div class="alert alert-success d-flex align-items-center mb-2 gap-2" role="alert">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <div>
+          {{ session('status') }}
+        </div>
+      </div>
+    @endif
     <h1>Configurações gerais do site</h1>
     <p>Atualizar configurações gerais do site</p>
     <hr>

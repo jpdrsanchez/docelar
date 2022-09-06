@@ -100,6 +100,7 @@ class BannerController extends Controller
         $findedBanner->save();
 
         if ($request->hasFile('image')) {
+            $findedBanner->media()->detach();
             $name = $request->file('image')->getClientOriginalName();
             $mimeType = $request->file('image')->getClientOriginalExtension();
             $path = $request->file('image')->store('/uploads', ['disk' => 'public']);
