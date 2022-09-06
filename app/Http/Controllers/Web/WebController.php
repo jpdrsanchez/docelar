@@ -63,7 +63,7 @@ class WebController extends Controller
     public function project(Project $project)
     {
         $project->load('media', 'gallery');
-        return view('web.project', ['project', $project]);
+        return view('web.project', ['project' => $project]);
     }
 
     public function talks()
