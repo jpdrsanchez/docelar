@@ -90,7 +90,7 @@
             <h3 class="homeSchedule__list__title">Palestras</h3>
             <ul class="homeSchedule__list__list">
               @forelse ($talks as $talk)
-                <li>{{ $talk->date }} - {{ $talk->name }}</li>
+                <li>{{ $talk->date }} - {{ $talk->title }}</li>
               @empty
               <li>Nenhuma Palestra Cadastrada</li>
               @endforelse

@@ -5,7 +5,7 @@
         <h2 class="schedule-template__category">{{ $category }}</h2>
         <h1 class="page-title schedule-template__title">{{ $title }}</h1>
         <p class="schedule-template__date">Acontecerá dia {{ $date }}</p>
-        <p class="schedule-template__text">{{ $description }}</p>
+        <div class="schedule-template__text">{!! $description !!}</div>
         <a class="schedule-template__link" href="{{ $link }}">Saiba mais</a>
       </div>
     </div>
