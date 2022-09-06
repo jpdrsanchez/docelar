@@ -1,6 +1,3 @@
-@php
-  var_dump($errors)
-@endphp
 <x-control.templates.base title="Login">
   <div class="auth">
     <form class="auth__form" action={{ route('login') }} method="POST">
