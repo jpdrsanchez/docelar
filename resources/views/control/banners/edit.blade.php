@@ -20,7 +20,7 @@
                     <div class="card" data-card>
                       <div class="card-header text-truncate">{{ $media->name; }}</div>
                       <div class="card-body">
-                        <img src="{{ asset($media->path) }}" alt="" class="card-image rounded">
+                        <img src="{{ asset('storage/'.$media->path) }}" alt="" class="card-image rounded">
                       </div>
                       <div class="card-footer d-flex align-items-center gap-2">
                         <button class="btn btn-noweb" type="button" data-select>Selecionar</button>

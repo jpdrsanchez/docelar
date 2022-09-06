@@ -21,7 +21,7 @@
       <p class="homeProjects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque.</p>
       <ul class="homeProjects__list">
         @foreach ($projects as $project)
-          <x-web.components.schedule-card :background="asset($project->media[0]->path)" type="lg" :title="$project->title" :content="$project->introduction" :link="route('web.project', ['project' => $project->slug])" />
+          <x-web.components.schedule-card :background="asset('storage/'.$project->media[0]->path)" type="lg" :title="$project->title" :content="$project->introduction" :link="route('web.project', ['project' => $project->slug])" />
         @endforeach
       </ul>
       <a href="{{ route('web.projects') }}" class="homeProjects__link">Ver mais projetos</a>
@@ -40,7 +40,7 @@
     <x-web.components.talks-carousel>
       @foreach ($talks as $talk)
         <div class="swiper-slide talks-slide__item">
-          <x-web.components.schedule-card :background="asset($talk->media[0]->path)" type="sw" :title="$talk->title" :content="$talk->date" :link="route('web.talk', ['talk' => $talk->slug])" />
+          <x-web.components.schedule-card :background="asset('storage/'.$talk->media[0]->path)" type="sw" :title="$talk->title" :content="$talk->date" :link="route('web.talk', ['talk' => $talk->slug])" />
         </div>
       @endforeach
     </x-web.components.talks-carousel>
