@@ -58,7 +58,7 @@
           <label for="image_one" class="form-label">Primeira Imagem</label>
           <input type="file" name="image_one" id="image_one" class="form-control @error('image_one') is-invalid @enderror" value={{ old('image_one') }}>
           @if ($about->image_one)
-          <img src="{{ asset($about->image_one) }}" alt="" style="display: block; max-width: 100%" class="mt-3">
+          <img src="{{ asset('storage/'.$about->image_one) }}" alt="" style="display: block; max-width: 100%" class="mt-3">
           @endif
           @error('image_one')
             <div class="invalid-feedback">
@@ -70,7 +70,7 @@
           <label for="image_two" class="form-label">Segunda Imagem</label>
           <input type="file" name="image_two" id="image_two" class="form-control @error('image_two') is-invalid @enderror" value={{ old('image_two') }}>
           @if ($about->image_two)
-          <img src="{{ asset($about->image_two) }}" alt="" style="display: block; max-width: 100%" class="mt-3">
+          <img src="{{ asset('storage/'.$about->image_two) }}" alt="" style="display: block; max-width: 100%" class="mt-3">
           @endif
           @error('image_two')
             <div class="invalid-feedback">

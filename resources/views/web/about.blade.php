@@ -8,10 +8,10 @@
       <div class="about__text">{!! $aboutpage->content !!}</div>
       <div class="about__photos">
         @if ($aboutpage->image_one)
-        <img src="{{ asset($aboutpage->image_one) }}" alt="Image 1" class="about__photos__photo">
+        <img src="{{ asset('storage/'.$aboutpage->image_one) }}" alt="Image 1" class="about__photos__photo">
         @endif
         @if ($aboutpage->image_two)
-        <img src="{{ asset($aboutpage->image_two) }}" alt="Image 2" class="about__photos__photo">
+        <img src="{{ asset('storage/'.$aboutpage->image_two) }}" alt="Image 2" class="about__photos__photo">
         @endif
       </div>
     </div>
