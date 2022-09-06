@@ -70,7 +70,7 @@
             <h3 class="homeSchedule__list__title">Eventos</h3>
             <ul class="homeSchedule__list__list">
               @forelse ($events as $event)
-                <li>{{ $event->date }} - {{ $event->name }}</li>
+                <li>{{ $event->date }} - {{ $event->title }}</li>
               @empty
               <li>Nenhum Evento Cadastrado</li>
               @endforelse
@@ -80,7 +80,7 @@
             <h3 class="homeSchedule__list__title">Projetos</h3>
             <ul class="homeSchedule__list__list">
               @forelse ($projects as $project)
-                <li>{{ $project->date }} - {{ $project->name }}</li>
+                <li>{{ $project->date }} - {{ $project->title }}</li>
               @empty
               <li>Nenhum Projeto Cadastrado</li>
               @endforelse
