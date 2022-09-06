@@ -1,12 +1,20 @@
 <?php
 
+use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ConfigController;
+use App\Http\Controllers\ContactPageController;
+use App\Http\Controllers\ControlController;
+use App\Http\Controllers\DonatePageController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\EventsPageController;
+use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectsPageController;
 use App\Http\Controllers\TalkController;
+use App\Http\Controllers\TalksPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth')->group(function () {
-    Route::get("/", fn () => view("control.home"));
+    Route::get("/", ControlController::class)->name('home');
     Route::resource("medias", MediaController::class)->except(['create']);
     Route::resource('banners', BannerController::class);
     Route::resource('projects', ProjectController::class);
@@ -31,4 +39,11 @@ Route::middleware('auth')->group(function () {
     Route::controller(ConfigController::class)->group(function () {
         Route::get('configurations', 'index')->name('configs.index');
     });
+    Route::resource("homepage", HomePageController::class)->except(['create', 'store', 'index', 'show']);
+    Route::resource("aboutpage", AboutPageController::class)->except(['create', 'store', 'index', 'show']);
+    Route::resource("donatepage", DonatePageController::class)->except(['create', 'store', 'index', 'show']);
+    Route::resource("contactpage", ContactPageController::class)->except(['create', 'store', 'index', 'show']);
+    Route::resource("eventspage", EventsPageController::class)->except(['create', 'store', 'index', 'show']);
+    Route::resource("projectspage", ProjectsPageController::class)->except(['create', 'store', 'index', 'show']);
+    Route::resource("talkspage", TalksPageController::class)->except(['create', 'store', 'index', 'show']);
 });

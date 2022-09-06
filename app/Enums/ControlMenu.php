@@ -34,7 +34,7 @@ enum ControlMenu
     private function setValues(): array
     {
         return match ($this) {
-            ControlMenu::HOME => ['Home', route('control.banners.index'), null],
+            ControlMenu::HOME => ['Home', route('control.home'), null],
             ControlMenu::BANNERS => ['Banners', route('control.banners.index'), [
                 ['Gerenciar Banners', route('control.banners.index')],
                 ['Novo Banner', route('control.banners.create')]
