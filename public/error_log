@@ -1,0 +1,13 @@
+[06-Sep-2022 03:01:52 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:335
+Stack trace:
+#0 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(629): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(610): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(541): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(447): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(366): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(427): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(115): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/docelardacrianca/docelardacrianca.com.br/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/docelardacrianca/docelardacrianca.com.br/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 335
