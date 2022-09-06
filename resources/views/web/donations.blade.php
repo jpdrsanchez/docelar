@@ -27,7 +27,7 @@
             <p class="donations-info__methods__item__text donations-info__methods__item__text--banks">Faça sua doação com uma Conta Bancária</p>
             <div class="donations-info__methods__item__banks">
               @forelse ($banks as $bank)
-              <x-web.components.donate-bank :image="asset($bank->media[0]->path)" :agency="$bank->agency" :account="$bank->account" :bank="$bank->code" :name="$bank->name" :document="$bank->document_value" />
+              <x-web.components.donate-bank :image="asset('storage/'.$bank->media[0]->path)" :agency="$bank->agency" :account="$bank->account" :bank="$bank->code" :name="$bank->name" :document="$bank->document_value" />
               @empty
               <p>Nenhum banco cadastrado</p>
               @endforelse
