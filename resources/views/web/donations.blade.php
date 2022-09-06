@@ -8,7 +8,7 @@
         <a href="#contribute" class="donations-main__button">Contribuir agora</a>
       </div>
     </div>
-    <img src="{{ Vite::asset('resources/images/donate/donate-detail.svg') }}" alt="" aria-hidden="true" class="donations-main__detail">
+    <img src="{{ Vite::asset('resources/images/background/line-1.svg') }}" alt="" aria-hidden="true" class="donations-main__detail">
     <img src="{{ Vite::asset('resources/images/donate/donate-bg.png') }}" alt="" aria-hidden="true" class="donations-main__bg">
   </main>
   <section class="donations-info" id="contribute">
