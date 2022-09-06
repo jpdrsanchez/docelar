@@ -23,4 +23,36 @@ class Media extends Model
     {
         return $this->morphedByMany(Banner::class, 'mediable');
     }
+
+    /**
+     * Get the parent mediable model.
+     */
+    public function talks()
+    {
+        return $this->morphedByMany(Talk::class, 'mediable');
+    }
+
+    /**
+     * Get the parent mediable model.
+     */
+    public function events()
+    {
+        return $this->morphedByMany(Event::class, 'mediable');
+    }
+
+    /**
+     * Get the parent mediable model.
+     */
+    public function projects()
+    {
+        return $this->morphedByMany(Project::class, 'mediable');
+    }
+
+    /**
+     * Get the parent mediable model.
+     */
+    public function galleries()
+    {
+        return $this->morphedByMany(Gallery::class, 'mediable');
+    }
 }

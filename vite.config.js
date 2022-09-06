@@ -45,6 +45,7 @@ export default defineConfig({
                 __dirname,
                 "node_modules/@fontsource/raleway"
             ),
+            "@quill": path.resolve(__dirname, "node_modules/quill/dist"),
         },
     },
     server: serverConfig,

@@ -59,10 +59,10 @@ class BannerController extends Controller
             $media->name = $name;
             $media->path = $path;
             $media->type = $mimeType;
-            $banner->media()->save($media, ['created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+            $banner->media()->save($media, ['type' => 'banner_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
         } else if ($request->has('image_id')) {
             $media = Media::find($request->image_id);
-            $banner->media()->attach($media->id, ['created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+            $banner->media()->attach($media->id, ['type' => 'banner_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
         }
 
         return redirect()->route('control.banners.index')->with('status', 'Banner Criado com Sucesso');
@@ -119,11 +119,11 @@ class BannerController extends Controller
             $media->name = $name;
             $media->path = $path;
             $media->type = $mimeType;
-            $banner->media()->save($media, ['created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+            $banner->media()->save($media, ['type' => 'banner_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
         } else if ($request->has('image_id')) {
             $media = Media::find($request->image_id);
             if ((int)$request->image_id !== $findedBanner->media[0]->id)
-                $banner->media()->sync([$media->id => ['created_at' => Carbon::now(), 'updated_at' => Carbon::now()]]);
+                $banner->media()->sync([$media->id => ['type' => 'banner_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]]);
         }
 
         return redirect()->route('control.banners.index')->with('status', 'Banner Atualizado com Sucesso');
@@ -137,11 +137,7 @@ class BannerController extends Controller
      */
     public function destroy(Banner $banner)
     {
-        $media = Media::find($banner->media->id);
-        $media->mediable_type = null;
-        $media->mediable_id = null;
-        $media->save();
-
+        $banner->media()->detach();
         $banner->delete();
         return redirect()->route('control.banners.index')->with('status', 'Banner Deletado com Sucesso');
     }

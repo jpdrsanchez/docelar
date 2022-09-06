@@ -12,6 +12,7 @@ enum ControlMenu
     case EVENTS;
     case PROJECTS;
     case TALKS;
+    case BANKS;
     case CONFIGURATIONS;
 
     /**
@@ -33,24 +34,30 @@ enum ControlMenu
     private function setValues(): array
     {
         return match ($this) {
-            ControlMenu::HOME => ['Home', route('control.'), null],
-            ControlMenu::BANNERS => ['Banners', route('control.banners.index'), null],
+            ControlMenu::HOME => ['Home', route('control.banners.index'), null],
+            ControlMenu::BANNERS => ['Banners', route('control.banners.index'), [
+                ['Gerenciar Banners', route('control.banners.index')],
+                ['Novo Banner', route('control.banners.create')]
+            ]],
             ControlMenu::MEDIAS => ['Mídias', route('control.medias.index'), null],
-            ControlMenu::EVENTS => ['Eventos', route('control.'), [
-                ['Gerenciar Eventos', route('control.')],
-                ['Novo Evento', route('control.')]
+            ControlMenu::EVENTS => ['Eventos', route('control.events.index'), [
+                ['Gerenciar Eventos', route('control.events.index')],
+                ['Novo Evento', route('control.events.create')]
             ]],
-            ControlMenu::PROJECTS => ['Projetos', route('control.'), [
-                ['Gerenciar Projetos', route('control.')],
-                ['Novo Projeto', route('control.')]
+            ControlMenu::PROJECTS => ['Projetos', route('control.projects.index'), [
+                ['Gerenciar Projetos', route('control.projects.index')],
+                ['Novo Projeto', route('control.projects.create')]
             ]],
-            ControlMenu::TALKS => ['Palestras', route('control.'), [
-                ['Gerenciar Palestras', route('control.')],
-                ['Nova Palestra', route('control.')]
+            ControlMenu::TALKS => ['Palestras', route('control.talks.index'), [
+                ['Gerenciar Palestras', route('control.talks.index')],
+                ['Nova Palestra', route('control.talks.create')]
             ]],
-            ControlMenu::CONFIGURATIONS => ['Configurações', route('control.'), [
-                ['SMPT', route('control.')],
-                ['Opções Gerais', route('control.')],
+            ControlMenu::BANKS => ['Bancos', route('control.banks.index'), [
+                ['Gerenciar Bancos', route('control.banks.index')],
+                ['Novo Banco', route('control.banks.create')]
+            ]],
+            ControlMenu::CONFIGURATIONS => ['Configurações', route('control.configs.index'), [
+                ['Opções Gerais', route('control.configs.index')],
             ]]
         };
     }

@@ -1,9 +1,9 @@
-<x-control.templates.base title="Criar Novo Banner">
+<x-control.templates.base title="Criar Nova Palestra">
   <div class="container">
-    <h1>Criar Banner</h1>
-    <p>Cadastrar novo banner no sistema</p>
+    <h1>Criar Banco</h1>
+    <p>Cadastrar novo banco no sistema</p>
     <hr>
-    <form action="{{ route('control.banners.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('control.banks.store') }}" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="modal fade" id="imagesModal" tabindex="-1" aria-labelledby="imagesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -42,39 +42,64 @@
         </div>
       </div>
       <div class="row">
-        <div class="mb-3 col-12 col-lg-6">
-          <label for="title" class="form-label">Título</label>
-          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') }}">
-          @error('title')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-          @enderror
-        </div>
-        <div class="mb-3 col-12 col-lg-6">
-          <label for="type" class="form-label">Tipo</label>
-          <select class="form-select @error("type") is-invalid @enderror" id="type" name="type">
-            <option selected disabled>Selecione o tipo do banner</option>
-            @foreach ($types as $type)
-              <option value="{{ $type->value }}" selected={{ old('type') == $type->value }}>{{ $type->placeholder() }}</option>
-            @endforeach
-          </select>
-          @error('type')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-          @enderror
-        </div>
-        <div class="mb-3 col-12">
-          <label for="description" class="form-label">Descrição</label>
-          <textarea name="description" id="description" rows="5" class="form-control @error("description") is-invalid @enderror">{{ old('description') }}</textarea>
-          @error('description')
+        <div class="mb-3 col-12 col-lg-4">
+          <label for="agency" class="form-label">Agência</label>
+          <input type="text" class="form-control @error("agency") is-invalid @enderror" id="agency" name="agency" value="{{ old('agency') }}">
+          @error('agency')
             <div class="invalid-feedback">
               {{ $message }}
             </div>
           @enderror
         </div>
         <div class="mb-3 col-12 col-lg-4">
+          <label for="account" class="form-label">Conta</label>
+          <input type="text" name="account" id="account" class="form-control @error("account") is-invalid @enderror" value="{{ old('account') }}">
+          @error('account')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
+        </div>
+        <div class="mb-3 col-12 col-lg-4">
+          <label for="code" class="form-label">Código do Banco</label>
+          <input type="number" name="code" id="code" class="form-control @error("code") is-invalid @enderror" value="{{ old('code') }}">
+          @error('code')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
+        </div>
+        <div class="mb-3 col-12 col-lg-6">
+          <label for="name" class="form-label">Proprietário</label>
+          <input type="text" name="name" id="name" class="form-control @error("name") is-invalid @enderror" value="{{ old('name') }}">
+          @error('name')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
+        </div>
+        <div class="mb-3 col-12 col-lg-6">
+          <label class="form-label" for="document_type">Tipo de Documento</label>
+          <select name="document_type" id="document_type" class="form-control @error("document_type") is-invalid @enderror">
+            <option value="CPF">CPF</option>
+            <option value="CNPJ">CNPJ</option>
+          </select>
+          @error('document_type')
+            <div class="text-danger">
+              {{ $message }}
+            </div>
+          @enderror
+        </div>
+        <div class="mb-3 col-12 col-lg-6">
+          <label for="document_value" class="form-label">Número do Documento</label>
+          <input type="number" name="document_value" id="document_value" class="form-control @error("document_value") is-invalid @enderror">
+          @error('document_value')
+            <div class="text-danger">
+              {{ $message }}
+            </div>
+          @enderror
+        </div>
+        <div class="mb-3 col-12 col-lg-6">
           <label class="form-label">Imagem</label>
           <button type="button" class="btn btn-noweb" data-bs-toggle="modal" data-bs-target="#imagesModal" style="width: 100%; display: block">
             <ion-icon name="images"></ion-icon>
@@ -86,30 +111,12 @@
             </div>
           @enderror
         </div>
-        <div class="mb-3 col-12 col-lg-4">
-          <label for="link" class="form-label">Link</label>
-          <input type="text" name="link" id="link" class="form-control @error("link") is-invalid @enderror" value="{{ old('link') }}">
-          @error('link')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-          @enderror
-        </div>
-        <div class="mb-3 col-12 col-lg-4">
-          <label for="button_text" class="form-label">Texto do Botão</label>
-          <input type="text" name="button_text" id="button_text" class="form-control @error("button_text") is-invalid @enderror" value="{{ old('button_text') }}">
-          @error('button_text')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-          @enderror
-        </div>
       </div>
       <hr>
       <div class="d-flex align-items-center gap-2">
         <button type="submit" class="btn btn-noweb">Criar</button>
         ou
-        <a href="{{ back() }}" class="btn btn-outline-noweb">Voltar</a>
+        <a href="{{ route('control.talks.index') }}" class="btn btn-outline-noweb">Voltar</a>
       </div>
     </form>
   </div>

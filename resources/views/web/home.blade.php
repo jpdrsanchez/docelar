@@ -20,12 +20,11 @@
       <h2 class="page-title homeProjects__title">Projetos</h2>
       <p class="homeProjects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa tortor integer mauris nibh fringilla. Ornare dictumst aliquam purus semper mattis molestie viverra tellus lacinia. Pharetra lectus vestibulum lacus scelerisque duis hendrerit. Risus neque tellus scelerisque.</p>
       <ul class="homeProjects__list">
-        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
-        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
-        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
-        <x-web.components.schedule-card background="https://picsum.photos/600" type="lg" title="Evento de Ano Novo" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo tincidunt massa." link="#" />
+        @foreach ($projects as $project)
+          <x-web.components.schedule-card :background="asset($project->media[0]->path)" type="lg" :title="$project->title" :content="$project->introduction" :link="route('web.project', ['project' => $project->slug])" />
+        @endforeach
       </ul>
-      <a href="#" class="homeProjects__link">Ver mais projetos</a>
+      <a href="{{ route('web.projects') }}" class="homeProjects__link">Ver mais projetos</a>
     </div>
     <img src="{{ Vite::asset('resources/images/background/detail-5.svg') }}" alt="" aria-hidden="true" class="homeProjects__image">
     <img src="{{ Vite::asset('resources/images/background/detail-6.svg') }}" alt="" aria-hidden="true" class="homeProjects__image-two">
@@ -39,21 +38,11 @@
       </div>
     </div>
     <x-web.components.talks-carousel>
-      <div class="swiper-slide talks-slide__item">
-        <x-web.components.schedule-card background="https://picsum.photos/800" type="sw" title="Palestra Sobre" content="08/08/2022" link="#" />
-      </div>
-      <div class="swiper-slide talks-slide__item">
-        <x-web.components.schedule-card background="https://picsum.photos/800" type="sw" title="Palestra Sobre" content="08/08/2022" link="#" />
-      </div>
-      <div class="swiper-slide talks-slide__item">
-        <x-web.components.schedule-card background="https://picsum.photos/800" type="sw" title="Palestra Sobre" content="08/08/2022" link="#" />
-      </div>
-      <div class="swiper-slide talks-slide__item">
-        <x-web.components.schedule-card background="https://picsum.photos/800" type="sw" title="Palestra Sobre" content="08/08/2022" link="#" />
-      </div>
-      <div class="swiper-slide talks-slide__item">
-        <x-web.components.schedule-card background="https://picsum.photos/800" type="sw" title="Palestra Sobre" content="08/08/2022" link="#" />
-      </div>
+      @foreach ($talks as $talk)
+        <div class="swiper-slide talks-slide__item">
+          <x-web.components.schedule-card :background="asset($talk->media[0]->path)" type="sw" :title="$talk->title" :content="$talk->date" :link="route('web.talk', ['talk' => $talk->slug])" />
+        </div>
+      @endforeach
     </x-web.components.talks-carousel>
   </section>
   <section class="homeDonate">

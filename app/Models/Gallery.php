@@ -5,12 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Talk extends Model
+class Gallery extends Model
 {
     use HasFactory;
 
     /**
-     * Get all of the banner's media.
+     * Get the parent imageable model (user or post).
+     */
+    public function gallerieable()
+    {
+        return $this->morphTo();
+    }
+
+    /**
+     * Get all of the gallery's media.
      */
     public function media()
     {

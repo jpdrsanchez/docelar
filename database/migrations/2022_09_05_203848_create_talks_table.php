@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('talks', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug');
+            $table->text('introduction');
+            $table->text('description');
+            $table->date('date');
+            $table->string('file');
             $table->timestamps();
         });
     }

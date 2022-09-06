@@ -18,10 +18,11 @@ Route::controller(WebController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/sobre', 'about')->name('about');
     Route::get('/eventos', 'events')->name('events');
-    Route::get('/evento', 'event')->name('event');
+    Route::get('/evento/{event:slug}', 'event')->name('event');
     Route::get('/projetos', 'projects')->name('projects');
+    Route::get('/projeto/{project:slug}', 'project')->name('project');
     Route::get('/palestras', 'talks')->name('talks');
     Route::get('/doacoes', 'donations')->name('donations');
-    Route::get('/palestra', 'talk')->name('talk');
+    Route::get('/palestra/{talk:slug}', 'talk')->name('talk');
     Route::get('/contato', 'contact')->name('contact');
 });

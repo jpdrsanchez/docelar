@@ -46,7 +46,7 @@
       @forelse ($medias as $media)
       <div class="col-12 col-sm-6 col-md-3">
         <div class="card">
-          <div class="card-header">{{ $media->name; }}</div>
+          <div class="card-header text-truncate">{{ $media->name; }}</div>
           <div class="card-body">
             <img src="{{ asset($media->path) }}" alt="" class="card-image rounded">
           </div>

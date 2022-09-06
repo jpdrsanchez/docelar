@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreTalkRequest;
 use App\Http\Requests\UpdateTalkRequest;
+use App\Models\Media;
 use App\Models\Talk;
+use Carbon\Carbon;
 
 class TalkController extends Controller
 {
@@ -15,7 +17,9 @@ class TalkController extends Controller
      */
     public function index()
     {
-        //
+        $talks = Talk::all();
+
+        return view('control.talks.index', ['talks' => $talks]);
     }
 
     /**
@@ -25,7 +29,9 @@ class TalkController extends Controller
      */
     public function create()
     {
-        //
+        $medias = Media::all();
+
+        return view('control.talks.create', ['medias' => $medias]);
     }
 
     /**
@@ -36,7 +42,37 @@ class TalkController extends Controller
      */
     public function store(StoreTalkRequest $request)
     {
-        //
+        $talk = new Talk;
+
+        if ($request->hasFile('file')) {
+            $path = $request->file('file')->store('/uploads', ['disk' => 'public']);
+            $talk->file = $path;
+        }
+
+        $validated = $request->validated();
+        $talk->title = $request->title;
+        $talk->introduction = $request->introduction;
+        $talk->description = $request->description;
+        $talk->slug = $validated['slug'];
+        $talk->date = Carbon::create($request->date)->toDateTimeString();
+        $talk->save();
+
+        if ($request->hasFile('image')) {
+            $name = $request->file('image')->getClientOriginalName();
+            $mimeType = $request->file('image')->getClientOriginalExtension();
+            $path = $request->file('image')->store('/uploads', ['disk' => 'public']);
+
+            $media = new Media;
+            $media->name = $name;
+            $media->path = $path;
+            $media->type = $mimeType;
+            $talk->media()->save($media, ['type' => 'talk_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+        } else if ($request->has('image_id')) {
+            $media = Media::find($request->image_id);
+            $talk->media()->attach($media->id, ['type' => 'talk_image', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]);
+        }
+
+        return redirect()->route('control.talks.index')->with('status', 'Palestra Criado com Sucesso');
     }
 
     /**

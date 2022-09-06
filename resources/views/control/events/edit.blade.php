@@ -1,9 +1,9 @@
-<x-control.templates.base title="Editar Banner">
+<x-control.templates.base title="Editar Evento">
   <div class="container">
-    <h1>Editar Banner</h1>
-    <p>Edite o banner cadastrado no sistema</p>
+    <h1>Editar Evento</h1>
+    <p>Edite o evento cadastrado no sistema</p>
     <hr>
-    <form action="{{ route('control.banners.update', ['banner' => $banner->id]) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('control.events.update', ['event' => $event->id]) }}" method="POST" enctype="multipart/form-data">
       @csrf
       @method('PUT')
       <div class="modal fade" id="imagesModal" tabindex="-1" aria-labelledby="imagesModalLabel" aria-hidden="true">
@@ -24,7 +24,7 @@
                       </div>
                       <div class="card-footer d-flex align-items-center gap-2">
                         <button class="btn btn-noweb" type="button" data-select>Selecionar</button>
-                        <input type="radio" name="image_id" id="image_id" value="{{ $media->id }}" data-input class="visually-hidden" @if ($banner->media[0]->id === $media->id) checked @endif>
+                        <input type="radio" name="image_id" id="image_id" value="{{ $media->id }}" data-input class="visually-hidden" @if ($project->event[0]->id === $media->id) checked @endif>
                       </div>
                     </div>
                   </div>
@@ -33,7 +33,7 @@
                     <h4 class="text-center">Nenhuma Mídia Cadastrada no Site</h4>
                   </div>
                 @endforelse
-                <div class="col-12 col-sm-6 mt-4">
+                <div class="col-12">
                   <label for="file" class="form-label">Fazer upload:</label>
                   <input type="file" class="form-control @error("image") is-invalid @enderror" id="image" name="image" data-upload>
                 </div>
@@ -45,7 +45,7 @@
       <div class="row">
         <div class="mb-3 col-12 col-lg-6">
           <label for="title" class="form-label">Título</label>
-          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') ? old('title') : $banner->title }}">
+          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') ? old('title') : $event->title }}">
           @error('title')
             <div class="invalid-feedback">
               {{ $message }}
@@ -53,14 +53,18 @@
           @enderror
         </div>
         <div class="mb-3 col-12 col-lg-6">
-          <label for="type" class="form-label">Tipo</label>
-          <select class="form-select @error("type") is-invalid @enderror" id="type" name="type">
-            <option selected disabled>Selecione o tipo do banner</option>
-            @foreach ($types as $type)
-              <option value="{{ $type->value }}" selected={{ $banner->type === $type->value }}>{{ $type->placeholder() }}</option>
-            @endforeach
-          </select>
-          @error('type')
+          <label for="type" class="form-label">Data</label>
+          <input type="date" name="date" id="date" class="form-control" value="{{ old('date') ? old('date') : $event->date }}">
+          @error('date')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
+        </div>
+        <div class="mb-3 col-12">
+          <label for="description" class="form-label">Introdução</label>
+          <textarea name="introduction" id="introduction" rows="5" class="form-control @error("introduction") is-invalid @enderror">{{ old('introduction') ? old('introduction') : $event->introduction }}</textarea>
+          @error('description')
             <div class="invalid-feedback">
               {{ $message }}
             </div>
@@ -68,7 +72,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <textarea name="description" id="description" rows="5" class="form-control @error("description") is-invalid @enderror">{{ old('description') ? old('description') : $banner->description}}</textarea>
+          <textarea name="description" id="description" rows="5" class="form-control @error("description") is-invalid @enderror">{{ old('description') ? old('description') : $event->description}}</textarea>
           @error('description')
             <div class="invalid-feedback">
               {{ $message }}
@@ -87,30 +91,12 @@
             </div>
           @enderror
         </div>
-        <div class="mb-3 col-12 col-lg-4">
-          <label for="link" class="form-label">Link</label>
-          <input type="text" name="link" id="link" class="form-control @error("link") is-invalid @enderror" value="{{ old('link') ? old('link') : $banner->link }}">
-          @error('link')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-          @enderror
-        </div>
-        <div class="mb-3 col-12 col-lg-4">
-          <label for="button_text" class="form-label">Texto do Botão</label>
-          <input type="text" name="button_text" id="button_text" class="form-control @error("button_text") is-invalid @enderror" value="{{ old('button_text') ? old('button_text') : $banner->button_text }}">
-          @error('button_text')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-          @enderror
-        </div>
       </div>
       <hr>
       <div class="d-flex align-items-center gap-2">
         <button type="submit" class="btn btn-noweb">Atualizar</button>
         ou
-        <a href="{{ back() }}" class="btn btn-outline-noweb">Voltar</a>
+        <a href="{{ route('control.events.index') }}" class="btn btn-outline-noweb">Voltar</a>
       </div>
     </form>
   </div>
