@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Web\Templates;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\Component;
 
 class SingleSchedule extends Component
@@ -11,7 +12,7 @@ class SingleSchedule extends Component
      *
      * @return void
      */
-    public function __construct(public string $previousRoute, public string $previousTitle, public string $pageTitle)
+    public function __construct(public string $previousRoute, public string $previousTitle, public string $pageTitle, public string $pageContent,  public Collection|null $pagePhotos = null)
     {
     }
 
