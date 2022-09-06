@@ -48,6 +48,7 @@ class WebController extends Controller
 
     public function event(Event $event)
     {
+        $event->load('media', 'gallery');
         return view('web.event', ['event', $event]);
     }
 
@@ -61,6 +62,7 @@ class WebController extends Controller
 
     public function project(Project $project)
     {
+        $project->load('media', 'gallery');
         return view('web.project', ['project', $project]);
     }
 
@@ -74,6 +76,7 @@ class WebController extends Controller
 
     public function talk(Talk $talk)
     {
+        $talk->load('media');
         return view('web.talk', ['talk' => $talk]);
     }
 
