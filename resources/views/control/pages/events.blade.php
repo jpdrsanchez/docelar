@@ -18,7 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <textarea rows="5" name="description_seo" id="description_seo" class="form-control">{{ old('description_seo') ? old('description_seo') : $event->description_seo }}</textarea>
+          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $event->description_seo }}</div>
+          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $event->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}

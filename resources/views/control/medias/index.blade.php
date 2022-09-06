@@ -20,7 +20,7 @@
         </a>
       </div>
       <div class="mb-4"></div>
-      <div class="collapse" id="upload_media">
+      <div class="collapse @error("file") show @enderror" id="upload_media">
         <div class="card card-body">
           <form method="POST" action="{{ route('control.medias.store') }}" enctype="multipart/form-data">
             @csrf
@@ -48,7 +48,7 @@
         <div class="card">
           <div class="card-header text-truncate">{{ $media->name; }}</div>
           <div class="card-body">
-            <img src="{{ asset('storage/'.$media->path) }}" alt="" class="card-image rounded">
+            <img src="{{ asset($media->path) }}" alt="" class="card-image rounded">
           </div>
           <div class="card-footer d-flex align-items-center gap-2">
             <a href="{{ route('control.medias.edit', ['media' => $media->id]) }}" class="btn btn-warning">Editar</a>

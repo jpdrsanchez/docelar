@@ -18,7 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <textarea rows="5" name="description_seo" id="description_seo" class="form-control">{{ old('description_seo') ? old('description_seo') : $contact->description_seo }}</textarea>
+          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $contact->description_seo }}</div>
+          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $contact->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -36,7 +37,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="content" class="form-label">Conteúdo Principal</label>
-          <textarea rows="5" name="content" id="content" class="form-control">{{ old('content') ? old('content') : $contact->content }}</textarea>
+          <div data-quill style="height: 130px">{{ old('content') ? old('content') : $contact->content }}</div>
+          <input type="hidden" name="content" id="content" value={{ old('content') ? old('content') : $contact->content }}>
           @error('content')
             <div class="invalid-feedback">
               {{ $message }}

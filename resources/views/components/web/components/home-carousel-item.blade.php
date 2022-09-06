@@ -24,6 +24,6 @@
         <a href="{{ $link }}" class="home-carousel__link">{{ $buttonText }}</a>
       </div>
     </div>
-    <img src="{{ asset('storage/'.$image) }}" alt="{{ $title }}" aria-hidden="true" class="home-carousel__image">
+    <img src="{{ asset($image) }}" alt="{{ $title }}" aria-hidden="true" class="home-carousel__image">
   </div>
 </div>

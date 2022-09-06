@@ -30,8 +30,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
     Route::get("/", ControlController::class)->name('home');
-    Route::resource("medias", MediaController::class)->except(['create']);
-    Route::resource('banners', BannerController::class);
+    Route::resource("medias", MediaController::class)->except(['create', 'show']);
+    Route::resource('banners', BannerController::class)->except(['show']);
     Route::resource('projects', ProjectController::class);
     Route::resource('events', EventController::class);
     Route::resource('talks', TalkController::class);

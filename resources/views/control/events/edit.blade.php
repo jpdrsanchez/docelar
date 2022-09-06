@@ -27,9 +27,10 @@
           @enderror
         </div>
         <div class="mb-3 col-12">
-          <label for="description" class="form-label">Introdução</label>
-          <textarea name="introduction" id="introduction" rows="5" class="form-control @error("introduction") is-invalid @enderror">{{ old('introduction') ? old('introduction') : $event->introduction }}</textarea>
-          @error('description')
+          <label for="introduction" class="form-label">Introdução</label>
+          <div data-quill style="height: 130px">{{ old('introduction') ? old('introduction') : $event->introduction }}</div>
+          <input type="hidden" name="introduction" id="introduction" value={{ old('introduction') ? old('introduction') : $event->introduction }}>
+          @error('introduction')
             <div class="invalid-feedback">
               {{ $message }}
             </div>
@@ -37,7 +38,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <textarea name="description" id="description" rows="5" class="form-control @error("description") is-invalid @enderror">{{ old('description') ? old('description') : $event->description}}</textarea>
+          <div data-quill style="height: 130px">{{ old('description') ? old('description') : $event->description }}</div>
+          <input type="hidden" name="description" id="description" value={{ old('description') ? old('description') : $event->description }}>
           @error('description')
             <div class="invalid-feedback">
               {{ $message }}

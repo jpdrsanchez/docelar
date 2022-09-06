@@ -18,7 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <textarea rows="5" name="description_seo" id="description_seo" class="form-control">{{ old('description_seo') ? old('description_seo') : $donate->description_seo }}</textarea>
+          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $donate->description_seo }}</div>
+          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $donate->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -45,7 +46,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="content" class="form-label">Conteúdo da Página</label>
-          <textarea rows="5" name="content" id="content" class="form-control">{{ old('content') ? old('content') : $donate->content }}</textarea>
+          <div data-quill style="height: 130px">{{ old('content') ? old('content') : $donate->content }}</div>
+          <input type="hidden" name="content" id="content" value={{ old('content') ? old('content') : $donate->content }}>
           @error('content')
             <div class="invalid-feedback">
               {{ $message }}
@@ -63,7 +65,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="donate_content" class="form-label">Conteúdo Seção de Doação</label>
-          <textarea rows="5" name="donate_content" id="donate_content" class="form-control">{{ old('donate_content') ? old('donate_content') : $donate->donate_content }}</textarea>
+          <div data-quill style="height: 130px">{{ old('donate_content') ? old('donate_content') : $donate->donate_content }}</div>
+          <input type="hidden" name="donate_content" id="donate_content" value={{ old('donate_content') ? old('donate_content') : $donate->donate_content }}>
           @error('donate_content')
             <div class="invalid-feedback">
               {{ $message }}

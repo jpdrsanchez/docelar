@@ -18,7 +18,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <textarea rows="5" name="description_seo" id="description_seo" class="form-control">{{ old('description_seo') ? old('description_seo') : $home->description_seo }}</textarea>
+          <div data-quill style="height: 130px">{{ old('description_seo') ? old('description_seo') : $home->description_seo }}</div>
+          <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') ? old('description_seo') : $home->description_seo }}>
           @error('description_seo')
             <div class="invalid-feedback">
               {{ $message }}
@@ -36,7 +37,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="about_description" class="form-label">Descrição Seção Sobre</label>
-          <textarea rows="5" name="about_description" id="about_description" class="form-control">{{ old('about_description') ? old('about_description') : $home->about_description }}</textarea>
+          <div data-quill style="height: 130px">{{ old('about_description') ? old('about_description') : $home->about_description }}</div>
+          <input type="hidden" name="about_description" id="about_description" value={{ old('about_description') ? old('about_description') : $home->about_description }}>
           @error('about_description')
             <div class="invalid-feedback">
               {{ $message }}
@@ -54,7 +56,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="projects_description" class="form-label">Descrição Seção Projetos</label>
-          <textarea rows="5" name="projects_description" id="projects_description" class="form-control">{{ old('projects_description') ? old('projects_description') : $home->projects_description }}</textarea>
+          <div data-quill style="height: 130px">{{ old('projects_description') ? old('projects_description') : $home->projects_description }}</div>
+          <input type="hidden" name="projects_description" id="projects_description" value={{ old('projects_description') ? old('projects_description') : $home->projects_description }}>
           @error('projects_description')
             <div class="invalid-feedback">
               {{ $message }}
@@ -72,7 +75,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="talks_description" class="form-label">Descrição Seção Palestras</label>
-          <textarea rows="5" name="talks_description" id="talks_description" class="form-control">{{ old('talks_description') ? old('talks_description') : $home->talks_description }}</textarea>
+          <div data-quill style="height: 130px">{{ old('talks_description') ? old('talks_description') : $home->talks_description }}</div>
+          <input type="hidden" name="talks_description" id="talks_description" value={{ old('talks_description') ? old('talks_description') : $home->talks_description }}>
           @error('talks_description')
             <div class="invalid-feedback">
               {{ $message }}
@@ -90,7 +94,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="donate_description" class="form-label">Descrição Seção de Doação</label>
-          <textarea rows="5" name="donate_description" id="donate_description" class="form-control">{{ old('donate_description') ? old('donate_description') : $home->donate_description }}</textarea>
+          <div data-quill style="height: 130px">{{ old('donate_description') ? old('donate_description') : $home->donate_description }}</div>
+          <input type="hidden" name="donate_description" id="donate_description" value={{ old('donate_description') ? old('donate_description') : $home->donate_description }}>
           @error('donate_description')
             <div class="invalid-feedback">
               {{ $message }}
@@ -108,7 +113,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="schedule_description" class="form-label">Descrição Seção Agenda</label>
-          <textarea rows="5" name="schedule_description" id="schedule_description" class="form-control">{{ old('schedule_description') ? old('schedule_description') : $home->schedule_description }}</textarea>
+          <div data-quill style="height: 130px">{{ old('schedule_description') ? old('schedule_description') : $home->schedule_description }}</div>
+          <input type="hidden" name="schedule_description" id="schedule_description" value={{ old('schedule_description') ? old('schedule_description') : $home->schedule_description }}>
           @error('schedule_description')
             <div class="invalid-feedback">
               {{ $message }}

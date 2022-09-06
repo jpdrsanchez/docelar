@@ -33,7 +33,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <textarea name="description" id="description" rows="5" class="form-control @error("description") is-invalid @enderror">{{ old('description') ? old('description') : $banner->description}}</textarea>
+          <div data-quill style="height: 130px">{{ old('description') ? old('description') : $banner->description }}</div>
+          <input type="hidden" name="description" id="description" value={{ old('description') ? old('description') : $banner->description }}>
           @error('description')
             <div class="invalid-feedback">
               {{ $message }}

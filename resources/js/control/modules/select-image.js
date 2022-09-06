@@ -7,7 +7,7 @@ const initImageSelection = () => {
     if (cards.length && buttons.length && inputs.length) {
         uploadInput.addEventListener("change", () => {
             cards.forEach((card) => {
-                card.classList.remove("border-primary");
+                card.classList.remove("card-selected");
             });
             inputs.forEach((input) => {
                 input.checked = false;
@@ -15,8 +15,8 @@ const initImageSelection = () => {
         });
 
         cards.forEach((card, index) => {
-            card.classList.remove("border-primary");
-            if (inputs[index]?.checked) card.classList.add("border-primary");
+            card.classList.remove("card-selected");
+            if (inputs[index]?.checked) card.classList.add("card-selected");
         });
 
         buttons.forEach((button) => {
@@ -30,10 +30,10 @@ const initImageSelection = () => {
         inputs.forEach((input, index) => {
             input.addEventListener("change", (e) => {
                 cards.forEach((card) => {
-                    card.classList.remove("border-primary");
+                    card.classList.remove("card-selected");
                 });
 
-                cards[index].classList.toggle("border-primary");
+                cards[index].classList.toggle("card-selected");
             });
         });
     }

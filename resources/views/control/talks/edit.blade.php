@@ -3,14 +3,14 @@
     <h1>Editar Evento</h1>
     <p>Edite o evento cadastrado no sistema</p>
     <hr>
-    <form action="{{ route('control.events.update', ['event' => $event->id]) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('control.talks.update', ['talk' => $talk->id]) }}" method="POST" enctype="multipart/form-data">
       @csrf
       @method('PUT')
-      <x-control.components.images-modal :medias="$medias" :id="isset($event->media[0]) && !empty($event->media[0]) ? $event->media[0]->id : null" />
+      <x-control.components.images-modal :medias="$medias" :id="isset($talk->media[0]) && !empty($talk->media[0]) ? $talk->media[0]->id : null" />
       <div class="row">
         <div class="mb-3 col-12 col-lg-6">
           <label for="title" class="form-label">Título</label>
-          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') ? old('title') : $event->title }}">
+          <input type="text" class="form-control @error("title") is-invalid @enderror" id="title" name="title" value="{{ old('title') ? old('title') : $talk->title }}">
           @error('title')
             <div class="invalid-feedback">
               {{ $message }}
@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3 col-12 col-lg-6">
           <label for="type" class="form-label">Data</label>
-          <input type="date" name="date" id="date" class="form-control" value="{{ old('date') ? old('date') : $event->date }}">
+          <input type="date" name="date" id="date" class="form-control" value="{{ old('date') ? old('date') : $talk->date }}">
           @error('date')
             <div class="invalid-feedback">
               {{ $message }}
@@ -27,9 +27,10 @@
           @enderror
         </div>
         <div class="mb-3 col-12">
-          <label for="description" class="form-label">Introdução</label>
-          <textarea name="introduction" id="introduction" rows="5" class="form-control @error("introduction") is-invalid @enderror">{{ old('introduction') ? old('introduction') : $event->introduction }}</textarea>
-          @error('description')
+          <label for="introduction" class="form-label">Introdução</label>
+          <div data-quill style="height: 130px">{{ old('introduction') ? old('introduction') : $talk->introduction }}</div>
+          <input type="hidden" name="introduction" id="introduction" value={{ old('introduction') ? old('introduction') : $talk->introduction }}>
+          @error('introduction')
             <div class="invalid-feedback">
               {{ $message }}
             </div>
@@ -37,7 +38,8 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description" class="form-label">Descrição</label>
-          <textarea name="description" id="description" rows="5" class="form-control @error("description") is-invalid @enderror">{{ old('description') ? old('description') : $event->description}}</textarea>
+          <div data-quill style="height: 130px">{{ old('description') ? old('description') : $talk->description }}</div>
+          <input type="hidden" name="description" id="description" value={{ old('description') ? old('description') : $talk->description }}>
           @error('description')
             <div class="invalid-feedback">
               {{ $message }}
