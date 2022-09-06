@@ -20,7 +20,7 @@
   <section class="talk-section">
     <div class="container talk-section__container">
       <div class="talk-section__text">{!! $talk->description !!}</div>
-      <a target="_blank" class="talk-section__link" href="{{ asset('storage/'.$talk->file->path) !! }}">Baixar Conteúdo</a>
+      <a target="_blank" class="talk-section__link" href="{{ asset('storage/'.$talk->file->path) }}">Baixar Conteúdo</a>
     </div>
   </section>
 </x-web.templates.base>
