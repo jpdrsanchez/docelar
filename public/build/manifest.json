@@ -1,8 +1,4 @@
 {
-  "resources/images/background/circle-2.svg": {
-    "file": "assets/circle-2.bb18f55a.svg",
-    "src": "resources/images/background/circle-2.svg"
-  },
   "resources/images/background/detail-11.svg": {
     "file": "assets/detail-11.2d7de7dc.svg",
     "src": "resources/images/background/detail-11.svg"
@@ -11,77 +7,81 @@
     "file": "assets/circle-1.9eefd805.svg",
     "src": "resources/images/background/circle-1.svg"
   },
-  "resources/images/background/detail-12.svg": {
-    "file": "assets/detail-12.bb3a7aeb.svg",
-    "src": "resources/images/background/detail-12.svg"
+  "resources/images/background/detail-10.svg": {
+    "file": "assets/detail-10.db944785.svg",
+    "src": "resources/images/background/detail-10.svg"
   },
-  "resources/images/background/detail-3.svg": {
-    "file": "assets/detail-3.c2482ff7.svg",
-    "src": "resources/images/background/detail-3.svg"
+  "resources/images/background/circle-2.svg": {
+    "file": "assets/circle-2.bb18f55a.svg",
+    "src": "resources/images/background/circle-2.svg"
   },
   "resources/images/background/detail-2.svg": {
     "file": "assets/detail-2.e961d154.svg",
     "src": "resources/images/background/detail-2.svg"
   },
-  "resources/images/background/detail-1.svg": {
-    "file": "assets/detail-1.371175a6.svg",
-    "src": "resources/images/background/detail-1.svg"
-  },
-  "resources/images/background/detail-10.svg": {
-    "file": "assets/detail-10.db944785.svg",
-    "src": "resources/images/background/detail-10.svg"
-  },
-  "resources/images/background/detail-5.svg": {
-    "file": "assets/detail-5.5ff8aa6c.svg",
-    "src": "resources/images/background/detail-5.svg"
-  },
-  "resources/images/background/line-1.svg": {
-    "file": "assets/line-1.3395a34e.svg",
-    "src": "resources/images/background/line-1.svg"
-  },
-  "resources/images/background/detail-9.svg": {
-    "file": "assets/detail-9.8c5eb99f.svg",
-    "src": "resources/images/background/detail-9.svg"
-  },
-  "resources/images/background/detail-7.svg": {
-    "file": "assets/detail-7.d5773c3e.svg",
-    "src": "resources/images/background/detail-7.svg"
-  },
-  "resources/images/background/detail-6.svg": {
-    "file": "assets/detail-6.c0981e4d.svg",
-    "src": "resources/images/background/detail-6.svg"
-  },
-  "resources/images/background/detail-8.svg": {
-    "file": "assets/detail-8.1e13a1f0.svg",
-    "src": "resources/images/background/detail-8.svg"
+  "resources/images/background/detail-12.svg": {
+    "file": "assets/detail-12.bb3a7aeb.svg",
+    "src": "resources/images/background/detail-12.svg"
   },
   "resources/images/background/detail-4.svg": {
     "file": "assets/detail-4.a560d247.svg",
     "src": "resources/images/background/detail-4.svg"
   },
+  "resources/images/background/detail-5.svg": {
+    "file": "assets/detail-5.5ff8aa6c.svg",
+    "src": "resources/images/background/detail-5.svg"
+  },
+  "resources/images/background/detail-1.svg": {
+    "file": "assets/detail-1.371175a6.svg",
+    "src": "resources/images/background/detail-1.svg"
+  },
+  "resources/images/background/detail-6.svg": {
+    "file": "assets/detail-6.c0981e4d.svg",
+    "src": "resources/images/background/detail-6.svg"
+  },
+  "resources/images/background/detail-3.svg": {
+    "file": "assets/detail-3.c2482ff7.svg",
+    "src": "resources/images/background/detail-3.svg"
+  },
+  "resources/images/background/detail-7.svg": {
+    "file": "assets/detail-7.d5773c3e.svg",
+    "src": "resources/images/background/detail-7.svg"
+  },
+  "resources/images/background/detail-9.svg": {
+    "file": "assets/detail-9.8c5eb99f.svg",
+    "src": "resources/images/background/detail-9.svg"
+  },
+  "resources/images/background/detail-8.svg": {
+    "file": "assets/detail-8.1e13a1f0.svg",
+    "src": "resources/images/background/detail-8.svg"
+  },
+  "resources/images/background/line-1.svg": {
+    "file": "assets/line-1.3395a34e.svg",
+    "src": "resources/images/background/line-1.svg"
+  },
   "resources/images/background/line-2.svg": {
     "file": "assets/line-2.eb69898c.svg",
     "src": "resources/images/background/line-2.svg"
-  },
-  "resources/images/contact/location.svg": {
-    "file": "assets/location.11a27b96.svg",
-    "src": "resources/images/contact/location.svg"
-  },
-  "resources/images/contact/phone.svg": {
-    "file": "assets/phone.0a85e2ff.svg",
-    "src": "resources/images/contact/phone.svg"
-  },
-  "resources/images/contact/person-1.png": {
-    "file": "assets/person-1.8b351a66.png",
-    "src": "resources/images/contact/person-1.png"
   },
   "resources/images/contact/mail.svg": {
     "file": "assets/mail.a61a9009.svg",
     "src": "resources/images/contact/mail.svg"
   },
+  "resources/images/contact/location.svg": {
+    "file": "assets/location.11a27b96.svg",
+    "src": "resources/images/contact/location.svg"
+  },
+  "resources/images/contact/person-1.png": {
+    "file": "assets/person-1.8b351a66.png",
+    "src": "resources/images/contact/person-1.png"
+  },
   "resources/images/donate/donate-bank.svg": {
     "file": "assets/donate-bank.533c869b.svg",
     "src": "resources/images/donate/donate-bank.svg"
+  },
+  "resources/images/contact/phone.svg": {
+    "file": "assets/phone.0a85e2ff.svg",
+    "src": "resources/images/contact/phone.svg"
   },
   "resources/images/donate/donate-pix.svg": {
     "file": "assets/donate-pix.d23a039b.svg",
@@ -95,13 +95,13 @@
     "file": "assets/donate-qr.2b88c360.png",
     "src": "resources/images/donate/donate-qr.png"
   },
-  "resources/images/home/circle-detail.svg": {
-    "file": "assets/circle-detail.a35e1b31.svg",
-    "src": "resources/images/home/circle-detail.svg"
-  },
   "resources/images/footer-logo.svg": {
     "file": "assets/footer-logo.6a6786b6.svg",
     "src": "resources/images/footer-logo.svg"
+  },
+  "resources/images/home/circle-detail.svg": {
+    "file": "assets/circle-detail.a35e1b31.svg",
+    "src": "resources/images/home/circle-detail.svg"
   },
   "resources/images/home/line-detail.svg": {
     "file": "assets/line-detail.778c780e.svg",
@@ -110,6 +110,14 @@
   "resources/images/home/people-3.png": {
     "file": "assets/people-3.54f97ddb.png",
     "src": "resources/images/home/people-3.png"
+  },
+  "resources/images/home/title-detail.svg": {
+    "file": "assets/title-detail.3b61e078.svg",
+    "src": "resources/images/home/title-detail.svg"
+  },
+  "resources/images/logo.png": {
+    "file": "assets/logo.bcd9b584.png",
+    "src": "resources/images/logo.png"
   },
   "resources/images/home/slide-purple.jpg": {
     "file": "assets/slide-purple.5cc786d3.jpg",
@@ -123,14 +131,6 @@
     "file": "assets/people-2.f7cde511.png",
     "src": "resources/images/home/people-2.png"
   },
-  "resources/images/logo.png": {
-    "file": "assets/logo.bcd9b584.png",
-    "src": "resources/images/logo.png"
-  },
-  "resources/images/home/title-detail.svg": {
-    "file": "assets/title-detail.3b61e078.svg",
-    "src": "resources/images/home/title-detail.svg"
-  },
   "resources/images/home/slide-light-blue.jpg": {
     "file": "assets/slide-light-blue.2cffe87b.jpg",
     "src": "resources/images/home/slide-light-blue.jpg"
@@ -142,6 +142,10 @@
   "resources/images/home/slide-blue.jpg": {
     "file": "assets/slide-blue.10356fef.jpg",
     "src": "resources/images/home/slide-blue.jpg"
+  },
+  "resources/fonts/gothamlight-webfont.eot": {
+    "file": "assets/gothamlight-webfont.265439fe.eot",
+    "src": "resources/fonts/gothamlight-webfont.eot"
   },
   "resources/fonts/gothambook-webfont.eot": {
     "file": "assets/gothambook-webfont.0f71c094.eot",
@@ -155,13 +159,17 @@
     "file": "assets/gothammedium-webfont.8b7cd610.eot",
     "src": "resources/fonts/gothammedium-webfont.eot"
   },
-  "resources/fonts/gothamlight-webfont.eot": {
-    "file": "assets/gothamlight-webfont.265439fe.eot",
-    "src": "resources/fonts/gothamlight-webfont.eot"
-  },
   "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2": {
     "file": "assets/raleway-cyrillic-ext-400-normal.1a60d844.woff2",
     "src": "node_modules/@fontsource/raleway/files/raleway-cyrillic-ext-400-normal.woff2"
+  },
+  "resources/fonts/loli-pop.woff": {
+    "file": "assets/loli-pop.69b0baad.woff",
+    "src": "resources/fonts/loli-pop.woff"
+  },
+  "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2": {
+    "file": "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
+    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2"
   },
   "node_modules/@fontsource/raleway/files/raleway-cyrillic-400-normal.woff2": {
     "file": "assets/raleway-cyrillic-400-normal.679eb908.woff2",
@@ -175,41 +183,25 @@
     "file": "assets/raleway-latin-400-normal.c78a1da5.woff2",
     "src": "node_modules/@fontsource/raleway/files/raleway-latin-400-normal.woff2"
   },
-  "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2": {
-    "file": "assets/raleway-latin-ext-400-normal.293dc7f5.woff2",
-    "src": "node_modules/@fontsource/raleway/files/raleway-latin-ext-400-normal.woff2"
-  },
-  "resources/fonts/loli-pop.woff": {
-    "file": "assets/loli-pop.69b0baad.woff",
-    "src": "resources/fonts/loli-pop.woff"
-  },
-  "resources/fonts/gothambold-webfont.woff2": {
-    "file": "assets/gothambold-webfont.e5689d23.woff2",
-    "src": "resources/fonts/gothambold-webfont.woff2"
-  },
-  "resources/fonts/gothamlight-webfont.woff2": {
-    "file": "assets/gothamlight-webfont.83bb3b91.woff2",
-    "src": "resources/fonts/gothamlight-webfont.woff2"
+  "resources/fonts/gothambook-webfont.woff2": {
+    "file": "assets/gothambook-webfont.c1d14e3a.woff2",
+    "src": "resources/fonts/gothambook-webfont.woff2"
   },
   "resources/fonts/gothammedium-webfont.woff2": {
     "file": "assets/gothammedium-webfont.a35bdc94.woff2",
     "src": "resources/fonts/gothammedium-webfont.woff2"
   },
-  "resources/fonts/gothambook-webfont.woff2": {
-    "file": "assets/gothambook-webfont.c1d14e3a.woff2",
-    "src": "resources/fonts/gothambook-webfont.woff2"
+  "resources/fonts/gothambold-webfont.woff2": {
+    "file": "assets/gothambold-webfont.e5689d23.woff2",
+    "src": "resources/fonts/gothambold-webfont.woff2"
   },
   "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff": {
     "file": "assets/raleway-all-400-normal.e0fbe643.woff",
     "src": "node_modules/@fontsource/raleway/files/raleway-all-400-normal.woff"
   },
-  "resources/fonts/gothamlight-webfont.woff": {
-    "file": "assets/gothamlight-webfont.177dd76f.woff",
-    "src": "resources/fonts/gothamlight-webfont.woff"
-  },
-  "resources/fonts/gothambold-webfont.woff": {
-    "file": "assets/gothambold-webfont.588ab1eb.woff",
-    "src": "resources/fonts/gothambold-webfont.woff"
+  "resources/fonts/gothamlight-webfont.woff2": {
+    "file": "assets/gothamlight-webfont.83bb3b91.woff2",
+    "src": "resources/fonts/gothamlight-webfont.woff2"
   },
   "resources/fonts/gothammedium-webfont.woff": {
     "file": "assets/gothammedium-webfont.389f7786.woff",
@@ -219,24 +211,32 @@
     "file": "assets/gothambook-webfont.ee9e44bc.woff",
     "src": "resources/fonts/gothambook-webfont.woff"
   },
-  "resources/fonts/gothamlight-webfont.ttf": {
-    "file": "assets/gothamlight-webfont.31d16321.ttf",
-    "src": "resources/fonts/gothamlight-webfont.ttf"
+  "resources/fonts/gothambold-webfont.woff": {
+    "file": "assets/gothambold-webfont.588ab1eb.woff",
+    "src": "resources/fonts/gothambold-webfont.woff"
   },
-  "resources/fonts/gothambold-webfont.ttf": {
-    "file": "assets/gothambold-webfont.09d9b6cb.ttf",
-    "src": "resources/fonts/gothambold-webfont.ttf"
-  },
-  "resources/fonts/gothammedium-webfont.ttf": {
-    "file": "assets/gothammedium-webfont.58ba8571.ttf",
-    "src": "resources/fonts/gothammedium-webfont.ttf"
+  "resources/fonts/gothamlight-webfont.woff": {
+    "file": "assets/gothamlight-webfont.177dd76f.woff",
+    "src": "resources/fonts/gothamlight-webfont.woff"
   },
   "resources/fonts/gothambook-webfont.ttf": {
     "file": "assets/gothambook-webfont.23d30c6f.ttf",
     "src": "resources/fonts/gothambook-webfont.ttf"
   },
+  "resources/fonts/gothammedium-webfont.ttf": {
+    "file": "assets/gothammedium-webfont.58ba8571.ttf",
+    "src": "resources/fonts/gothammedium-webfont.ttf"
+  },
+  "resources/fonts/gothambold-webfont.ttf": {
+    "file": "assets/gothambold-webfont.09d9b6cb.ttf",
+    "src": "resources/fonts/gothambold-webfont.ttf"
+  },
+  "resources/fonts/gothamlight-webfont.ttf": {
+    "file": "assets/gothamlight-webfont.31d16321.ttf",
+    "src": "resources/fonts/gothamlight-webfont.ttf"
+  },
   "resources/js/control/app.js": {
-    "file": "assets/app.718014bb.js",
+    "file": "assets/app.7412a5d8.js",
     "src": "resources/js/control/app.js",
     "isEntry": true
   },
@@ -253,12 +253,12 @@
     "src": "resources/js/web/app.css"
   },
   "resources/scss/web/app.scss": {
-    "file": "assets/app.6ea9fa38.css",
+    "file": "assets/app.1ea1f38a.css",
     "src": "resources/scss/web/app.scss",
     "isEntry": true
   },
   "resources/scss/control/app.scss": {
-    "file": "assets/app.390274ba.css",
+    "file": "assets/app.8839c0e6.css",
     "src": "resources/scss/control/app.scss",
     "isEntry": true
   }
