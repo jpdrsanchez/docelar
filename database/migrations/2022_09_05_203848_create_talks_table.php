@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('description_seo');
             $table->string('title');
             $table->string('slug');
-            $table->string('card_text');
+            $table->string('card_text')->nullable();
             $table->boolean('show_date');
             $table->text('introduction');
             $table->text('description');
