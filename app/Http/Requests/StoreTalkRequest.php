@@ -17,6 +17,9 @@ class StoreTalkRequest extends FormRequest
         $this->merge([
             'slug' => Str::slug($this->title),
         ]);
+        $this->merge([
+            'show_date' => filter_var($this->show_date, FILTER_VALIDATE_BOOLEAN),
+        ]);
     }
 
     /**
@@ -37,8 +40,12 @@ class StoreTalkRequest extends FormRequest
     public function rules()
     {
         return [
+            'title_seo' => 'required|string',
+            'description_seo' => 'required|string',
             'title' => 'required|string',
             'slug' => 'required|string|unique:projects,slug',
+            'card_text' => 'required_without:show_date',
+            'show_date' => 'boolean',
             'introduction' => 'required|string',
             'description' => 'required|string',
             'date' => 'required|date',

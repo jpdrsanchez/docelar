@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 
 class StoreEventRequest extends FormRequest
 {
+
     /**
      * Prepare the data for validation.
      *
@@ -16,6 +17,9 @@ class StoreEventRequest extends FormRequest
     {
         $this->merge([
             'slug' => Str::slug($this->title),
+        ]);
+        $this->merge([
+            'show_date' => filter_var($this->show_date, FILTER_VALIDATE_BOOLEAN),
         ]);
     }
 
@@ -37,8 +41,12 @@ class StoreEventRequest extends FormRequest
     public function rules()
     {
         return [
+            'title_seo' => 'required|string',
+            'description_seo' => 'required|string',
             'title' => 'required|string',
             'slug' => 'required|string|unique:events,slug',
+            'card_text' => 'required_without:show_date',
+            'show_date' => 'boolean',
             'introduction' => 'required|string',
             'description' => 'required|string',
             'date' => 'required|date',
@@ -61,7 +69,6 @@ class StoreEventRequest extends FormRequest
             'file' => 'O arquivo deve ser válido',
             'mimes' => 'O arquivo deve ser do tipo jpg ou png',
             'numeric' => 'Selecione uma imagem válida',
-            'required_without' => 'teste'
         ];
     }
 }

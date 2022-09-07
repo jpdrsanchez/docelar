@@ -8,7 +8,7 @@
       <div class="modal-body">
         <div class="row">
           @forelse ($medias as $media)
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" data-card>
                 <div class="card-header text-truncate">{{ $media->name; }}</div>
                 <div class="card-body">

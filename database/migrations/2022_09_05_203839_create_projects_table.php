@@ -15,8 +15,12 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
+            $table->string('title_seo');
+            $table->string('description_seo');
             $table->string('title');
             $table->string('slug');
+            $table->string('card_text');
+            $table->boolean('show_date');
             $table->text('introduction');
             $table->text('description');
             $table->date('date');

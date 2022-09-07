@@ -7,6 +7,18 @@ use Illuminate\Foundation\Http\FormRequest;
 class UpdateEventRequest extends FormRequest
 {
     /**
+     * Prepare the data for validation.
+     *
+     * @return void
+     */
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'show_date' => filter_var($this->show_date, FILTER_VALIDATE_BOOLEAN),
+        ]);
+    }
+
+    /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
@@ -24,7 +36,11 @@ class UpdateEventRequest extends FormRequest
     public function rules()
     {
         return [
+            'title_seo' => 'required|string',
+            'description_seo' => 'required|string',
             'title' => 'required|string',
+            'card_text' => 'required_without:show_date',
+            'show_date' => 'boolean',
             'introduction' => 'required|string',
             'description' => 'required|string',
             'date' => 'required|date',

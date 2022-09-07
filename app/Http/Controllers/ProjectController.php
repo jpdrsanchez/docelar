@@ -45,7 +45,11 @@ class ProjectController extends Controller
     {
         $validated = $request->validated();
         $project = new Project;
+        $project->title_seo = $request->title_seo;
+        $project->description_seo = $request->description_seo;
         $project->title = $request->title;
+        $project->card_text = $request->card_text;
+        $project->show_date = $request->show_date;
         $project->introduction = $request->introduction;
         $project->description = $request->description;
         $project->slug = $validated['slug'];
@@ -96,7 +100,11 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project)
     {
+        $project->title_seo = $request->title_seo;
+        $project->description_seo = $request->description_seo;
         $project->title = $request->title;
+        $project->card_text = $request->card_text;
+        $project->show_date = $request->show_date;
         $project->introduction = $request->introduction;
         $project->description = $request->description;
         $project->date = Carbon::create($request->date)->toDateTimeString();

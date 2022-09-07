@@ -45,7 +45,11 @@ class EventController extends Controller
     {
         $validated = $request->validated();
         $event = new Event;
+        $event->title_seo = $request->title_seo;
+        $event->description_seo = $request->description_seo;
         $event->title = $request->title;
+        $event->card_text = $request->card_text;
+        $event->show_date = $request->show_date;
         $event->introduction = $request->introduction;
         $event->description = $request->description;
         $event->slug = $validated['slug'];
@@ -96,7 +100,11 @@ class EventController extends Controller
      */
     public function update(UpdateEventRequest $request, Event $event)
     {
+        $event->title_seo = $request->title_seo;
+        $event->description_seo = $request->description_seo;
         $event->title = $request->title;
+        $event->card_text = $request->card_text;
+        $event->show_date = $request->show_date;
         $event->introduction = $request->introduction;
         $event->description = $request->description;
         $event->date = Carbon::create($request->date)->toDateTimeString();

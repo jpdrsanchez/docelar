@@ -51,7 +51,11 @@ class TalkController extends Controller
         }
 
         $validated = $request->validated();
+        $talk->title_seo = $request->title_seo;
+        $talk->description_seo = $request->description_seo;
         $talk->title = $request->title;
+        $talk->card_text = $request->card_text;
+        $talk->show_date = $request->show_date;
         $talk->introduction = $request->introduction;
         $talk->description = $request->description;
         $talk->slug = $validated['slug'];
@@ -103,7 +107,11 @@ class TalkController extends Controller
             $talk->file = $path;
         }
 
+        $talk->title_seo = $request->title_seo;
+        $talk->description_seo = $request->description_seo;
         $talk->title = $request->title;
+        $talk->card_text = $request->card_text;
+        $talk->show_date = $request->show_date;
         $talk->introduction = $request->introduction;
         $talk->description = $request->description;
         $talk->date = Carbon::create($request->date)->toDateTimeString();
