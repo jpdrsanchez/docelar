@@ -12,7 +12,7 @@
       <div class="d-flex align-items-center justify-content-between">
         <div>
           <h1><strong>{{ $gallery->name }}</strong></h1>
-          <p>Gerenciar galeria</p>
+          <p>{{ $gallery->gallerieable->title }}</p>
         </div>
         <a data-bs-toggle="collapse" href="#upload_media" role="button" aria-expanded="false" aria-controls="upload_media" class="btn btn-noweb">
           <ion-icon name="add-circle"></ion-icon>
@@ -39,6 +39,7 @@
         </div>
       </div>
     </div>
+    <div data-alert class="alert alert-success">Upload realizado com sucesso! Atualize a página para ver as imagens. <a href="{{ route('control.galleries.edit', ['gallery', $gallery->id]) }}"></a></div>
     <div class="row mb-5">
       @forelse ($gallery->media as $media)
       <div class="col-12 col-sm-6 col-md-3 mb-4">

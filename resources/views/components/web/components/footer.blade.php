@@ -2,16 +2,16 @@
   <div class="container footer__container">
     <div class="footer__content">
       <img src="{{ Vite::asset('resources/images/footer-logo.svg') }}" alt="Doce lar da criança" class="footer__logo">
-      <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id massa fames ipsum pharetra bibendum odio pellente.</p>
+      <p class="footer__text">{!! $configuration['footer_text'] !!}</p>
     </div>
     <div class="footer__links">
       <h3 class="footer__title">Redes Sociais</h3>
       <nav class="footer__list">
-        <a href="#" class="footer__list__link">
+        <a href="{{ $configuration['instagram'] }}" class="footer__list__link">
           <ion-icon name="logo-instagram"></ion-icon>
           <span class="visually-hidden">Instagram</span>
         </a>
-        <a href="#" class="footer__list__link">
+        <a href="{{ $configuration['facebook'] }}" class="footer__list__link">
           <ion-icon name="logo-facebook"></ion-icon>
           <span class="visually-hidden">Facebook</span>
         </a>

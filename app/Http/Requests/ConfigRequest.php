@@ -27,7 +27,7 @@ class ConfigRequest extends FormRequest
             'address' => 'required|string',
             'phone' => 'required|string',
             'email' => 'required|string',
-            'maps' => 'required|string',
+            'maps' => 'string',
             'instagram' => 'required|string',
             'facebook' => 'required|string',
             'footer_text' => 'required|string',

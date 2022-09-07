@@ -98,3 +98,11 @@ body {
 strong {
   font-weight: 700;
 }
+
+[data-alert] {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

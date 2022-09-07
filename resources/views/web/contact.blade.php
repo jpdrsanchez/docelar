@@ -23,7 +23,7 @@
                 </span>
                 <div class="contact-section__contact__item__text">
                   <h4>Endereço:</h4>
-                  <p>Rua xxxxxxx xxxxxx, xxx São Paulo - SP</p>
+                  <p>{!! $configuration['address'] !!}</p>
                 </div>
               </li>
               <li class="contact-section__contact__item">
@@ -32,7 +32,7 @@
                 </span>
                 <div class="contact-section__contact__item__text">
                   <h4>Telefone:</h4>
-                  <p>(11) 90000-0000</p>
+                  <p>{{ $configuration['phone'] }}</p>
                 </div>
               </li>
               <li class="contact-section__contact__item">
@@ -41,10 +41,13 @@
                 </span>
                 <div class="contact-section__contact__item__text">
                   <h4>E-mail:</h4>
-                  <p>contato@docelar.com.br</p>
+                  <p>{{ $configuration['email'] }}</p>
                 </div>
               </li>
             </ul>
+            <div class="contact-section__map">
+              {!! $configuration['maps'] !!}
+            </div>
           </div>
         </div>
       </div>

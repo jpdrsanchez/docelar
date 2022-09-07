@@ -42,4 +42,12 @@ if (quillContainer.length) {
 
 import Dropzone from "dropzone";
 
-const dropzone = new Dropzone(".dropzone");
+const dropzone = new Dropzone(".dropzone", {
+    dictDefaultMessage: "Clique ou arraste as imagens que deseja subir",
+});
+
+const alertWrapper = document.querySelector("[data-alert]");
+
+dropzone.on("success", (e) => {
+    alertWrapper.classList.add("active");
+});

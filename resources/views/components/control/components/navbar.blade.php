@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg noweb-navbar mb-5">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="{{ route('control.home') }}">
       <img src="//www.nowcloud.com.br/tools/framework/v5/images/logo-dashboard.png" alt="Logotipo Noweb Publicidade" height="30">
       <span class="visually-hidden">Noweb Publicidade</span>
     </a>

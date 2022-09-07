@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3 col-12">
           <label for="description_seo" class="form-label">Descrição SEO</label>
-          <div data-quill style="height: 130px">{{ old('description_seo') }}</div>
+          <div data-quill style="height: 130px">{!! old('description_seo') !!}</div>
           <input type="hidden" name="description_seo" id="description_seo" value={{ old('description_seo') }}>
           @error('description_seo')
             <div class="invalid-feedback">

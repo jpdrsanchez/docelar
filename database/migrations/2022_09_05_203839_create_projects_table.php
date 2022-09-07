@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('show_date');
             $table->text('introduction');
             $table->text('description');
-            $table->date('date');
+            $table->timestamp('date');
             $table->timestamps();
         });
     }
