@@ -1,6 +1,8 @@
 <div class="donate-bank">
   <div class="donate-bank__image">
+    @if ($image)
     <img src="{{ $image }}" alt="{{ $bank }}">
+    @endif
   </div>
   <ul class="donate-bank__list">
     <li class="donate-bank__item">

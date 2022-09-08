@@ -15,7 +15,7 @@
   <section class="talks-form">
     <div class="container talks-form__container">
       <div class="talks-form__content">
-        <x-web.components.contact-form :title="$talkspage->form_title" type="talks" />
+        <x-web.components.contact-form :title="$talkspage->form_title" :action="route('web.sendTalk')" type="talks" />
           <div class="talks-form__image">
             <img src="{{ Vite::asset('resources/images/talks.png') }}" alt="Palestras">
           </div>

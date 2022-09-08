@@ -12,7 +12,7 @@
       <img src="{{ Vite::asset('resources/images/contact/person-1.png') }}" alt="" aria-hidden="true" class="contact-section__image">
       <div class="contact-section__content">
         <div class="contact-section__form">
-          <x-web.components.contact-form :title="$contact->form_title" type="contact" />
+          <x-web.components.contact-form :action="route('web.send')" :title="$contact->form_title" type="contact" />
         </div>
         <div class="contact-section__column">
           <div class="contact-section__info">

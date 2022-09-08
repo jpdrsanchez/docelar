@@ -51,6 +51,17 @@ em {
   font-style: italic;
 }
 
+.app-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
 .container {
   position: relative;
   width: 100%;

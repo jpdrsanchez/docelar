@@ -11,7 +11,7 @@ class DonateBank extends Component
      *
      * @return void
      */
-    public function __construct(public string $image, public string $agency, public string $account, public string $bank, public string $name, public string $document)
+    public function __construct(public bool|string $image, public string $agency, public string $account, public string $bank, public string $name, public string $document)
     {
     }
 

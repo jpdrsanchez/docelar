@@ -11,7 +11,7 @@ class ContactForm extends Component
      *
      * @return void
      */
-    public function __construct(public string $title, public string $type)
+    public function __construct(public string $title, public string $type, public string $action)
     {
     }
 

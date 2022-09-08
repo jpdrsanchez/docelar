@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\Web\WebController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,9 @@ Route::controller(WebController::class)->group(function () {
     Route::get('/palestra/{talk:slug}', 'talk')->name('talk');
     Route::get('/contato', 'contact')->name('contact');
 });
+
+Route::post('/enviar', [MailController::class, 'contact'])->name('send');
+Route::post('/enviar-palestra', [MailController::class, 'talk'])->name('sendTalk');
+
+Route::get('/enviado', fn () => view('web.sent'))->name('sent');
+Route::fallback(fn () => view('web.404'));
