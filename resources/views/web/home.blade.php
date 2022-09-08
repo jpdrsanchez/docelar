@@ -1,4 +1,4 @@
-<x-web.templates.base :title="$homepage->title_seo" :description="$homepage->description_seo">
+<x-web.templates.base :description="$homepage->description_seo" :title="$homepage->title_seo">
   @unless ($banners->isEmpty())
   <x-web.components.home-carousel>
     @foreach ($banners as $banner)
