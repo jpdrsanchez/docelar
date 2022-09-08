@@ -2,7 +2,7 @@
   <div class="container footer__container">
     <div class="footer__content">
       <img src="{{ Vite::asset('resources/images/footer-logo.svg') }}" alt="Doce lar da criança" class="footer__logo">
-      <p class="footer__text">{!! $configuration['footer_text'] !!}</p>
+      <div class="footer__text">{!! $configuration['footer_text'] !!}</div>
     </div>
     <div class="footer__links">
       <h3 class="footer__title">Redes Sociais</h3>

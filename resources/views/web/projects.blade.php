@@ -1,9 +1,15 @@
 <x-web.templates.base title="{{ $projectpage->title_seo }}">
-  @unless (! $highlight)
-  <x-web.templates.schedule :background="asset('storage/'.$highlight->media[0]->path)" :category="$category" :title="$highlight->title" :date="$highlight->date" :description="$highlight->introduction" :link="route('web.project', ['project' => $highlight->slug])" section-title="">
+  @if ($highlight)
+  @php
+    $image = isset($highlight->media[0]) ? asset('storage/'.$highlight->media[0]->path) : false;
+  @endphp
+  <x-web.templates.schedule :background="$image" :category="$category" :title="$highlight->title" :date="$highlight->date" :description="$highlight->introduction" :link="route('web.project', ['project' => $highlight->slug])" section-title="">
     @foreach ($projects as $project)
-    <x-web.components.schedule-card :background="asset('storage/'.$project->media[0]->path)" type="md" :title="$project->title" :content="$project->date" :link="route('web.project', ['project' => $project->slug])" />
+    @php
+      $projectImage = isset($project->media[0]) ? asset('storage/'.$project->media[0]->path) : false;
+    @endphp
+    <x-web.components.schedule-card :background="$projectImage" type="md" :title="$project->title" :content="$project->date" :link="route('web.project', ['project' => $project->slug])" />
     @endforeach
   </x-web.templates.schedule>
-  @endunless
+  @endif
 </x-web.templates.base>

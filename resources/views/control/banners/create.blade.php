@@ -21,7 +21,7 @@
           <select class="form-select @error("type") is-invalid @enderror" id="type" name="type">
             <option selected disabled>Selecione o tipo do banner</option>
             @foreach ($types as $type)
-              <option value="{{ $type->value }}" selected={{ old('type') == $type->value }}>{{ $type->placeholder() }}</option>
+              <option value="{{ $type->value }}" @selected(old('type') === $type->value)>{{ $type->placeholder() }}</option>
             @endforeach
           </select>
           @error('type')
@@ -75,7 +75,7 @@
       <div class="d-flex align-items-center gap-2">
         <button type="submit" class="btn btn-noweb">Criar</button>
         ou
-        <a href="{{ back() }}" class="btn btn-outline-noweb">Voltar</a>
+        <a href="{{ route('control.banners.index') }}" class="btn btn-outline-noweb">Voltar</a>
       </div>
     </form>
   </div>

@@ -1,11 +1,14 @@
 <x-web.templates.base title="{{ $homepage->title_seo }}">
-  @if (! $banners->isEmpty())
+  @unless ($banners->isEmpty())
   <x-web.components.home-carousel>
     @foreach ($banners as $banner)
-      <x-web.components.home-carousel-item :title="$banner->title" :text="$banner->description" :button-text="$banner->button_text" :image="$banner->media[0]->path" :link="$banner->link" :type="$types::from($banner->type)" />
+    @php
+      $image = isset($banner->media[0]) ? $banner->media[0]->path : false;
+    @endphp
+    <x-web.components.home-carousel-item :title="$banner->title" :text="$banner->description" :button-text="$banner->button_text" :image="$image" :link="$banner->link" :type="$banner->type" />
     @endforeach
   </x-web.components.home-carousel>
-  @endif
+  @endunless
   <section class="homeAbout">
     <img src="{{ Vite::asset('resources/images/home/people-2.png') }}" alt="" aria-hidden="true" class="homeAbout__image">
     <img src="{{ Vite::asset('resources/images/background/line-1.svg') }}" alt="" aria-hidden="true" class="homeAbout__line">

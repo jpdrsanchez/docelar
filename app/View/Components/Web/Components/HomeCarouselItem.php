@@ -12,7 +12,7 @@ class HomeCarouselItem extends Component
      *
      * @return void
      */
-    public function __construct(public string $title, public string $text, public string $image, public string $link, public string $buttonText, public BannerTypes $type)
+    public function __construct(public string $title, public string $text, public bool|string $image, public string $link, public string $buttonText, public BannerTypes $type)
     {
     }
 

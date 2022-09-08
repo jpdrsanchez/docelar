@@ -49,10 +49,11 @@
             <img src="{{ asset('storage/'.$media->path) }}" alt="" class="card-image rounded">
           </div>
           <div class="card-footer d-flex align-items-center gap-2">
-            <form action="{{ route('control.medias.destroy', ['media' => $media->id]) }}" method="POST">
+            <form action="{{ route('control.galleries.destroy', ['gallery' => $gallery->id]) }}" method="POST">
               @csrf
               @method('DELETE')
-              <button type="submit" class="btn btn-danger">Excluir</button>
+              <input type="hidden" name="image_id" value="{{ $media->id }}">
+              <button type="submit" class="btn btn-danger">Remover da Galeria</button>
             </form>
           </div>
         </div>

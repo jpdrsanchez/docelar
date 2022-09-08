@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DestroyGalleryRequest;
 use App\Http\Requests\UpdateGalleryRequest;
 use App\Models\Gallery;
 use App\Models\Media;
@@ -47,11 +48,14 @@ class GalleryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
+     * @param  \App\Http\Requests\DestroyGalleryRequest  $request
      * @param  \App\Models\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Gallery $gallery)
+    public function destroy(DestroyGalleryRequest $request, Gallery $gallery)
     {
-        //
+        $gallery->media()->detach($request->image_id);
+
+        return redirect()->route('control.galleries.edit', ['gallery' => $gallery->id])->with('status', 'Imagem excluída com sucesso');
     }
 }

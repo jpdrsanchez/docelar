@@ -13,7 +13,7 @@ class ImagesModal extends Component
      *
      * @return void
      */
-    public function __construct(public Collection $medias, public string|null $id = null)
+    public function __construct(public Collection $medias, public ?string $id = null, public bool $hasInput = true)
     {
     }
 

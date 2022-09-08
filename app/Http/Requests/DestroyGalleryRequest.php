@@ -2,11 +2,9 @@
 
 namespace App\Http\Requests;
 
-use App\Enums\BannerTypes;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rules\Enum;
 
-class UpdateBannerRequest extends FormRequest
+class DestroyGalleryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,12 +24,7 @@ class UpdateBannerRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'link' => 'required|string|url',
-            'button_text' => 'required|string',
-            'type' => [new Enum(BannerTypes::class), 'required'],
-            'image' => 'file|mimes:png',
+            'image_id' => 'required|numeric'
         ];
     }
 
@@ -43,11 +36,8 @@ class UpdateBannerRequest extends FormRequest
     public function messages()
     {
         return [
-            'string' => 'O campo deve ser do tipo string',
+            'numeric' => 'O campo id deve ser válido',
             'required' => 'O campo não pode estar vazio',
-            'url' => 'O campo deve conter um link válido',
-            'image.file' => 'O arquivo deve ser válido',
-            'image.mimes' => 'O arquivo deve ser do tipo PNG',
         ];
     }
 }

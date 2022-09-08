@@ -26,12 +26,14 @@
             </div>
           @endforelse
         </div>
+        @if ($hasInput)
         <div class="row">
           <div class="col-12 col-sm-6 mt-4">
             <label for="file" class="form-label">Fazer upload:</label>
             <input type="file" class="form-control" id="image" name="image" data-upload>
           </div>
         </div>
+        @endif
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-noweb" data-bs-dismiss="modal" aria-label="Close">Fechar</button>

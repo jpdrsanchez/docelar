@@ -26,9 +26,8 @@ class WebController extends Controller
         $projects = Project::with('media')->orderBy('date', 'desc')->take(8)->get();
         $talks = Talk::with('media')->orderBy('date', 'desc')->take(8)->get();
         $events = Event::with('media')->orderBy('date', 'desc')->take(8)->get();
-        $types = BannerTypes::class;
 
-        return view('web.home', compact('homepage', 'banners', 'projects', 'talks', 'events', 'types'));
+        return view('web.home', compact('homepage', 'banners', 'projects', 'talks', 'events'));
     }
 
     public function about()
@@ -48,8 +47,8 @@ class WebController extends Controller
 
     public function event(Event $event)
     {
-        $event->load('media', 'gallery');
-        return view('web.event', ['event', $event]);
+        $event->load('gallery');
+        return view('web.event', ['event' => $event]);
     }
 
     public function projects()
@@ -62,7 +61,7 @@ class WebController extends Controller
 
     public function project(Project $project)
     {
-        $project->load('media', 'gallery');
+        $project->load('gallery');
         return view('web.project', ['project' => $project]);
     }
 

@@ -13,7 +13,9 @@
         <div class="talk-main__text">{!! $talk->introduction !!}</div>
       </div>
       <div class="talk-main__image">
+        @if (isset($talk->media[0]))
         <img src="{{ asset('storage/'.$talk->media[0]->path) }}" alt="image">
+        @endif
       </div>
     </div>
   </main>

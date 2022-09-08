@@ -35,7 +35,7 @@
           <tr>
             <th scope="row">{{ $banner->id }}</th>
             <td>{{ $banner->title }}</td>
-            <td>{{ $banner->type }}</td>
+            <td>{{ $banner->type->placeholder() }}</td>
             <td>{{ $banner->link }}</td>
             <td>
               <div class="d-flex align-items-stretch gap-2 justify-content-end">

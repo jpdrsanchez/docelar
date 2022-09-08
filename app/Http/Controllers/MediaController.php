@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMediaRequest;
 use App\Http\Requests\UpdateMediaRequest;
 use App\Models\Media;
+use Illuminate\Support\Facades\Storage;
 
 class MediaController extends Controller
 {
@@ -42,40 +43,6 @@ class MediaController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Media  $media
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Media $media)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Media  $media
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Media $media)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateMediaRequest  $request
-     * @param  \App\Models\Media  $media
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateMediaRequest $request, Media $media)
-    {
-        //
-    }
-
-    /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Media  $media
@@ -83,6 +50,17 @@ class MediaController extends Controller
      */
     public function destroy(Media $media)
     {
-        //
+        $mediaRelations = ['banners', 'talks', 'events', 'projects', 'galleries'];
+        $media->load($mediaRelations);
+
+        foreach ($mediaRelations as $relation) {
+            $media->$relation()->detach();
+        }
+
+        Storage::delete($media->path);
+
+        $media->delete();
+
+        return redirect()->route('control.medias.index')->with('status', 'Mídia excluída com sucesso');
     }
 }

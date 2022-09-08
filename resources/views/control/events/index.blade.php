@@ -36,7 +36,7 @@
             <th scope="row">{{ $event->id }}</th>
             <td>{{ $event->title }}</td>
             <td>{{ $event->slug }}</td>
-            <td>{{ $event->date }}</td>
+            <td>{{ $event->now }}</td>
             <td>
               <div class="d-flex align-items-stretch gap-2 justify-content-end">
                 <a class="btn btn-noweb" href="{{ route('control.galleries.edit', ['gallery' => $event->gallery->id]) }}">

@@ -52,9 +52,26 @@
           </div>
           <div class="card-footer d-flex align-items-center gap-2">
             <form action="{{ route('control.medias.destroy', ['media' => $media->id]) }}" method="POST">
+              <div class="modal fade" tabindex="-1" id="deleteModal" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="deleteModalLabel">Confirmar exclusão</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Ao exluir essa image, ela também será excluída de todos as páginas, banners, eventos, projetos, palestras e galerias as quais ela estiver atrelada.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               @csrf
               @method('DELETE')
-              <button type="submit" class="btn btn-danger">Excluir</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Excluir</button>
             </form>
           </div>
         </div>

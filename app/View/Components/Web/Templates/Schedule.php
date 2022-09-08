@@ -11,7 +11,7 @@ class Schedule extends Component
      *
      * @return void
      */
-    public function __construct(public string $background, public string $category, public string $title, public string $date, public string $description, public string $link, public string $sectionTitle = '')
+    public function __construct(public bool|string $background, public string $category, public string $title, public string $date, public string $description, public string $link, public string $sectionTitle = '')
     {
     }
 
