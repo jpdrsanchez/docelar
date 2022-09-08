@@ -3,7 +3,7 @@
   @php
     $image = isset($highlight->media[0]) ? asset('storage/'.$highlight->media[0]->path) : false;
   @endphp
-  <x-web.templates.schedule :background="$image" :category="$category" :title="$highlight->title" :date="$highlight->date" :description="$highlight->introduction" :link="route('web.project', ['project' => $highlight->slug])" section-title="">
+  <x-web.templates.schedule :background="$image" :category="$category" :title="$highlight->title" :date="$highlight->date" :description="$highlight->introduction" :link="route('web.talk', ['talk' => $highlight->slug])" section-title="">
     @foreach ($talks as $talk)
     @php
       $desc = $talk->show_date ? $talk->date : $talk->card_text;
