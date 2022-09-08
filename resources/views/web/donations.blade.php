@@ -1,4 +1,4 @@
-<x-web.templates.base title="{{ $donate->title_seo }}">
+<x-web.templates.base :title="$donate->title_seo" :description="$donate->description_seo">
   <main class="donations-main">
     <div class="container donations-main__container">
       <div class="donations-main__wrapper">

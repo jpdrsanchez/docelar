@@ -1,4 +1,4 @@
-<x-web.templates.base title="{{ $contact->title_seo }}">
+<x-web.templates.base :title="$contact->title_seo" :description="$contact->description_seo">
   <main class="contact-main">
     <div class="container contact-main__container">
       <div class="contact-main__content">

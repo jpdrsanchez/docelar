@@ -1,4 +1,4 @@
-<x-web.templates.base title="{{ $aboutpage->title_seo }}">
+<x-web.templates.base :title="$aboutpage->title_seo" :description="$aboutpage->description_seo">
   <main class="about">
     <img src="{{ Vite::asset('resources/images/background/detail-12.svg') }}" alt="" aria-hidden="true" class="about__detail-one">
     <img src="{{ Vite::asset('resources/images/background/detail-11.svg') }}" alt="" aria-hidden="true" class="about__detail-two">

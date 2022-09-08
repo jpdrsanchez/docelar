@@ -1,4 +1,4 @@
-<x-web.templates.base title="{{ $talkspage->title_seo }}">
+<x-web.templates.base :title="$talkspage->title_seo" :description="$talkspage->description_seo">
   @if($highlight)
   @php
     $image = isset($highlight->media[0]) ? asset('storage/'.$highlight->media[0]->path) : false;

@@ -1,4 +1,4 @@
-<x-web.templates.base title="Erro 404 - Página não Encontrada">
+<x-web.templates.base title="Solicitação de Contato Enviada" description="Solicitação de Contato Enviada">
   <main class="not-found">
     <img src="{{ Vite::asset('resources/images/background/detail-12.svg') }}" alt="" aria-hidden="true" class="not-found__detail-one">
     <img src="{{ Vite::asset('resources/images/background/detail-11.svg') }}" alt="" aria-hidden="true" class="not-found__detail-two">

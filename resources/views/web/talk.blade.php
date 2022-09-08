@@ -1,4 +1,4 @@
-<x-web.templates.base title="Palestra">
+<x-web.templates.base :title="$talk->title_seo" :description="$talk->description_seo">
   <main class="talk-main">
     <div class="container talk-main__container">
       <div class="talk-main__content">
