@@ -6,9 +6,10 @@
   <x-web.templates.schedule :background="$image" :category="$category" :title="$highlight->title" :date="$highlight->date" :description="$highlight->introduction" :link="route('web.event', ['event' => $highlight->slug])" section-title="Próximos Eventos">
     @foreach ($events as $event)
     @php
+      $desc = $talk->show_date ? $talk->date : $talk->card_text;
       $eventImage = isset($event->media[0]) ? asset('storage/'.$event->media[0]->path) : false;
     @endphp
-    <x-web.components.schedule-card :background="$eventImage" type="md" :title="$event->title" :content="$event->date" :link="route('web.event', ['event' => $event->slug])" />
+    <x-web.components.schedule-card :background="$eventImage" type="md" :title="$event->title" :content="$desc" :link="route('web.event', ['event' => $event->slug])" />
     @endforeach
   </x-web.templates.schedule>
   @endif

@@ -26,7 +26,10 @@
       <div class="homeProjects__text">{!! $homepage->projects_description !!}</div>
       <ul class="homeProjects__list">
         @foreach ($projects as $project)
-          <x-web.components.schedule-card :background="asset('storage/'.$project->media[0]->path)" type="lg" :title="$project->title" :content="$project->introduction" :link="route('web.project', ['project' => $project->slug])" />
+          @php
+            $desc = $project->show_date ? $project->date : $project->card_text;
+          @endphp
+          <x-web.components.schedule-card :background="asset('storage/'.$project->media[0]->path)" type="lg" :title="$project->title" :content="$desc" :link="route('web.project', ['project' => $project->slug])" />
         @endforeach
       </ul>
       <a href="{{ route('web.projects') }}" class="homeProjects__link">Ver mais projetos</a>
@@ -44,8 +47,11 @@
     </div>
     <x-web.components.talks-carousel>
       @foreach ($talks as $talk)
+        @php
+          $desc = $talk->show_date ? $talk->date : $talk->card_text;
+        @endphp
         <div class="swiper-slide talks-slide__item">
-          <x-web.components.schedule-card :background="asset('storage/'.$talk->media[0]->path)" type="sw" :title="$talk->title" :content="$talk->date" :link="route('web.talk', ['talk' => $talk->slug])" />
+          <x-web.components.schedule-card :background="asset('storage/'.$talk->media[0]->path)" type="sw" :title="$talk->title" :content="$desc" :link="route('web.talk', ['talk' => $talk->slug])" />
         </div>
       @endforeach
     </x-web.components.talks-carousel>
