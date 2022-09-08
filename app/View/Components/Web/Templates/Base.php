@@ -12,7 +12,7 @@ class Base extends Component
      * @param string $title
      * @return void
      */
-    public function __construct(public string $title)
+    public function __construct(public string $title, public string $description)
     {
     }
 
